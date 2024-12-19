@@ -52,7 +52,7 @@ ul {
 .no-border {
   border: none;
   background-color:  var(--secondary-shadow);  
-  border-radius: 10px;
+  border-radius: 9px;
   padding: 0.5rem;
   cursor: pointer;
 }
