@@ -111,38 +111,39 @@ nav ul li {
 }
 
 .hero {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2.5rem;
-    max-width: 68.75rem;
-    margin: auto;
-    padding: 2rem;
-    text-align: center;
-  }
-  .hero img {
-    height: 37.5rem;
-    width: 37.5rem;
-  }
-  
-  .bio {
-    width: 25rem;
-    padding: 0.625rem;
-    border-radius: 6px;
-    box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
-  }
-  
-  .bio h1 {
-    margin-bottom: var(--bottom-margin);
-    margin: 0.5rem;
-  }
-  
-  .bio p {
-    line-height: var(--line-height);
-    padding: 0.3rem 0;
-    margin: 0.5rem;
-    text-align: justify;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 80rem; /* Increased width */
+  margin: auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero img {
+  height: 37.5rem;
+  width: 37.5rem;
+}
+
+.bio {
+  width: 37.5rem;
+  padding: 0.625rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 15px 2px var(--secondary-shadow);
+}
+
+.bio h1 {
+  margin-bottom: var(--bottom-margin);
+  margin: 0.5rem;
+}
+
+.bio p {
+  line-height: var(--line-height);
+  padding: 0.3rem 0;
+  margin: 0.5rem;
+  text-align: justify;
+}
   .more-about {
     padding: 1rem 6rem;
   }
@@ -312,112 +313,113 @@ nav ul li {
     object-fit: cover;
   }
 
+
 /* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
-    .hero img {
-        height: 30rem;
-        width: 30rem;
-    }
-    .bio {
-        width: 20rem;
-    }
+  .hero img {
+      height: 30rem;
+      width: 30rem;
+  }
+  .bio {
+    width: 30rem;
+  }
 }
 
 @media (max-width: 992px) {
-    nav h1 {
-        font-size: 40px;
-    }
-    nav a {
-        font-size: 20px;
-    }
-    .hero img {
-        height: 25rem;
-        width: 25rem;
-    }
-    .bio {
-        width: 18rem;
-    }
-    .more-about {
-        padding: 1rem 4rem;
-    }
+  nav h1 {
+      font-size: 40px;
+  }
+  nav a {
+      font-size: 20px;
+  }
+  .hero img {
+      height: 25rem;
+      width: 25rem;
+  }
+  .bio {
+    width: 25rem;
+  }
+  .more-about {
+      padding: 1rem 4rem;
+  }
 }
 
 @media (max-width: 768px) {
-    nav ul {
-        display: none;
-        flex-direction: column;
-        gap: 0;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: var(--bg-color);
-    }
+  nav ul {
+      display: none;
+      flex-direction: column;
+      gap: 0;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: var(--bg-color);
+  }
 
-    nav ul.show {
-        display: flex;
-    }
+  nav ul.show {
+      display: flex;
+  }
 
-    .burger-menu {
-        display: block;
-        cursor: pointer;
-    }
+  .burger-menu {
+      display: block;
+      cursor: pointer;
+  }
 
-    .hero {
-        flex-direction: column;
-        text-align: center;
-    }
-    .hero img {
-        height: 20rem;
-        width: 20rem;
-    }
-    .bio {
-        width: 15rem;
-    }
-    .more-about {
-        padding: 1rem 2rem;
-    }
-    .skills-wrapper img {
-        padding: 0.625rem;
-    }
-    .icon {
-        width: 8rem;
-        height: 8rem;
-    }
-    .projects-container {
-        flex-direction: column;
-    }
-    .project-container {
-        width: 100%;
-    }
+  .hero {
+      flex-direction: column;
+      text-align: center;
+  }
+  .hero img {
+      height: 20rem;
+      width: 20rem;
+  }
+  .bio {
+    width: 20rem;
+  }
+  .more-about {
+      padding: 1rem 2rem;
+  }
+  .skills-wrapper img {
+      padding: 0.625rem;
+  }
+  .icon {
+      width: 8rem;
+      height: 8rem;
+  }
+  .projects-container {
+      flex-direction: column;
+  }
+  .project-container {
+      width: 100%;
+  }
 }
 
 @media (max-width: 576px) {
-    nav h1 {
-        font-size: 30px;
-    }
-    nav a {
-        font-size: 18px;
-    }
-    .hero img {
-        height: 15rem;
-        width: 15rem;
-    }
-    .bio {
-        width: 12rem;
-    }
-    .more-about {
-        padding: 1rem;
-    }
-    .skills-wrapper img {
-        padding: 0.5rem;
-    }
-    .icon {
-        width: 6rem;
-        height: 6rem;
-    }
-    .project-pic {
-        width: 100%;
-        height: auto;
-    }
+  nav h1 {
+      font-size: 30px;
+  }
+  nav a {
+      font-size: 18px;
+  }
+  .hero img {
+      height: 15rem;
+      width: 15rem;
+  }
+  .bio {
+    width: 25rem;
+  }
+  .more-about {
+      padding: 1rem;
+  }
+  .skills-wrapper img {
+      padding: 0.5rem;
+  }
+  .icon {
+      width: 6rem;
+      height: 6rem;
+  }
+  .project-pic {
+      width: 100%;
+      height: auto;
+  }
 }
