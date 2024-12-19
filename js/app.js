@@ -24,3 +24,12 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+  const burgerMenu = document.getElementById('burger-menu');
+  const navLinks = document.querySelector('.navigation');
+
+  burgerMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+  });
+});

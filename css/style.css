@@ -105,6 +105,12 @@ nav ul {
     display: flex;
     gap: 1.9rem;
 }
+.burger-menu {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
 
 nav ul li {
     font-weight: var(--bold-font);
@@ -357,12 +363,25 @@ nav ul li {
   }
 
   nav ul.show {
-      display: flex;
-  }
 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-color); /* Change text color */
+    border: 2px solid var(--secondary-shadow);
+    margin: 1rem auto; /* Center horizontally */
+    text-align: center;
+    padding: 1rem;
+    border-radius: 8px;
+    width: 10rem;
+    position: absolute; /* Position it absolutely */
+    left: 1rem; /* Align to the right side */
+}
+nav ul.show li {
+  padding: 0.5rem 0;
+}
   .burger-menu {
       display: block;
-      cursor: pointer;
   }
 
   .hero {
