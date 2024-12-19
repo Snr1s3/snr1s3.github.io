@@ -2,7 +2,7 @@
 
 /* Variables */
 :root {
-    --font-family: "Roboto", sans-serf;
+    --font-family: "Roboto", sans-serif;
     --normal-font: 400;
     --bold-font: 700;
     --bolder-font: 900;
@@ -194,6 +194,7 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
   }
   .projects-title {
     text-align: center;
@@ -281,8 +282,7 @@ nav ul li {
     cursor: pointer;
   }
   .socials {
-
-  padding: 0.5rem;
+    padding: 0.5rem;
     border: none;
     background-color:  var(--secondary-shadow);  
     border-radius: 10px;
@@ -308,4 +308,114 @@ nav ul li {
     width: 5000px; /* Adjust the width as needed */
     height: 300px; /* Maintain aspect ratio */
     object-fit: cover;
-  } 
+  }
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .hero img {
+        height: 30rem;
+        width: 30rem;
+    }
+    .bio {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 992px) {
+    nav h1 {
+        font-size: 40px;
+    }
+    nav a {
+        font-size: 20px;
+    }
+    .hero img {
+        height: 25rem;
+        width: 25rem;
+    }
+    .bio {
+        width: 18rem;
+    }
+    .more-about {
+        padding: 1rem 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        gap: 0;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--bg-color);
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .burger-menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero img {
+        height: 20rem;
+        width: 20rem;
+    }
+    .bio {
+        width: 15rem;
+    }
+    .more-about {
+        padding: 1rem 2rem;
+    }
+    .skills-wrapper img {
+        padding: 0.625rem;
+    }
+    .icon {
+        width: 8rem;
+        height: 8rem;
+    }
+    .projects-container {
+        flex-direction: column;
+    }
+    .project-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    nav h1 {
+        font-size: 30px;
+    }
+    nav a {
+        font-size: 18px;
+    }
+    .hero img {
+        height: 15rem;
+        width: 15rem;
+    }
+    .bio {
+        width: 12rem;
+    }
+    .more-about {
+        padding: 1rem;
+    }
+    .skills-wrapper img {
+        padding: 0.5rem;
+    }
+    .icon {
+        width: 6rem;
+        height: 6rem;
+    }
+    .project-pic {
+        width: 100%;
+        height: auto;
+    }
+}
