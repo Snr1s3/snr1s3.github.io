@@ -1,31 +1,26 @@
-// Nav hamburgerburger selections
-const burger = document.querySelector("#burger-menu");
-const ul = document.querySelector("nav ul");
-const nav = document.querySelector("nav");
+document.addEventListener('DOMContentLoaded', () => {
+  const themeToggle = document.getElementById('theme-toggle');
+  const themeIcon = document.getElementById('bIcon');
+  const currentTheme = localStorage.getItem('theme') || 'light';
 
-// Scroll to top selection
-const scrollUp = document.querySelector("#scroll-up");
+  if (currentTheme === 'dark') {
+      document.documentElement.setAttribute('data-theme', 'dark');
+      themeIcon.src = 'img/icons/sun.png'; // Set icon for dark mode
+  } else {
+      themeIcon.src = 'img/icons/moon.svg'; // Set icon for light mode
+  }
 
-// Select nav links
-const navLink = document.querySelectorAll(".nav-link");
+  themeToggle.addEventListener('click', () => {
+      const theme = document.documentElement.getAttribute('data-theme');
+      const newTheme = theme === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', newTheme);
+      localStorage.setItem('theme', newTheme);
 
-// Hamburger menu function
-burger.addEventListener("click", () => {
-  ul.classList.toggle("show");
-});
-
-// Close hamburger menu when a link is clicked
-navLink.forEach((link) =>
-  link.addEventListener("click", () => {
-    ul.classList.remove("show");
-  })
-);
-
-// scroll to top functionality
-scrollUp.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    left: 0,
-    behavior: "smooth",
+      // Change icon based on the new theme
+      if (newTheme === 'dark') {
+          themeIcon.src = 'img/icons/sun.png'; // Set icon for dark mode
+      } else {
+          themeIcon.src = 'img/icons/moon.svg'; // Set icon for light mode
+      }
   });
 });

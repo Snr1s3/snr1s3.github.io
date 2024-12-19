@@ -20,28 +20,24 @@
       sizes="32x32"
       href="img/logo.png"
     />
-
-    <!-- Animate CSS CDN -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-    />
     <title>Alba Segura | Junior Developer</title>
+
+    <script defer src="js/app.js"></script>
   </head>
 
   <body>
     <!-- Navbar -->
     <nav>
-        <h1>Alba Segura</h1>
-        <ul class="navigation">
+      <h1>Alba Segura</h1>
+      <ul class="navigation">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <button class="burger-menu" id="burger-menu">
-          <ion-icon class="bars" name="menu-outline"></ion-icon>
-        </button>
+      </ul>
+      <button id="theme-toggle" class="no-border">
+        <img id="bIcon" src="img/icons/moon.svg" alt="Toggle Dark Mode" width="40" class="iconMenu">
+    </button>
   </nav>
     <!-- Hero Section -->
     <section class="hero" id="about">
@@ -77,6 +73,7 @@
           consequuntur labore? Ea totam voluptas amet!
         </p>
       </section>
+    
     <!-- Skills section -->
     <section class="skills" id="skills">
         <h2 class="skill-header">My Top Skills</h2>
@@ -84,19 +81,25 @@
         <div class="skills-wrapper">
           <div class="first-set animate__animated animate__pulse">
             <img
-              src="img/icons/icons8-html-5.svg"
+              src="img/icons/c.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
             <img
-              src="img/icons/icons8-css3.svg"
+              src="img/icons/csharp.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
             <img
-              src="img/icons/icons8-javascript.svg"
+              src="img/icons/java.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="img/icons/kotlin.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
@@ -105,19 +108,25 @@
   
           <div class="second-set animate__animated animate__pulse">
             <img
-              src="img/icons/java.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
               src="img/icons/python.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
             />
             <img
-              src="img/icons/c.svg"
+              src="img/icons/javascript.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="img/icons/mysql.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="img/icons/oracle.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
@@ -127,6 +136,12 @@
           <div class="third-set animate__animated animate__pulse">
             <img
               src="img/icons/linux.svg"
+              alt=""
+              loading="lazy"
+              class="icon icon-card"
+            />
+            <img
+              src="img/icons/bash.svg"
               alt=""
               loading="lazy"
               class="icon icon-card"
@@ -146,6 +161,7 @@
           </div>
         </div>
       </section>
+
     <!-- Projects section -->
     <section class="projects" id="projects">
         <h2 class="projects-title">Some of my Recent Projects</h2>
@@ -197,6 +213,7 @@
           </div>
         </div>
       </section>
+
     <!-- Social accounts - Fixed to the right -->
     <div class="socials">
         <a href="#" target="_blank"
@@ -224,6 +241,7 @@
           ><img src="img/icons/Octicons-mark-github.svg.png" alt="Github" class="socicon"
         /></a>
         </div>
+      
     <!-- Footer section -->
     <footer>
         <p class="copy">&copy; Copyright 2024</p>
@@ -234,8 +252,5 @@
           >
         </p>
   </footer>
-  
-    <!-- Website scripts -->
-    <script src="assets/js/app.js"></script>
   </body>
 </html>
