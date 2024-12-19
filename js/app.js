@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (currentTheme === 'dark') {
       document.documentElement.setAttribute('data-theme', 'dark');
-      themeIcon.src = 'img/icons/sun.png'; // Set icon for dark mode
+      themeIcon.src = 'img/icons/sun.png'; 
   } else {
       themeIcon.src = 'img/icons/moon.svg'; // Set icon for light mode
   }
