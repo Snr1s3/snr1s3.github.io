@@ -31,26 +31,33 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Language Toggle
     const langToggle = document.getElementById('lang-toggle');
-    const langNotification = document.getElementById('lang-notification');
+    const langIcon = document.getElementById('lIcon');
     const currentLang = localStorage.getItem('lang') || 'eng';
 
     if (currentLang === 'cat') {
         document.documentElement.setAttribute('data-lang', 'cat');
-        langNotification.textContent = 'Language: CAT';
+        langIcon.src = 'img/cat.png';
     } else if (currentLang === 'esp') {
         document.documentElement.setAttribute('data-lang', 'esp');
-        langNotification.textContent = 'Language: ESP';
+        langIcon.src = 'img/sp.svg';
     } else {
-        langNotification.textContent = 'Language: ENG';
+        langIcon.src = 'img/eng.png';
     }
 
     langToggle.addEventListener('click', () => {
         const lang = document.documentElement.getAttribute('data-lang');
-        const newLang = lang === 'cat' ? 'eng' : (lang === 'eng' ? 'esp' : 'cat');
+        const newLang = lang === 'esp' ? 'eng' : (lang === 'eng' ? 'cat' : 'esp');
         document.documentElement.setAttribute('data-lang', newLang);
         localStorage.setItem('lang', newLang);
 
-        langNotification.textContent = `Language: ${newLang.toUpperCase()}`;
+        // Update the language icon based on the new language
+        if (newLang === 'cat') {
+            langIcon.src = '../img/cat.png';
+        } else if (newLang === 'esp') {
+            langIcon.src = '../img/sp.svg';
+        } else {
+            langIcon.src = '../img/eng.png';
+        }
         loadContent(newLang);
     });
 
@@ -59,11 +66,16 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function loadContent(lang) {
-    fetch('json/text.json')
+    fetch('../json/text.json')
         .then(response => response.json())
         .then(data => {
             const content = data[lang];
-
+            // Header
+            document.getElementById('About').textContent = content.header.about;
+            document.getElementById('Skills').textContent = content.header.skills;
+            document.getElementById('Projects').textContent = content.header.projects;
+            document.getElementById('Contact').textContent = content.header.contact;
+            
             // Hero Section
             document.getElementById('hero-title').textContent = content.hero.title;
             document.getElementById('hero-description').textContent = content.hero.description;
@@ -80,6 +92,9 @@ function loadContent(lang) {
 
             // Skills Section
             document.getElementById('skills-title').textContent = content.skills.title;
+
+            document.getElementById('Project-Title').textContent = content.projects.title;
+            document.getElementById('Contacts2').textContent = content.header.contact;
         })
         .catch(error => console.error('Error loading content:', error));
 }

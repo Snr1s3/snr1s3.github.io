@@ -1,8 +1,14 @@
 {
   "eng":{
+    "header": {
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
     "hero": {
-      "title": "Hello world! ENG",
-      "description": "My name is Alba, I'm an IT student at Intitut TIC Barcelona. I'm an aspiring developer embarking on my exciting journey into the world of code. I'm thrilled to be diving into this creative and problem-solving field, and I'm eager to learn everything I can about building the next generation of technology."
+      "title": "Hello world!",
+      "description": "My name is Alba, I am a computer science student at Institut TIC Barcelona. I am an aspiring developer embarking on my exciting journey into the world of code. I’m delighted to be immersing myself in this creative and problem-solving field, and I’m eager to learn everything I can about building the next generation of technology."
     },
     "moreAbout": {
       "title": "More About Me",
@@ -14,15 +20,24 @@
     },
     "skills": {
       "title": "My Top Skills"
+    },
+    "projects": {
+      "title": "Some of my Projects"
     }
   },
   "cat":{
+    "header": {
+      "about": "Sobre mi",
+      "skills": "Habilitats",
+      "projects": "Projectes",
+      "contact": "Contacte"
+    },
     "hero": {
-      "title": "Hello world! CAT",
-      "description": "My name is Alba, I'm an IT student at Intitut TIC Barcelona. I'm an aspiring developer embarking on my exciting journey into the world of code. I'm thrilled to be diving into this creative and problem-solving field, and I'm eager to learn everything I can about building the next generation of technology."
+      "title": "Hola Món!",
+      "description": "Em dic Alba, soc estudiant d'informàtica a Institut TIC Barcelona. Soc una aspirant a desenvolupadora embarcant-me en el meu emocionant viatge al món del codi. Estic encantat d'estar submergint-me en aquest camp creatiu i de resolució de problemes, i estic ansiosa per aprendre tot el que puc sobre la construcció de la pròxima generació de tecnologia."
     },
     "moreAbout": {
-      "title": "More About Me",
+      "title": "Més Sobre Mi",
       "paragraphs": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
@@ -30,16 +45,25 @@
       ]
     },
     "skills": {
-      "title": "My Top Skills"
+      "title": "Les Meves Habilitats"
+    },
+    "projects": {
+      "title": "Alguns Dels Meus Projectes"
     }
   },
   "esp":{
+    "header": {
+      "about": "Sobre mí",
+      "skills": "Habilidades",
+      "projects": "Proyectos",
+      "contact": "Contacto"
+    },
     "hero": {
-      "title": "Hello world! ESP",
-      "description": "My name is Alba, I'm an IT student at Intitut TIC Barcelona. I'm an aspiring developer embarking on my exciting journey into the world of code. I'm thrilled to be diving into this creative and problem-solving field, and I'm eager to learn everything I can about building the next generation of technology."
+      "title": "Hola Mundo!",
+      "description": "Me llamo Alba, soy estudiante de informática a Instituto TIC Barcelona. Soy una aspirante a desarrolladora embarcándome en mi emocionante viaje en el mundo del código. Estoy encantado de estar sumergiéndome en este campo creativo y de resolución de problemas, y estoy ansiosa para aprender todo el que puedo sobre la construcción de la próxima generación de tecnología."
     },
     "moreAbout": {
-      "title": "More About Me",
+      "title": "Más Sobre Mí",
       "paragraphs": [
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
         "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
@@ -47,7 +71,10 @@
       ]
     },
     "skills": {
-      "title": "My Top Skills"
+      "title": "Mis Habilidades"
+    },
+    "projects": {
+      "title": "Algunos De Mis Proyectos"
     }
   }  
 }
