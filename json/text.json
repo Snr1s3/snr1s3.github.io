@@ -1,0 +1,53 @@
+{
+  "eng":{
+    "hero": {
+      "title": "Hello world! ENG",
+      "description": "My name is Alba, I'm an IT student at Intitut TIC Barcelona. I'm an aspiring developer embarking on my exciting journey into the world of code. I'm thrilled to be diving into this creative and problem-solving field, and I'm eager to learn everything I can about building the next generation of technology."
+    },
+    "moreAbout": {
+      "title": "More About Me",
+      "paragraphs": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!"
+      ]
+    },
+    "skills": {
+      "title": "My Top Skills"
+    }
+  },
+  "cat":{
+    "hero": {
+      "title": "Hello world! CAT",
+      "description": "My name is Alba, I'm an IT student at Intitut TIC Barcelona. I'm an aspiring developer embarking on my exciting journey into the world of code. I'm thrilled to be diving into this creative and problem-solving field, and I'm eager to learn everything I can about building the next generation of technology."
+    },
+    "moreAbout": {
+      "title": "More About Me",
+      "paragraphs": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!"
+      ]
+    },
+    "skills": {
+      "title": "My Top Skills"
+    }
+  },
+  "esp":{
+    "hero": {
+      "title": "Hello world! ESP",
+      "description": "My name is Alba, I'm an IT student at Intitut TIC Barcelona. I'm an aspiring developer embarking on my exciting journey into the world of code. I'm thrilled to be diving into this creative and problem-solving field, and I'm eager to learn everything I can about building the next generation of technology."
+    },
+    "moreAbout": {
+      "title": "More About Me",
+      "paragraphs": [
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!"
+      ]
+    },
+    "skills": {
+      "title": "My Top Skills"
+    }
+  }  
+}

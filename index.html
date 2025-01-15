@@ -41,6 +41,11 @@
       <button id="theme-toggle" class="no-border">
         <img id="bIcon" src="img/icons/moon.svg" alt="Toggle Dark Mode" width="40" class="iconMenu">
     </button>
+    <button id="lang-toggle" class="no-border">
+      <img id="lIcon" src="img/language.svg" alt="Toggle Dark Mode" width="40" class="iconMenu">
+  </button>
+  
+  <span id="lang-notification" class="lang-notification">Language: ENG</span>
   </nav>
     <!-- Hero Section -->
     <section class="hero" id="about">
@@ -51,36 +56,21 @@
           class="hero-img"
         />
         <div class="bio animate__animated animate__shakeX">
-          <h2 class="bio-title">Hello world!</h2>
-          <p class="bio-text">
-            My name is Alba, I'm an IT student at Intitut TIC Barcelona. I'm an aspiring developer embarking on my exciting journey into the world of code. I'm thrilled to be diving into this creative and problem-solving field, and I'm eager to learn everything I can about building the next generation of technology. 
-          </p>
+          
+        <h2 class="bio-title" id="hero-title"></h2>
+        <p class="bio-text" id="hero-description"></p>
         </div>
   </section>
   
     <!-- More about -->
     <section class="more-about">
-        <h2>More About Me</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-          nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum,
-          autem deleniti cupiditate molestias quis unde quae totam porro dicta
-          iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur
-          nostrum dolor minus, libero delectus praesentium perferendis
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,
-          consequuntur labore? Ea totam voluptas amet!
-        </p>
-      </section>
+    <h2 id="more-about-title"></h2>
+    <div id="more-about-content"></div>
+    </section>
     
     <!-- Skills section -->
     <section class="skills" id="skills">
-        <h2 class="skill-header">My Top Skills</h2>
-  
+      <h2 class="skill-header" id="skills-title"></h2>
         <div class="skills-wrapper">
           <div class="first-set animate__animated animate__pulse">
             <img

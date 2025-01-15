@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
-/* Variables */
 :root {
     --font-family: "Roboto", sans-serif;
     --normal-font: 400;
@@ -17,7 +16,6 @@
     --transition: 0.3s;
     --text-color: #000;
 }
-/* Variables end */
 
 [data-theme="dark"] {
   --bg-color: #2c2c2c;
@@ -32,7 +30,6 @@ html {
     scroll-behavior: smooth;
 }
 
-/* CSS Resets */
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +45,11 @@ body {
 ul {
     list-style-type: none;
 }
-
+.lang-notification {
+  margin-left: 1rem;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
 .no-border {
   border: none;
   background-color:  var(--secondary-shadow);  
@@ -123,7 +124,7 @@ nav ul li {
   align-items: center;
   justify-content: center;
   gap: 2.5rem;
-  max-width: 80rem; /* Increased width */
+  max-width: 80rem;
   margin: auto;
   padding: 2rem;
   text-align: center;
@@ -316,13 +317,11 @@ nav ul li {
   }
                           
   .logo-img {
-    width: 5000px; /* Adjust the width as needed */
-    height: 300px; /* Maintain aspect ratio */
+    width: 5000px; 
+    height: 300px; 
     object-fit: cover;
   }
 
-
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .hero img {
       height: 30rem;
@@ -369,15 +368,15 @@ nav ul li {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color: var(--text-color); /* Change text color */
+    color: var(--text-color); 
     border: 2px solid var(--secondary-shadow);
-    margin: 1rem auto; /* Center horizontally */
+    margin: 1rem auto;
     text-align: center;
     padding: 1rem;
     border-radius: 8px;
     width: 10rem;
-    position: absolute; /* Position it absolutely */
-    left: 1rem; /* Align to the right side */
+    position: absolute;
+    left: 1rem;
 }
 nav ul.show li {
   padding: 0.5rem 0;
