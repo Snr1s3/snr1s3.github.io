@@ -23,6 +23,21 @@
     },
     "projects": {
       "title": "Some of my Projects"
+    },
+    "p1":{
+      "p1-title": "Project 1",
+      "p1-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p1-link":"Check it out"
+    },
+    "p2":{
+      "p2-title": "Project 2",
+      "p2-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p2-link":"Check it out"
+    },
+    "p3":{
+      "p3-title": "Project 3",
+      "p3-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p3-link":"Check it out"
     }
   },
   "cat":{
@@ -49,6 +64,21 @@
     },
     "projects": {
       "title": "Alguns Dels Meus Projectes"
+    },
+    "p1":{
+      "p1-title": "Projecte 1",
+      "p1-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p1-link":"Clica aquí"
+    },
+    "p2":{
+      "p2-title": "Projecte 2",
+      "p2-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p2-link":"Clica aquí"
+    },
+    "p3":{
+      "p3-title": "Projecte 3",
+      "p3-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p3-link":"Clica aquí"
     }
   },
   "esp":{
@@ -75,6 +105,21 @@
     },
     "projects": {
       "title": "Algunos De Mis Proyectos"
+    },
+    "p1":{
+      "p1-title": "Projecte 1",
+      "p1-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p1-link":"Clica aquí"
+    },
+    "p2":{
+      "p2-title": "Projecte 2",
+      "p2-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p2-link":"Clica aquí"
+    },
+    "p3":{
+      "p3-title": "Projecte 3",
+      "p3-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
+      "p3-link":"Clic"
     }
   }  
 }
