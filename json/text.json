@@ -1,5 +1,5 @@
 {
-  "eng":{
+  "en":{
     "header": {
       "about": "About",
       "skills": "Skills",
@@ -81,7 +81,7 @@
       "p3-link":"Clica aquí"
     }
   },
-  "esp":{
+  "es":{
     "header": {
       "about": "Sobre mí",
       "skills": "Habilidades",

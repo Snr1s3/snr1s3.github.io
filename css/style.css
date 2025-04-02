@@ -1,28 +1,32 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,700&display=swap");
 
 :root {
-    --font-family: "Roboto", sans-serif;
-    --normal-font: 400;
-    --bold-font: 700;
-    --bolder-font: 900;
-    --bg-color: #ffffffff;
-    --primary-color: #7209B7;
-    --secondary-color: #4361EE;
-    --primary-shadow: #F72585;
-    --secondary-shadow: #4CC9F0;
-    --bottom-margin: 0.5rem;
-    --bottom-margin-2: 1rem;
-    --line-height: 1.7rem;
-    --transition: 0.3s;
-    --text-color: #000;
+  --font-family: "Roboto", sans-serif;
+  --normal-font: 400;
+  --bold-font: 700;
+  --bolder-font: 900;
+  --bg-color: linear-gradient(135deg, #d9faff, #a6e3ff); 
+  --barra: #ffffffff;   
+  --primary-color: #00a8ff; 
+  --secondary-color: #4cd137; 
+  --primary-shadow: rgba(0, 168, 255, 0.5); 
+  --secondary-shadow: rgba(76, 209, 55, 0.5);   
+  --neon-glow-color: rgba(0, 168, 255, 0.5);
+  --bottom-margin: 0.5rem;
+  --bottom-margin-2: 1rem;
+  --line-height: 1.7rem;
+  --transition: 0.3s;
+  --text-color: #000;
 }
 
 [data-theme="dark"] {
+  --barra: #2c2c2c;
   --bg-color: #2c2c2c;
-  --primary-color: #bb86fc;
-  --secondary-color: #03dac6;
-  --primary-shadow: #3700b3;
-  --secondary-shadow: #03dac6;
+  --primary-color: #00a8ff; 
+  --secondary-color: #4cd137; 
+  --primary-shadow: rgba(0, 168, 255, 0.5); 
+  --secondary-shadow: rgba(76, 209, 55, 0.5);
+  --neon-glow-color: rgba(0, 168, 255, 0.8);
   --text-color: #ffffff;
 }
 
@@ -50,6 +54,71 @@ ul {
   font-size: 1rem;
   color: var(--primary-color);
 }
+.hover-scale {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-scale:hover {
+  transform: scale(1.1);
+}
+
+.cta-button {
+  background: linear-gradient(135deg, #00a8ff, #4cd137);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.cta-button:hover {
+  background: linear-gradient(135deg, #4cd137, #00a8ff);
+  transform: scale(1.1);
+}
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: linear-gradient(135deg, #00a8ff, #4cd137);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 168, 255, 0.5);
+  transition: transform 0.3s ease-in-out;
+}
+
+#back-to-top:hover {
+  transform: scale(1.2);
+}
+#language-select {
+  background-color: var(--barra); /* Matches the navbar background */
+  color: var(--primary-color); /* Text color */
+  border: 2px solid var(--primary-color); /* Border color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 0.5rem; /* Padding for better spacing */
+  font-size: 1rem; /* Font size for readability */
+  font-family: var(--font-family); /* Consistent font */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: var(--transition); /* Smooth hover effect */
+}
+
+#language-select:hover {
+  background-color: var(--primary-color); /* Highlight background on hover */
+  color: #fff; /* White text on hover */
+  border-color: var(--secondary-color); /* Change border color on hover */
+}
+
+#language-select:focus {
+  outline: none; /* Remove default focus outline */
+  box-shadow: 0 0 5px var(--secondary-shadow); /* Add a subtle focus shadow */
+}
 .no-border {
   border: none;
   background-color:  var(--secondary-shadow);  
@@ -57,7 +126,9 @@ ul {
   padding: 0.5rem;
   cursor: pointer;
 }
-
+.neon-glow {
+  box-shadow: 0 0 10px var(--neon-glow-color);
+}
 .no-border img {
   display: block;
 }
@@ -80,7 +151,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     padding: 1.5rem 3.5rem;
-    background-color: var(--bg-color);
+    background-color: var(--barra);
     box-shadow: 0 3px 5px var(--secondary-shadow);  
 }
 
@@ -98,13 +169,123 @@ nav a:hover {
     color: var(--secondary-color);
     border-bottom: 2px solid var(--secondary-color);
 }
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  gap: 2rem; /* Space between social links and form */
+}
 
+.contact-socials {
+  display: flex;
+  gap: 1.5rem; /* Space between social icons */
+  justify-content: center;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 2rem;
+  max-width: 500px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+  border-radius: 15px;
+  box-shadow: 0 4px 15px var(--neon-glow-color); /* Neon glow effect */
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--text-color);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 10px var(--secondary-shadow);
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+.icon-card {
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
+}
+
+.icon-card:active {
+  cursor: grabbing;
+  transform: scale(1.1); /* Slightly enlarge the icon while dragging */
+}
+
+.skills-wrapper > div {
+  border: 2px dashed transparent;
+  transition: border-color 0.3s ease-in-out;
+}
+
+.skills-wrapper > div.dragover {
+  border-color: var(--primary-color); /* Highlight the drop zone */
+}
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px var(--neon-glow-color);
+  transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+  display: none; /* Initially hidden */
+  z-index: 1000; /* Ensure it appears above other elements */
+}
+
+#back-to-top:hover {
+  transform: scale(1.2);
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
+.contact-form button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+}
 a {
   font-size: 20px;
 }
 nav ul {
     display: flex;
     gap: 1.9rem;
+}
+.contact-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  padding: 2rem;
 }
 .burger-menu {
 

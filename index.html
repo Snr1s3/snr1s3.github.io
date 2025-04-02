@@ -9,17 +9,8 @@
     <link rel="stylesheet" href="css/style.css" />
 
     <!-- Favicons -->
-    <link
-      rel="icon"
-      sizes="180x180"
-      href="img/logo.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/logo.png"
-    />
+    <link rel="icon" sizes="180x180" href="img/logo.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="img/logo.png" />
     <title>Alba Segura | Junior Developer</title>
 
     <script defer src="js/app.js"></script>
@@ -27,248 +18,138 @@
 
   <body>
     <!-- Navbar -->
-    <nav>
-      <h1>Alba Segura</h1>
+    <nav class="glassmorphism neon-border">
+      <h1 class="gradient-text neon-text">Alba Segura</h1>
       <ul class="navigation">
-          <li><a href="#about" class="nav-link" id="About"></a></li>
-          <li><a href="#skills" class="nav-link" id="Skills"></a></li>
-          <li><a href="#projects" class="nav-link" id="Projects"></a></li>
-          <li><a href="#contact" class="nav-link" id="Contact"></a></li>
+        <li><a href="#about" class="nav-link neon-hover" id="About">About</a></li>
+        <li><a href="#skills" class="nav-link neon-hover" id="Skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link neon-hover" id="Projects">Projects</a></li>
+        <li><a href="#contact" class="nav-link neon-hover" id="Contact">Contact</a></li>
       </ul>
-      <button class="burger-menu" id="burger-menu">
-          <img src="img/icons/menu.svg" alt="Menu" width="30">
+      <button class="burger-menu neon-hover" id="burger-menu">
+        <img src="img/icons/menu.svg" alt="Menu" width="30" />
       </button>
-      <button id="theme-toggle" class="no-border">
-        <img id="bIcon" src="img/icons/moon.svg" alt="Toggle Dark Mode" width="40" class="iconMenu">
-    </button>
-    <button id="lang-toggle" class="no-border">
-      <img id="lIcon" src="img/language.svg" alt="Toggle Dark Mode" width="40" class="iconMenu">
-  </button>
-  
-  </nav>
+      <button id="theme-toggle" class="no-border neon-hover neon-glow ">
+        <img id="bIcon" src="img/icons/moon.svg" alt="Toggle Dark Mode" style="height: 30px; width: 30px;"  class="iconMenu icon  hover-scale" />
+      </button>
+      <select id="language-select" class="iconMenu glassmorphism neon-border">
+        <option value="en">English</option>
+        <option value="es">Español</option>
+        <option value="cat">Català</option>
+      </select>
+    </nav>
+
     <!-- Hero Section -->
-    <section class="hero" id="about">
-        <img
-          src="img/wfh_1.svg"
-          alt="jane-doe"
-          loading="lazy"
-          class="hero-img"
-        />
-        <div class="bio animate__animated animate__shakeX">
-          
-        <h2 class="bio-title" id="hero-title"></h2>
-        <p class="bio-text" id="hero-description"></p>
-        </div>
-  </section>
-  
-    <!-- More about -->
-    <section class="more-about">
-    <h2 id="more-about-title"></h2>
-    <div id="more-about-content"></div>
-    </section>
-    
-    <!-- Skills section -->
-    <section class="skills" id="skills">
-      <h2 class="skill-header" id="skills-title"></h2>
-        <div class="skills-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <img
-              src="img/icons/c.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="img/icons/csharp.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="img/icons/java.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-  
-          <div class="second-set animate__animated animate__pulse">
-            <img
-              src="img/icons/kotlin.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="img/icons/python.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="img/icons/javascript.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-
-          <div class="third-set animate__animated animate__pulse">
-            <img
-            src="img/icons/mysql.svg"
-            alt=""
-            loading="lazy"
-            class="icon icon-card"
-          />
-            <img
-                src="img/icons/oracle.svg"
-                alt="Oracle"
-                loading="lazy"
-                class="icon icon-card"
-            />
-            <img
-              src="img/icons/linux.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-
-          <div class="fourth-set animate__animated animate__pulse">
-            <img
-              src="img/icons/bash.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="img/icons/docker.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-            <img
-              src="img/icons/git.svg"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </div>
-        </div>
-      </section>
-
-    <!-- Projects section -->
-    <section class="projects" id="projects">
-        <h2 class="projects-title" id="Project-Title"></h2>
-        <div class="projects-container">
-          <div class="project-container project-card">
-            <img
-            src="img/1.webp"
-              alt="expense-tracker"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title" id="p1">Lorem, ipsum dolor</h3>
-            <p class="project-details" id="p1-details">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              ratione vel inventore labore commodi modi quos culpa aut saepe!
-              Alias!
-            </p>
-            <a href="#" target="_blank" class="project-link" id="p1-link">Check it Out</a>
-          </div>
-          <div class="project-container project-card">
-            <img
-                src="img/1.webp"
-              alt="netflic-clone"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title" id="p2">Lorem, ipsum dolor</h3>
-            <p class="project-details" id="p2-details">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              ratione vel inventore labore commodi modi quos culpa aut saepe!
-              Alias!
-            </p>
-            <a href="#" target="_blank" class="project-link" id="p2-link">Check it Out</a>
-          </div>
-          <div class="project-container project-card">
-            <img
-              src="img/1.webp"
-              alt="greeny-earth"
-              loading="lazy"
-              class="project-pic"
-            />
-            <h3 class="project-title" id="p3">Lorem, ipsum dolor</h3>
-            <p class="project-details" id="p3-details">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas
-              ratione vel inventore labore commodi modi quos culpa aut saepe!
-              Alias!
-            </p>
-            <a href="#" target="_blank" class="project-link" id="p3-link">Check it Out</a>
-          </div>
-        </div>
-      </section>
-
-      <section class="skills" id="contact">
-        <h2 class="skill-header" id="Contacts2">Contact</h2>
-  
-        <div class="skills-wrapper">
-          <div class="first-set animate__animated animate__pulse">
-            <a href="mailto:alba.segura.llamas@gmail.com">
-              <img
-                  src="img/icons/gmail.webp"
-                  alt="Gmail"
-                  loading="lazy"
-                  class="icon icon-card"
-              />
-          </a>
-          <a href="https://www.linkedin.com/in/alba-segura-llamas-b91491299/" target="_blank">
-            <img
-              src="img/icons/linkedIn.webp"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </a>
-          <a href="https://github.com/Snr1s3">
-            <img
-              src="img/icons/Octicons-mark-github.svg.png"
-              alt=""
-              loading="lazy"
-              class="icon icon-card"
-            />
-          </a>
-          </div>
-          <div class="skills-wrapper">
-            <div class="first-set animate__animated animate__pulse">
-              <a href="img/cat.gif" download>
-                <img
-                    src="img/icons/cv.png"
-                    alt=""
-                    loading="lazy"
-                    class="icon icon-card"
-                />
-              </a>
-            </div>
-        </div>
-      </section>
-    <!-- Social accounts - Fixed to the right -->
-    <div class="socials">
-      <a href="img/cat.gif" download><img src="img/icons/cv.png" alt="CV" loading="lazy" class="socicon"/></a>
-        <a href="mailto:alba.segura.llamas@gmail.com" target="_blank"><img src="img/icons/gmail.webp"alt="Mail"loading="lazy" class="socicon"/></a>
-        <a href="https://www.linkedin.com/in/alba-segura-llamas-b91491299/" target="_blank"><img src="img/icons/linkedIn.webp"alt="Linkedin" loading="lazy"class="socicon"/></a>
-        <a href="https://github.com/Snr1s3" target="_blank"><img src="img/icons/Octicons-mark-github.svg.png" alt="Github" class="socicon"/></a>
-    </div>
-      
-    <!-- Footer section -->
-    <footer>
-        <p class="copy">&copy; Copyright 2024</p>
-        <p class="copy">
-          <a href="html/cat.html">Built with by</a>
-          <a href="https://github.com/Snr1s3" target="_blank"
-            >Alba Segura (Snr1s3)</a
-          >
+    <section class="hero glassmorphism neon-border" id="about">
+      <img src="img/wfh_1.svg" alt="jane-doe" loading="lazy" class="hero-img" />
+      <div class="bio animate__animated animate__fadeInUp">
+        <h2 class="bio-title gradient-text neon-text" id="hero-title">Welcome to My Portfolio</h2>
+        <p class="bio-text" id="hero-description">
+          I am a passionate junior developer with a love for technology and innovation.
         </p>
-  </footer>
+      </div>
+    </section>
+
+    <!-- More About Section -->
+    <section class="more-about glassmorphism neon-border">
+      <h2 class="gradient-text neon-text" id="more-about-title">More About Me</h2>
+      <div id="more-about-content">
+        <p class="neon-text">
+          I enjoy solving problems, learning new technologies, and building creative solutions.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills glassmorphism neon-border" id="skills">
+      <h2 class="skill-header gradient-text neon-text" id="skills-title">My Skills</h2>
+      <div class="skills-wrapper">
+        <div class="first-set animate__animated animate__pulse">
+          <img src="img/icons/c.svg" alt="C" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="c" />
+          <img src="img/icons/csharp.svg" alt="C#" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="csharp" />
+          <img src="img/icons/java.svg" alt="Java" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="java" />
+        </div>
+        <div class="second-set animate__animated animate__pulse">
+          <img src="img/icons/kotlin.svg" alt="Kotlin" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="kotlin" />
+          <img src="img/icons/python.svg" alt="Python" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="python" />
+          <img src="img/icons/javascript.svg" alt="JavaScript" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="javascript" />
+        </div>
+        <div class="third-set animate__animated animate__pulse">
+          <img src="img/icons/mysql.svg" alt="MySQL" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="mysql" />
+          <img src="img/icons/oracle.svg" alt="Oracle" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="oracle" />
+          <img src="img/icons/linux.svg" alt="Linux" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="linux" />
+        </div>
+        <div class="fourth-set animate__animated animate__pulse">
+          <img src="img/icons/bash.svg" alt="Bash" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="bash" />
+          <img src="img/icons/docker.svg" alt="Docker" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="docker" />
+          <img src="img/icons/git.svg" alt="Git" loading="lazy" class="icon icon-card neon-glow hover-scale" draggable="true" data-id="git" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects glassmorphism neon-border" id="projects">
+      <h2 class="projects-title gradient-text neon-text" id="Project-Title">My Projects</h2>
+      <div class="projects-container">
+        <div class="project-container project-card neon-glow hover-scale">
+          <img src="img/1.webp" alt="expense-tracker" loading="lazy" class="project-pic" />
+          <h3 class="project-title" id="p1">Expense Tracker</h3>
+          <p class="project-details" id="p1-details">
+            A web app to track your expenses and manage your budget effectively.
+          </p>
+          <a href="#" target="_blank" class="project-link neon-hover" id="p1-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card neon-glow hover-scale">
+          <img src="img/1.webp" alt="netflix-clone" loading="lazy" class="project-pic" />
+          <h3 class="project-title" id="p2">Netflix Clone</h3>
+          <p class="project-details" id="p2-details">
+            A clone of Netflix with a sleek UI and dynamic content loading.
+          </p>
+          <a href="#" target="_blank" class="project-link neon-hover" id="p2-link">Check it Out</a>
+        </div>
+        <div class="project-container project-card neon-glow hover-scale">
+          <img src="img/1.webp" alt="greeny-earth" loading="lazy" class="project-pic" />
+          <h3 class="project-title" id="p3">Greeny Earth</h3>
+          <p class="project-details" id="p3-details">
+            A platform to promote eco-friendly practices and sustainability.
+          </p>
+          <a href="#" target="_blank" class="project-link neon-hover" id="p3-link">Check it Out</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact glassmorphism neon-border" id="contact">
+      <h2 class="contact-title gradient-text neon-text" id="Contacts2">Contact Me</h2>
+      
+      <!-- Social Links -->
+      <div class="contact-socials">
+        <a href="mailto:alba.segura.llamas@gmail.com" class="social-link neon-hover">
+          <img src="img/icons/gmail.webp" alt="Gmail" loading="lazy" class="icon icon-card neon-glow hover-scale" />
+        </a>
+        <a href="https://www.linkedin.com/in/alba-segura-llamas-b91491299/" target="_blank" class="social-link neon-hover">
+          <img src="img/icons/linkedIn.webp" alt="LinkedIn" loading="lazy" class="icon icon-card neon-glow hover-scale" />
+        </a>
+        <a href="https://github.com/Snr1s3" target="_blank" class="social-link neon-hover">
+          <img src="img/icons/Octicons-mark-github.svg.png" alt="GitHub" loading="lazy" class="icon icon-card neon-glow hover-scale" />
+        </a>
+      </div>
+    
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <input type="text" placeholder="Your Name" class="form-input neon-glow" required />
+        <input type="email" placeholder="Your Email" class="form-input neon-glow" required />
+        <textarea placeholder="Your Message" class="form-textarea neon-glow" required></textarea>
+        <button type="submit" class="cta-button neon-hover">Send Message</button>
+      </form>
+    </section>
+    <button id="back-to-top" class="neon-hover">↑</button>
+    <!-- Footer -->
+    <footer class="glassmorphism neon-border">
+      <p class="copy neon-text">&copy; 2024 Alba Segura</p>
+      <p class="copy neon-text">
+        Built with ❤️ by <a href="https://github.com/Snr1s3" target="_blank" class="neon-hover">Alba Segura (Snr1s3)</a>
+      </p>
+    </footer>
   </body>
 </html>
