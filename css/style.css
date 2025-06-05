@@ -238,7 +238,13 @@ nav a:hover {
   cursor: grabbing;
   transform: scale(1.1); /* Slightly enlarge the icon while dragging */
 }
-
+.skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
 .skills-wrapper > div {
   border: 2px dashed transparent;
   transition: border-color 0.3s ease-in-out;
