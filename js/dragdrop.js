@@ -1,6 +1,8 @@
 export function initDragAndDrop() {
     const skillWrapper = document.querySelector('.skills-wrapper');
     let draggedItem = null;
+    let placeholder = document.createElement('div');
+    placeholder.className = 'drag-placeholder';
 
     skillWrapper.addEventListener('dragstart', (e) => {
         if (e.target.classList.contains('icon-card')) {
@@ -10,11 +12,12 @@ export function initDragAndDrop() {
         }
     });
 
-    skillWrapper.addEventListener('dragend', (e) => {
+    skillWrapper.addEventListener('dragend', () => {
         if (draggedItem) {
             setTimeout(() => {
                 draggedItem.style.display = 'block';
                 draggedItem = null;
+                if (placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
             }, 0);
         }
     });
@@ -23,21 +26,30 @@ export function initDragAndDrop() {
         e.preventDefault();
         skillWrapper.classList.add('dragover');
         const afterElement = getDragAfterElement(skillWrapper, e.clientX, e.clientY, draggedItem);
+
+        // Remove existing placeholder
+        if (placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
+
         if (afterElement == null) {
-            skillWrapper.appendChild(draggedItem);
+            skillWrapper.appendChild(placeholder);
         } else {
-            skillWrapper.insertBefore(draggedItem, afterElement);
+            skillWrapper.insertBefore(placeholder, afterElement);
         }
     });
 
     skillWrapper.addEventListener('dragleave', () => {
         skillWrapper.classList.remove('dragover');
+        if (placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
     });
 
     skillWrapper.addEventListener('drop', (e) => {
         e.preventDefault();
         skillWrapper.classList.remove('dragover');
         const afterElement = getDragAfterElement(skillWrapper, e.clientX, e.clientY, draggedItem);
+
+        // Remove placeholder before inserting
+        if (placeholder.parentNode) placeholder.parentNode.removeChild(placeholder);
+
         if (afterElement == null) {
             skillWrapper.appendChild(draggedItem);
         } else {
