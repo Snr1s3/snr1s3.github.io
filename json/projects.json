@@ -1,0 +1,114 @@
+[
+  {
+    "name": "Aslsh",
+    "desc_en": "A simple shell written in Go for learning purposes.",
+    "desc_cat": "Una simple closca escrita a Go amb finalitats d’aprenentatge.",
+    "desc_esp": "Un shell simple escrito en Go para fines de aprendizaje.",
+    "url": "https://github.com/Snr1s3/Aslsh",
+    "photo": "https://via.placeholder.com/300x200?text=Aslsh"
+  },
+  {
+    "name": "Documentacio",
+    "desc_en": "Obsidian",
+    "desc_cat": "Obsidiana",
+    "desc_esp": "Obsidiana",
+    "url": "https://github.com/Snr1s3/Documentacio",
+    "photo": "https://via.placeholder.com/300x200?text=Documentacio"
+  },
+  {
+    "name": "GuessGame",
+    "desc_en": "Pokémon Guessing Game Using PokéAPI",
+    "desc_cat": "Pokémon Endevinant joc amb Pokéapi",
+    "desc_esp": "Juego de adivinanzas de Pokémon usando Pokéapi",
+    "url": "https://github.com/Snr1s3/GuessGame",
+    "photo": "https://via.placeholder.com/300x200?text=GuessGame"
+  },
+  {
+    "name": "IA",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/IA",
+    "photo": "https://via.placeholder.com/300x200?text=IA"
+  },
+  {
+    "name": "M7-Geeco-in",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/M7-Geeco-in",
+    "photo": "https://via.placeholder.com/300x200?text=M7-Geeco-in"
+  },
+  {
+    "name": "MAZEGAME",
+    "desc_en": "Maze Game is a console-based game in Java where the player navigates through a maze.",
+    "desc_cat": "Maze Game és un joc basat en la consola a Java on el jugador navega per un laberint.",
+    "desc_esp": "Maze Game es un juego basado en la consola en Java, donde el jugador navega a través de un laberinto.",
+    "url": "https://github.com/Snr1s3/MAZEGAME",
+    "photo": "https://via.placeholder.com/300x200?text=MAZEGAME"
+  },
+  {
+    "name": "MAZEGAMECS",
+    "desc_en": "Maze Game is a console-based game in C# where the player navigates through a maze.",
+    "desc_cat": "Maze Game és un joc basat en la consola a C# on el jugador navega per un laberint.",
+    "desc_esp": "Maze Game es un juego basado en la consola en C# donde el jugador navega a través de un laberinto.",
+    "url": "https://github.com/Snr1s3/MAZEGAMECS",
+    "photo": "https://via.placeholder.com/300x200?text=MAZEGAMECS"
+  },
+  {
+    "name": "PathOfRemembering",
+    "desc_en": "Final Project of SMIX in C#",
+    "desc_cat": "Projecte final de Smix a C#",
+    "desc_esp": "Proyecto final de Smix en C#",
+    "url": "https://github.com/Snr1s3/PathOfRemembering",
+    "photo": "https://via.placeholder.com/300x200?text=PathOfRemembering"
+  },
+  {
+    "name": "serverApp_Turnonauta",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/serverApp_Turnonauta",
+    "photo": "https://via.placeholder.com/300x200?text=serverApp_Turnonauta"
+  },
+  {
+    "name": "Snr1s3",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/Snr1s3",
+    "photo": "https://via.placeholder.com/300x200?text=Snr1s3"
+  },
+  {
+    "name": "snr1s3.github.io",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/snr1s3.github.io",
+    "photo": "https://via.placeholder.com/300x200?text=snr1s3.github.io"
+  },
+  {
+    "name": "Sorting-Algorithms",
+    "desc_en": "In Java, Javascript, Python, C and C#",
+    "desc_cat": "A Java, JavaScript, Python, C i C#",
+    "desc_esp": "En Java, JavaScript, Python, C y C#",
+    "url": "https://github.com/Snr1s3/Sorting-Algorithms",
+    "photo": "https://via.placeholder.com/300x200?text=Sorting-Algorithms"
+  },
+  {
+    "name": "Turnonauta",
+    "desc_en": "Turnonaut is an application for managing TCG tournaments as Magic: The Gathering and Pokémon TCG.",
+    "desc_cat": "Turnonauta és una aplicació per gestionar tornejos de TCG (Trading Card Games) com Magic: The Gathering i Pokémon TCG.",
+    "desc_esp": "Turnonaut es una aplicación para administrar torneos TCG como Magic: The Gathering and Pokémon TCG.",
+    "url": "https://github.com/Snr1s3/Turnonauta",
+    "photo": "https://via.placeholder.com/300x200?text=Turnonauta"
+  },
+  {
+    "name": "TurnoNauta_FastAPI",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/TurnoNauta_FastAPI",
+    "photo": "https://via.placeholder.com/300x200?text=TurnoNauta_FastAPI"
+  }
+]

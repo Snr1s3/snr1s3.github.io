@@ -20,6 +20,7 @@ function loadContent(lang) {
         .then((data) => {
             const content = data[lang];
             updateTextContent(content);
+            updateProjects(lang)
         })
         .catch((error) => console.error('Error loading content:', error));
 }
@@ -57,6 +58,49 @@ function updateTextContent(content) {
     const projectTitle = document.getElementById('Project-Title');
     if (projectTitle) projectTitle.textContent = content.projects.title;
 
+    const projectLink1 = document.getElementById('p1-link');
+    if (projectLink1) projectLink1.textContent = content.p1["p1-link"];
+    const projectLink2 = document.getElementById('p2-link');
+    if (projectLink2) projectLink2.textContent = content.p2["p2-link"];
+    const projectLink3 = document.getElementById('p3-link');
+    if (projectLink3) projectLink3.textContent = content.p3["p3-link"];
+
     const contactElement = document.getElementById('Contacts2');
     if (contactElement) contactElement.textContent = content.header.contact;
+}
+
+async function updateProjects(lang) {
+    try {
+        const response = await fetch('../json/projects.json');
+        const projects = await response.json();
+
+        // Pick the right description field for the language
+        const descField = {
+            en: "desc_en",
+            cat: "desc_cat",
+            esp: "desc_esp"
+        }[lang] || "desc_en";
+
+        // Shuffle and pick 3 unique projects
+        const shuffled = projects.sort(() => 0.5 - Math.random());
+        const selected = shuffled.slice(0, 3);
+
+        selected.forEach((project, idx) => {
+            const num = idx + 1;
+            const titleEl = document.getElementById(`p${num}`);
+            const descEl = document.getElementById(`p${num}-desc`);
+            const linkEl = document.getElementById(`p${num}-link`);
+            //const photoEl = document.querySelector(`#p${num}-link`).parentElement.querySelector('img');
+            if (titleEl) titleEl.textContent = project.name;
+            if (descEl) descEl.textContent = project[descField] || "";
+            if (linkEl) {
+                linkEl.textContent = "Go to project";
+                linkEl.href = project.url;
+                linkEl.target = "_blank";
+            }
+            //if (photoEl && project.photo) photoEl.src = project.photo;
+        });
+    } catch (error) {
+        console.error('Error loading projects:', error);
+    }
 }
