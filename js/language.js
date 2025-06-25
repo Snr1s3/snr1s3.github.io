@@ -68,56 +68,38 @@ function updateTextContent(content) {
     const contactElement = document.getElementById('Contacts2');
     if (contactElement) contactElement.textContent = content.header.contact;
 }
-async function translateText(text, targetLang) {
-    if (!text) return "";
-    const response = await fetch("https://libretranslate.com/translate", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-            q: text,
-            source: "en",
-            target: targetLang,
-            format: "text"
-        })
-    });
-    const data = await response.json();
-    return data.translatedText || "";
-}
+
 async function updateProjects(lang) {
     try {
         const response = await fetch('../json/projects.json');
         const projects = await response.json();
 
+        // Map language code to the correct field in your JSON
+        const descField = {
+            en: "desc_en",
+            cat: "desc_cat",
+            es: "desc_esp"
+        }[lang] || "desc_en";
+
         // Shuffle and pick 3 unique projects
         const shuffled = projects.sort(() => 0.5 - Math.random());
         const selected = shuffled.slice(0, 3);
 
-        for (let idx = 0; idx < selected.length; idx++) {
-            const project = selected[idx];
+        selected.forEach((project, idx) => {
             const num = idx + 1;
             const titleEl = document.getElementById(`p${num}`);
             const descEl = document.getElementById(`p${num}-desc`);
             const linkEl = document.getElementById(`p${num}-link`);
-            //const photoEl = document.querySelector(`#p${num}-link`).parentElement.querySelector('img');
+            // const photoEl = document.querySelector(`#p${num}-link`).parentElement.querySelector('img');
             if (titleEl) titleEl.textContent = project.name;
-
-            let desc = project.desc_en || "";
-            if (lang === "cat") {
-                desc = project.desc_cat || await translateText(project.desc_en, "ca");
-            } else if (lang === "esp") {
-                desc = project.desc_esp || await translateText(project.desc_en, "es");
-            } else if (lang === "en") {
-                desc = project.desc_esp || await translateText(project.desc_en, "es");
-            }
-            if (descEl) descEl.textContent = desc;
-
+            if (descEl) descEl.textContent = project[descField] || "";
             if (linkEl) {
                 linkEl.textContent = "Go to project";
                 linkEl.href = project.url;
                 linkEl.target = "_blank";
             }
-            //if (photoEl && project.photo) photoEl.src = project.photo;
-        }
+            // if (photoEl && project.photo) photoEl.src = project.photo;
+        });
     } catch (error) {
         console.error('Error loading projects:', error);
     }
