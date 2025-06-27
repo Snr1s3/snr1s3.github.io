@@ -8,7 +8,7 @@
   --secondary: #00ffd0;            /* Vibrant cyan for gradients */
   --bg: #10182a;    
   
-  --bg-f: #6a88a7;                 /* Deep dark blue background */
+  --bg-f: #1c2d3e;                 /* Deep dark blue background */
   --bg-glass: #02509596;    /* Glass: dark blue, more contrast */
   --bg-glass2: rgba(20, 30, 60, 0.92);  /* Glass2: even darker, more contrast */
   --text: #23a2f7;                 /* Pure white for text */
@@ -23,7 +23,7 @@
   --primary: #0066ff;              /* Deep blue for accents */
   --secondary: #00bfae;            /* Teal for gradients */
   --bg: #eaf6ff;              /* Light blue background */
-  --bg-f: #282A36                   /* Very light blue background */
+  --bg-f: #6287ac;                   /* Very light blue background */
   --bg-glass: rgba(255,255,255,0.85);   /* Glass: white, more opacity */
   --bg-glass2: rgba(230,245,255,0.95);  /* Glass2: light blue, more contrast */
   --text: #10182a;                 /* Deep blue for text */
