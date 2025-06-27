@@ -9,9 +9,13 @@ response = requests.get(url)
 repos = response.json()
 
 translator = Translator()
+ignore_repos = ["snr1s3.github.io", "Snr1s3 "]  # Add repo names to ignore
 
 repo_list = []
 for repo in repos:
+    if repo["name"] in ignore_repos:
+        print(f"Skipping repository: {repo['name']}")
+        continue
     print(f"Processing repository: {repo['name']}")
     desc = repo["description"] or ""
     desc_cat = translator.translate(desc, dest='ca').text if desc else ""

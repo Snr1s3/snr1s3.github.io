@@ -30,7 +30,7 @@
   --shadow: 0 8px 32px 0 rgba(0,102,255,0.10); /* Blue shadow */
 }
 body {
-  background: url('../img/bg.jpg') no-repeat center center fixed;
+  background: url('../img/bg.png') no-repeat center center fixed;
   background-size: cover;
 }
 
