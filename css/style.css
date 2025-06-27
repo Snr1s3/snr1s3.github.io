@@ -4,37 +4,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
 
 :root {
-  --primary: #3ea6ff;              /* Brighter blue for accents */
-  --secondary: #00ffd0;            /* Vibrant cyan for gradients */
-  --bg: #10182a;    
+  --primary: #bd93f9;               /* Dracula purple */
+  --secondary: #8be9fd;             /* Cyan highlight */
+  --bg: #282a36;                    /* Dark background */
   
-  --bg-f: #1c2d3e;                 /* Deep dark blue background */
-  --bg-glass: #02509596;    /* Glass: dark blue, more contrast */
-  --bg-glass2: rgba(20, 30, 60, 0.92);  /* Glass2: even darker, more contrast */
-  --text: #23a2f7;                 /* Pure white for text */
-  --text-secondary: #8bb8ff;       /* Soft blue for secondary text */
-  --accent: #ffb86c;               /* Warm accent for buttons/links */
-  --border: rgba(62,166,255,0.18); /* Subtle blue border */
-  --shadow: 0 8px 32px 0 rgba(62,166,255,0.18); /* Blue shadow */
+  --bg-f: #44475a;                  /* Panels and elevated blocks */
+  --bg-glass: rgba(68, 71, 90, 0.75);
+  --bg-glass2: rgba(40, 42, 54, 0.85);
+  
+  --text: #f8f8f2;                  /* Foreground text */
+  --text-secondary: #6272a4;        /* Comment-style subtext */
+  --accent: #ff79c6;                /* CTA/button pink */
+  
+  --border: rgba(189, 147, 249, 0.15); /* Subtle purple border */
+  --shadow: 0 8px 32px 0 rgba(189, 147, 249, 0.1); /* Soft glow */
+}
+[data-theme="light"] {
+  --primary: #5a4d8b;               /* Deep muted purple */
+  --secondary: #007a99;             /* Cyan variant (darker) */
+  --bg: #f2eafa;                    /* Very light lavender background */
+  
+  --bg-f: #e6dbf8;                  /* Light panel purple */
+  --bg-glass: rgba(230, 219, 248, 0.85);
+  --bg-glass2: rgba(210, 198, 240, 0.9);
+  
+  --text: #1e1c2a;                  /* Deep plum/black for readability */
+  --text-secondary: #4b5265;        /* Muted gray-purple for subtext */
+  --accent: #c026d3;                /* Warm pink accent (Dracula pink-inspired) */
+  
+  --border: rgba(90, 77, 139, 0.12);
+  --shadow: 0 8px 32px 0 rgba(90, 77, 139, 0.08);
 }
 
-/* Light Theme */
-[data-theme="light"] {
-  --primary: #0066ff;              /* Deep blue for accents */
-  --secondary: #00bfae;            /* Teal for gradients */
-  --bg: #4389be;              /* Light blue background */
-  --bg-f: #6287ac;                   /* Very light blue background */
-  --bg-glass: rgba(255,255,255,0.85);   /* Glass: white, more opacity */
-  --bg-glass2: rgba(230,245,255,0.95);  /* Glass2: light blue, more contrast */
-  --text: #10182a;                 /* Deep blue for text */
-  --text-secondary: #3ea6ff;       /* Bright blue for secondary text */
-  --accent: #ff8800;               /* Stronger accent for light mode */
-  --border: rgba(0,102,255,0.13);  /* Subtle blue border */
-  --shadow: 0 8px 32px 0 rgba(0,102,255,0.10); /* Blue shadow */
-}
+
+
 body {
   color: var(--text);           /* Use your text color variable */
-  background: var(--bg-f);      /* Set background color */
+  background: var(--bg);      /* Set background color */
 }
 html, body {
   color: var(--text);
