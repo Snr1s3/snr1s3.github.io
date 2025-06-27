@@ -22,7 +22,7 @@
 [data-theme="light"] {
   --primary: #0066ff;              /* Deep blue for accents */
   --secondary: #00bfae;            /* Teal for gradients */
-  --bg: #eaf6ff;              /* Light blue background */
+  --bg: #4389be;              /* Light blue background */
   --bg-f: #6287ac;                   /* Very light blue background */
   --bg-glass: rgba(255,255,255,0.85);   /* Glass: white, more opacity */
   --bg-glass2: rgba(230,245,255,0.95);  /* Glass2: light blue, more contrast */
