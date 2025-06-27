@@ -6,7 +6,9 @@
 :root {
   --primary: #3ea6ff;              /* Brighter blue for accents */
   --secondary: #00ffd0;            /* Vibrant cyan for gradients */
-  --bg: #10182a;                   /* Deep dark blue background */
+  --bg: #10182a;    
+  
+  --bg-f: #6a88a7;                 /* Deep dark blue background */
   --bg-glass: #02509596;    /* Glass: dark blue, more contrast */
   --bg-glass2: rgba(20, 30, 60, 0.92);  /* Glass2: even darker, more contrast */
   --text: #23a2f7;                 /* Pure white for text */
@@ -20,7 +22,8 @@
 [data-theme="light"] {
   --primary: #0066ff;              /* Deep blue for accents */
   --secondary: #00bfae;            /* Teal for gradients */
-  --bg: #eaf6ff;                   /* Very light blue background */
+  --bg: #eaf6ff;              /* Light blue background */
+  --bg-f: #282A36                   /* Very light blue background */
   --bg-glass: rgba(255,255,255,0.85);   /* Glass: white, more opacity */
   --bg-glass2: rgba(230,245,255,0.95);  /* Glass2: light blue, more contrast */
   --text: #10182a;                 /* Deep blue for text */
@@ -30,7 +33,7 @@
   --shadow: 0 8px 32px 0 rgba(0,102,255,0.10); /* Blue shadow */
 }
 body {
-  background: url('../img/bg.png') no-repeat center center fixed;
+  background: var(--bg-f);
   background-size: cover;
 }
 
