@@ -1,125 +1,80 @@
 {
   "en":{
     "header": {
-      "about": "About",
+      "about": "Hello World!",
       "skills": "Skills",
-      "projects": "Projects",
-      "contact": "Contact"
+      "projects": "Featured Projects",
+      "experience": "Experience",
+      "settings": "Settings"
     },
-    "hero": {
-      "title": "Hello world!",
-      "description": "My name is Alba, I am a computer science student at Institut TIC Barcelona. I am an aspiring developer embarking on my exciting journey into the world of code. I’m delighted to be immersing myself in this creative and problem-solving field, and I’m eager to learn everything I can about building the next generation of technology."
+    "about": {
+      "body":"My name is Alba. I recently finished my degree in Computer Science and I am taking my first steps in the industry."
     },
-    "moreAbout": {
-      "title": "More About Me",
-      "paragraphs": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!"
-      ]
+    "skills":{
+      "my_skills":"Languages & Tools:",
+      "learning":"Learning:"
     },
-    "skills": {
-      "title": "My Top Skills"
+    "hero":{
+      "name":"Alba Segura",
+      "subtitle":"Junior Developer in a journey to DevOps",
+      "projects":"More Projects"
     },
-    "projects": {
-      "title": "Some of my Projects"
-    },
-    "p1":{
-      "p1-title": "Docs",
-      "p1-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p1-link":"Check it out"
-    },
-    "p2":{
-      "p2-title": "Project 2",
-      "p2-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p2-link":"Check it out"
-    },
-    "p3":{
-      "p3-title": "Project 3",
-      "p3-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p3-link":"Check it out"
+    "experience":{
+      "position":"Senior Assistant Software Engineer",
+      "where":"Kyndryl (09-2025 - Present)",
+      "tasks":"Supporting senior engineers with software development, code reviews, and system optimization."
     }
   },
   "cat":{
     "header": {
-      "about": "Sobre mi",
+      "about": "Hello World!",
       "skills": "Habilitats",
-      "projects": "Projectes",
-      "contact": "Contacte"
+      "projects": "Projectes destacats",
+      "experience": "Experiencia",
+      "settings": "Configuració"
     },
-    "hero": {
-      "title": "Hola Món!",
-      "description": "Em dic Alba, soc estudiant d'informàtica a Institut TIC Barcelona. Soc una aspirant a desenvolupadora embarcant-me en el meu emocionant viatge al món del codi. Estic encantat d'estar submergint-me en aquest camp creatiu i de resolució de problemes, i estic ansiosa per aprendre tot el que puc sobre la construcció de la pròxima generació de tecnologia."
+    "about": {
+      "body":"Em dic Alba. Recentment he acabat el grau superior d'Informàtica i estic fent els meus primers passos en la indústria."
     },
-    "moreAbout": {
-      "title": "Més Sobre Mi",
-      "paragraphs": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!"
-      ]
+    "skills":{
+      "my_skills":"Llenguatges i eines:",
+      "learning":"Learning:"
     },
-    "skills": {
-      "title": "Les Meves Habilitats"
+    "hero":{
+      "name":"Alba Segura",
+      "subtitle":"Desenvolupadora júnior en un viatge cap a DevOps",
+      "projects":"Més Projectes"
     },
-    "projects": {
-      "title": "Alguns Dels Meus Projectes"
-    },
-    "p1":{
-      "p1-title": "Docs",
-      "p1-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p1-link":"Clica aquí"
-    },
-    "p2":{
-      "p2-title": "Projecte 2",
-      "p2-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p2-link":"Clica aquí"
-    },
-    "p3":{
-      "p3-title": "Projecte 3",
-      "p3-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p3-link":"Clica aquí"
+    "experience":{
+      "position":"Senior Assistant Software Engineer",
+      "where":"Kyndryl (09-2025 - Present)",
+      "tasks":"Donar suport als enginyers sèniors amb el desenvolupament de programari, la revisió de codi i l'optimització de sistemes."
     }
   },
   "es":{
     "header": {
-      "about": "Sobre mí",
+      "about": "Hello World!",
       "skills": "Habilidades",
-      "projects": "Proyectos",
-      "contact": "Contacto"
+      "projects": "Proyectos destacados",
+      "experience": "Experiencia",
+      "settings": "Configuración"
     },
-    "hero": {
-      "title": "Hola Mundo!",
-      "description": "Me llamo Alba, soy estudiante de informática a Instituto TIC Barcelona. Soy una aspirante a desarrolladora embarcándome en mi emocionante viaje en el mundo del código. Estoy encantado de estar sumergiéndome en este campo creativo y de resolución de problemas, y estoy ansiosa para aprender todo el que puedo sobre la construcción de la próxima generación de tecnología."
+    "about": {
+      "body":"Me llamo Alba. Recientemente he terminado el grado superior de Informática y estoy dando mis primeros pasos en la industria."
     },
-    "moreAbout": {
-      "title": "Más Sobre Mí",
-      "paragraphs": [
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-        "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur nostrum dolor minus, libero delectus praesentium perferendis",
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, consequuntur labore? Ea totam voluptas amet!"
-      ]
+    "skills":{
+      "my_skills":"Idiomas y herramientas:",
+      "learning":"Learning:"
     },
-    "skills": {
-      "title": "Mis Habilidades"
+    "hero":{
+      "name":"Alba Segura",
+      "subtitle":"Desarrolladora junior en un viaje a DevOps",
+      "projects":"Más Projects"
     },
-    "projects": {
-      "title": "Algunos De Mis Proyectos"
-    },
-    "p1":{
-      "p1-title": "Docs",
-      "p1-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p1-link":"Clica aquí"
-    },
-    "p2":{
-      "p2-title": "Projecte 2",
-      "p2-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p2-link":"Clica aquí"
-    },
-    "p3":{
-      "p3-title": "Projecte 3",
-      "p3-desc":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nesciunt excepturi quos obcaecati incidunt voluptatem ipsam sunt ipsum, autem deleniti cupiditate molestias quis unde quae totam porro dicta iure animi inventore, veniam hic! Omnis nulla, delectus a voluptatibus",
-      "p3-link":"Clica aquí"
+    "experience":{
+      "position":"Senior Assistant Software Engineer",
+      "where":"Kyndryl (09-2025 - Presente)",
+      "tasks":"Apoyar a ingenieros senior con el desarrollo de software, revisiones de código y optimización de sistemas."
     }
   }  
 }

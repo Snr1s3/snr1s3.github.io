@@ -1,0 +1,36 @@
+/* ====== CSS Variables & Theme System ====== */
+
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+:root {
+  --primary: #bd93f9;               /* Main purple */
+  --secondary: #8be9fd;             /* Cyan accent */
+  --accent: #ff79c6;                /* Pink highlight */
+  
+  --bg: #282a36;                    /* Dark background */
+  --bg-card: #44475a;               /* Card/panel background */
+  --bg-glass: rgba(68, 71, 90, 0.8); /* Glass effect */
+  
+  --text: #f8f8f2;                  /* Main text */
+  --text-muted: #6272a4;            /* Secondary text */
+  
+  --border: rgba(189, 147, 249, 0.2); /* Border color */
+  --shadow: 0 8px 32px 0 rgba(189, 147, 249, 0.1); /* Shadow */
+}
+
+[data-theme="light"] {
+  --primary: #4a3d7a;               /* Darker purple */
+  --secondary: #005a6b;             /* Darker cyan */
+  --accent: #a01ea8;                /* Darker magenta */
+  
+  --bg: #e8ddf0;                    /* Darker light background */
+  --bg-card: #d4c4e8;               /* Darker light card background */
+  --bg-glass: rgba(212, 196, 232, 0.9); /* Darker light glass */
+  
+  --text: #1a1826;                  /* Darker text */
+  --text-muted: #3a415a;            /* Darker muted text */
+  
+  --border: rgba(74, 61, 122, 0.2); /* Darker light border */
+  --shadow: 0 8px 32px 0 rgba(74, 61, 122, 0.12); /* Darker light shadow */
+}

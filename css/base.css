@@ -1,0 +1,48 @@
+/* ====== Base Styles ====== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: var(--bg);
+    color: var(--text);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Typography */
+h2 {
+    font-size: clamp(0.9rem, 1.4vw, 1.8rem);
+    margin-bottom: clamp(4px, 0.8vw, 12px);
+    color: var(--primary);
+    text-align: center;
+}
+
+h3 {
+    font-size: clamp(0.7rem, 1vw, 1.4rem);
+    margin-bottom: clamp(3px, 0.5vw, 8px);
+    color: var(--text);
+    text-align: center;
+}
+
+p, li {
+    font-size: clamp(0.65rem, 0.9vw, 1rem);
+    line-height: 1.5;
+    color: var(--text-muted);
+    text-align: center;
+}
+
+/* Icon styling */
+.iconMenu {
+    transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+    transform: scale(1.03);
+}

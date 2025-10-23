@@ -32,41 +32,34 @@ function updateTextContent(content) {
     if (skills) skills.textContent = content.header.skills;
     const projects = document.getElementById('Projects');
     if (projects) projects.textContent = content.header.projects;
-    const contact = document.getElementById('Contact');
-    if (contact) contact.textContent = content.header.contact;
+    const experience = document.getElementById('Experiencia');
+    if (experience) experience.textContent = content.header.experience;
+    const settings = document.getElementById('Settings');
+    if (settings) settings.textContent = content.header.settings;
 
-    const heroTitle = document.getElementById('hero-title');
-    if (heroTitle) heroTitle.textContent = content.hero.title;
-    const heroDesc = document.getElementById('hero-description');
-    if (heroDesc) heroDesc.textContent = content.hero.description;
 
-    const moreAboutTitle = document.getElementById('more-about-title');
-    if (moreAboutTitle) moreAboutTitle.textContent = content.moreAbout.title;
-    const moreAboutContent = document.getElementById('more-about-content');
-    if (moreAboutContent) {
-        moreAboutContent.innerHTML = '';
-        content.moreAbout.paragraphs.forEach((paragraph) => {
-            const p = document.createElement('p');
-            p.textContent = paragraph;
-            moreAboutContent.appendChild(p);
-        });
-    }
+    const body_about = document.getElementById("Body-About");
+    if (body_about) body_about.textContent = content.about.body
 
-    const skillsTitle = document.getElementById('skills-title');
-    if (skillsTitle) skillsTitle.textContent = content.skills.title;
+    
+    const my_skills = document.getElementById("skills");
+    if (my_skills) my_skills.textContent = content.skills.my_skills
+    const learning = document.getElementById("learning");
+    if (learning) learning.textContent = content.skills.learning
 
-    const projectTitle = document.getElementById('Project-Title');
-    if (projectTitle) projectTitle.textContent = content.projects.title;
+    const name = document.getElementById('Name');
+    if (name) name.textContent = content.hero.name;
+    const subtitle = document.getElementById('Subtitle');
+    if (subtitle) subtitle.textContent = content.hero.subtitle;
+    const project = document.getElementById('Project');
+    if (project) project.textContent = content.hero.projects;
 
-    const projectLink1 = document.getElementById('p1-link');
-    if (projectLink1) projectLink1.textContent = content.p1["p1-link"];
-    const projectLink2 = document.getElementById('p2-link');
-    if (projectLink2) projectLink2.textContent = content.p2["p2-link"];
-    const projectLink3 = document.getElementById('p3-link');
-    if (projectLink3) projectLink3.textContent = content.p3["p3-link"];
-
-    const contactElement = document.getElementById('Contacts2');
-    if (contactElement) contactElement.textContent = content.header.contact;
+    const position = document.getElementById('Position');
+    if (position) position.textContent = content.experience.position;
+    const where = document.getElementById('Where');
+    if (where) where.textContent = content.experience.where;
+    const tasks = document.getElementById('Tasks');
+    if (tasks) tasks.textContent = content.experience.tasks;
 }
 
 async function updateProjects(lang) {
