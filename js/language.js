@@ -66,15 +66,11 @@ async function updateProjects(lang) {
     try {
         const response = await fetch('../json/projects.json');
         const projects = await response.json();
-
-        // Map language code to the correct field in your JSON
         const descField = {
             en: "desc_en",
             cat: "desc_cat",
             es: "desc_esp"
         }[lang] || "desc_en";
-
-        // Shuffle and pick 3 unique projects
         const shuffled = projects.sort(() => 0.5 - Math.random());
         const selected = shuffled.slice(0, 3);
 
@@ -83,7 +79,6 @@ async function updateProjects(lang) {
             const titleEl = document.getElementById(`p${num}`);
             const descEl = document.getElementById(`p${num}-desc`);
             const linkEl = document.getElementById(`p${num}-link`);
-            // const photoEl = document.querySelector(`#p${num}-link`).parentElement.querySelector('img');
             if (titleEl) titleEl.textContent = project.name;
             if (descEl) descEl.textContent = project[descField] || "";
             if (linkEl) {
@@ -91,7 +86,6 @@ async function updateProjects(lang) {
                 linkEl.href = project.url;
                 linkEl.target = "_blank";
             }
-            // if (photoEl && project.photo) photoEl.src = project.photo;
         });
     } catch (error) {
         console.error('Error loading projects:', error);
