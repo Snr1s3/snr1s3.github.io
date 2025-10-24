@@ -1,6 +1,7 @@
 import requests
 import json
 import asyncio
+import random
 from googletrans import Translator
 
 async def translate_repos():
@@ -12,6 +13,9 @@ async def translate_repos():
 
     translator = Translator()
     ignore_repos = ["snr1s3.github.io", "Snr1s3"]  # Add repo names to ignore
+    
+    # List of available background images
+    background_images = ["../img/bg.jpg", "../img/image.png"]
 
     repo_list = []
     for repo in repos:
@@ -41,13 +45,16 @@ async def translate_repos():
             desc_cat_text = ""
             desc_esp_text = ""
         
+        # Randomly select a background image
+        random_image = random.choice(background_images)
+        
         repo_list.append({
             "name": repo["name"],
             "desc_en": desc_en_text,
             "desc_cat": desc_cat_text,
             "desc_esp": desc_esp_text,
             "url": repo["html_url"],
-            "image": f"https://via.placeholder.com/300x200?text={repo['name']}"
+            "image": random_image
         })
 
     with open("../json/projects.json", "w") as f:

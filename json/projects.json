@@ -5,7 +5,7 @@
     "desc_cat": "Aslsh un shell senzill escrit a Go amb finalitats d'aprenentatge.",
     "desc_esp": "Utilice un shell simple escrito en Go con fines de aprendizaje.",
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "https://via.placeholder.com/300x200?text=Aslsh"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_API",
@@ -13,7 +13,7 @@
     "desc_cat": "",
     "desc_esp": "",
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_API"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -21,7 +21,7 @@
     "desc_cat": "",
     "desc_esp": "",
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_Gateway"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Login",
@@ -29,7 +29,7 @@
     "desc_cat": "API per gestionar els inicis de sessió i CRUD d'usuari",
     "desc_esp": "API para manejar inicios de sesión y usuario CRUD",
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_Login"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Web",
@@ -37,7 +37,7 @@
     "desc_cat": "Web App feta amb Flask",
     "desc_esp": "Aplicación web hecha con Flask",
     "url": "https://github.com/Snr1s3/CommanderMTG_Web",
-    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_Web"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Documentacio",
@@ -45,7 +45,7 @@
     "desc_cat": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
     "desc_esp": "Bienvenido a la documentación personal de Snr1s3. Aquí encontrará guías y manuales para la instalación y configuración de diferentes servicios y herramientas.",
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "https://via.placeholder.com/300x200?text=Documentacio"
+    "image": "../img/image.png"
   },
   {
     "name": "PathOfRemembering",
@@ -53,7 +53,7 @@
     "desc_cat": "Projecte final de SMIX en C#",
     "desc_esp": "Proyecto Final de SMIX en C#",
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "https://via.placeholder.com/300x200?text=PathOfRemembering"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Sorting-Algorithms",
@@ -61,6 +61,6 @@
     "desc_cat": "Sorting-Algorithms és un repositori per aprendre sobre els algorismes d'ordenació",
     "desc_esp": "Sorting-Algorithms es un repositorio para aprender sobre algoritmos de clasificación.",
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "https://via.placeholder.com/300x200?text=Sorting-Algorithms"
+    "image": "../img/image.png"
   }
 ]
