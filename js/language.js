@@ -21,6 +21,7 @@ function loadContent(lang) {
             const content = data[lang];
             updateTextContent(content);
             updateProjects(lang)
+            updateProjects2(lang)
         })
         .catch((error) => console.error('Error loading content:', error));
 }
@@ -101,26 +102,46 @@ async function updateProjects(lang) {
                 
                 projectsContainer.appendChild(projectCard);
             });
-        } else {
-            // Home page - update existing elements (your current logic)
-            const shuffled = projects.sort(() => 0.5 - Math.random());
-            const selected = shuffled.slice(0, 3);
-
-            selected.forEach((project, idx) => {
-                const num = idx + 1;
-                const titleEl = document.getElementById(`p${num}`);
-                const descEl = document.getElementById(`p${num}-desc`);
-                const linkEl = document.getElementById(`p${num}-link`);
-                if (titleEl) titleEl.textContent = project.name;
-                if (descEl) descEl.textContent = project[descField] || "";
-                if (linkEl) {
-                    linkEl.textContent = "Go to project";
-                    linkEl.href = project.url;
-                    linkEl.target = "_blank";
-                }
-            });
+ } else {
+            console.log('Projects container not found, checking for home page...');
+            // Home page - update projects section
+            const projectsSection = document.getElementById('projects-scroll');
+            
+            if (projectsSection) {
+                console.log('Home projects section found');
+                // Get first 8 projects to ensure scrolling
+                const selectedProjects = projects.slice(0, 8);
+                
+                // Clear existing content
+                projectsSection.innerHTML = '';
+                
+                // Create project items
+                selectedProjects.forEach(project => {
+                    const projectItem = document.createElement('div');
+                    projectItem.className = 'project-item';
+                    
+                    const projectName = project.name || 'Unnamed Project';
+                    const projectDesc = project[descField] || project.desc_en || 'No description available';
+                    const projectUrl = project.url || project.html_url || '#';
+                    
+                    projectItem.innerHTML = `
+                        <h3><a id="scrollProjects" href="${projectUrl}" target="_blank">${projectName}</a></h3>
+                        <p>${projectDesc}</p>
+                    `;
+                    
+                    projectsSection.appendChild(projectItem);
+                });
+            } else {
+                console.log('No projects section found on home page');
+            }
         }
     } catch (error) {
         console.error('Error loading projects:', error);
+        
+        // Show fallback content if JSON fails
+        const projectsContainer = document.getElementById('projects-container');
+        if (projectsContainer) {
+            projectsContainer.innerHTML = '<p>Error loading projects. Please check the console for details.</p>';
+        }
     }
 }

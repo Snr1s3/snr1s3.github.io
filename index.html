@@ -12,8 +12,8 @@
         <!-- Hero Section -->
         <section class="section hero">
             <div class="hero-content">
-                <h1 id="Name">Alba Segura</h1>
-                <p id="Subtitle">Junior Developer & Creative Problem Solver</p>
+                <h1 id="Name"></h1>
+                <p id="Subtitle"></p>
                 <div class="contact-info">
                     <a href="https://github.com/Snr1s3" class="social-link">🐙 GitHub</a>
                     <a href="https://www.linkedin.com/in/alba-segura-llamas-b91491299/" class="social-link">💼 LinkedIn</a>
@@ -27,7 +27,7 @@
 
         <!-- Settings Section -->
         <section class="section settings">
-            <h2 id="Settings">Settings</h2>
+            <h2 id="Settings"></h2>
             <div class="settings-controls">
                 <button id="theme-toggle" class="no-border neon-hover neon-glow">
                     <img id="bIcon" src="./img/icons/moon.svg" alt="Toggle Dark Mode" style="height: 25px; width: 25px;" class="iconMenu icon hover-scale" />
@@ -42,14 +42,14 @@
 
         <!-- About Section -->
         <section class="section about">
-            <h2 id="About">Hello world!</h2>
-            <p id="Body-About">My name is Alba. I recently completed my degree in Computer Science, and I'm taking my first steps in the industry.</p>
+            <h2 id="About"></h2>
+            <p id="Body-About"></p>
         </section>
 
         <!-- Skills Section -->
         <section class="section skills">
-            <h2 id="Skills">Skills</h2>
-            <p id="skills">Languages & Tools</p>
+            <h2 id="Skills"></h2>
+            <p id="skills"></p>
             <div class="skill-tags">
                 <span class="tag main-skill">Java</span>
                 <span class="tag main-skill">Python</span>
@@ -58,7 +58,7 @@
                 <span class="tag main-skill">SQL / PostgreSQL</span>                
                 <span class="tag main-skill">Linux / Bash</span>
             </div>
-            <p id="learning">Currently Learning:</p>
+            <p id="learning"></p>
             <div class="skill-tags">
                 <span class="tag learning-skill">Go</span>
                 <span class="tag learning-skill">Docker</span>
@@ -68,31 +68,25 @@
 
         <!-- Projects Section -->
         <section class="section projects">
-            <h2 id="Projects">Featured Projects</h2>
-            <div class="project-item">
-                <h3>E-Commerce Platform</h3>
-                <p>Full-stack web application with React & Node.js</p>
-            </div>
-            <div class="project-item">
-                <h3>Portfolio Website</h3>
-                <p>Responsive design with modern CSS</p>
+            <h2 id="Projects"></h2>
+            <div id="projects-scroll" class="projects-scroll">
+                
             </div>
         </section>
 
         <!-- Experience Section -->
         <section class="section experience">
-            <h2 id="Experiencia">Experience</h2>
+            <h2 id="Experiencia"></h2>
             <div style="margin-bottom: 15px;">
-                <h3 id="Position">Senior Software Assistant</h3>
-                <p id="Where">Kyndryl (2025 - Present)</p>
-                <p id="Tasks">Led development of key features and mentored junior developers.</p>
+                <h3 id="Position"></h3>
+                <p id="Where"></p>
+                <p id="Tasks"></p>
             </div>
         </section>
     </div>
-
     <script type="module">
-        import { initThemeToggle } from './js/theme.js';
-        import { initLanguageDropdown } from './js/language.js';
+        import { initThemeToggle } from '../js/theme.js';
+        import { initLanguageDropdown } from '../js/language.js';
         
         document.addEventListener('DOMContentLoaded', () => {
             initThemeToggle();

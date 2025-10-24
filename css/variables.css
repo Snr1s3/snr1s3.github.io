@@ -8,29 +8,29 @@
   --secondary: #8be9fd;             /* Cyan accent */
   --accent: #ff79c6;                /* Pink highlight */
   
-  --bg: #282a36;                    /* Dark background */
-  --bg-card: #44475a;               /* Card/panel background */
-  --bg-glass: rgba(68, 71, 90, 0.8); /* Glass effect */
+  --bg: #1a1b26;                    /* Darker background for better contrast */
+  --bg-card: #24283b;               /* Darker card background */
+  --bg-glass: rgba(36, 40, 59, 0.9); /* Darker glass effect */
   
-  --text: #f8f8f2;                  /* Main text */
-  --text-muted: #6272a4;            /* Secondary text */
+  --text: #ffffff;                  /* Pure white for maximum contrast */
+  --text-muted: #a9b1d6;            /* Better contrast for secondary text */
   
-  --border: rgba(189, 147, 249, 0.2); /* Border color */
-  --shadow: 0 8px 32px 0 rgba(189, 147, 249, 0.1); /* Shadow */
+  --border: rgba(189, 147, 249, 0.3); /* More visible border */
+  --shadow: 0 8px 32px 0 rgba(189, 147, 249, 0.15); /* Stronger shadow */
 }
 
 [data-theme="light"] {
-  --primary: #4a3d7a;               /* Darker purple */
-  --secondary: #005a6b;             /* Darker cyan */
-  --accent: #a01ea8;                /* Darker magenta */
+  --primary: #5b21b6;               /* Darker purple for better contrast */
+  --secondary: #0369a1;             /* Darker cyan */
+  --accent: #be185d;                /* Darker pink */
   
-  --bg: #e8ddf0;                    /* Darker light background */
-  --bg-card: #d4c4e8;               /* Darker light card background */
-  --bg-glass: rgba(212, 196, 232, 0.9); /* Darker light glass */
+  --bg: #ffffff;                    /* Pure white background */
+  --bg-card: #f8fafc;               /* Very light gray for cards */
+  --bg-glass: rgba(248, 250, 252, 0.95); /* Light glass */
   
-  --text: #1a1826;                  /* Darker text */
-  --text-muted: #3a415a;            /* Darker muted text */
+  --text: #0f172a;                  /* Very dark text for maximum contrast */
+  --text-muted: #475569;            /* Darker muted text for better readability */
   
-  --border: rgba(74, 61, 122, 0.2); /* Darker light border */
-  --shadow: 0 8px 32px 0 rgba(74, 61, 122, 0.12); /* Darker light shadow */
+  --border: rgba(91, 33, 182, 0.2); /* More visible border */
+  --shadow: 0 8px 32px 0 rgba(91, 33, 182, 0.1); /* Subtle shadow */
 }
