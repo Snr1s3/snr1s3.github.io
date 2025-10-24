@@ -5,7 +5,15 @@
     "desc_cat": "Aslsh un shell senzill escrit a Go amb finalitats d'aprenentatge.",
     "desc_esp": "Utilice un shell simple escrito en Go con fines de aprendizaje.",
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
+  },
+  {
+    "name": "CommanderMTG_AndroidApp",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_API",
@@ -13,7 +21,7 @@
     "desc_cat": "",
     "desc_esp": "",
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -21,7 +29,7 @@
     "desc_cat": "",
     "desc_esp": "",
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
@@ -37,7 +45,7 @@
     "desc_cat": "Web App feta amb Flask",
     "desc_esp": "Aplicación web hecha con Flask",
     "url": "https://github.com/Snr1s3/CommanderMTG_Web",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Documentacio",
@@ -45,7 +53,7 @@
     "desc_cat": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
     "desc_esp": "Bienvenido a la documentación personal de Snr1s3. Aquí encontrará guías y manuales para la instalación y configuración de diferentes servicios y herramientas.",
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "PathOfRemembering",
@@ -61,6 +69,6 @@
     "desc_cat": "Sorting-Algorithms és un repositori per aprendre sobre els algorismes d'ordenació",
     "desc_esp": "Sorting-Algorithms es un repositorio para aprender sobre algoritmos de clasificación.",
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   }
 ]

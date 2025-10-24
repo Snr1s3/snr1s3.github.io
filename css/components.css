@@ -201,7 +201,7 @@
     padding: clamp(4px, 0.6vw, 10px);
     background: var(--bg-card);
     border-radius: clamp(3px, 0.5vw, 8px);
-    border-left: clamp(1px, 0.2vw, 2px) solid var(--primary);
+    border: clamp(1px, 0.2vw, 2px) solid var(--primary);
     text-align: center;
 }
 
