@@ -2,33 +2,65 @@
   {
     "name": "Aslsh",
     "desc_en": "Aslsh a simple shell written in Go for learning purposes.",
-    "desc_cat": "Aslsh una simple closca escrita a Go amb finalitats d'aprenentatge.",
-    "desc_esp": "ASLSH un shell simple escrito en Go para fines de aprendizaje.",
+    "desc_cat": "Aslsh un shell senzill escrit a Go amb finalitats d'aprenentatge.",
+    "desc_esp": "Utilice un shell simple escrito en Go con fines de aprendizaje.",
     "url": "https://github.com/Snr1s3/Aslsh",
-    "photo": "https://via.placeholder.com/300x200?text=Aslsh"
+    "image": "https://via.placeholder.com/300x200?text=Aslsh"
+  },
+  {
+    "name": "CommanderMTG_API",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/CommanderMTG_API",
+    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_API"
+  },
+  {
+    "name": "CommanderMTG_Gateway",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
+    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_Gateway"
+  },
+  {
+    "name": "CommanderMTG_Login",
+    "desc_en": "API to handle Logins, and user CRUD",
+    "desc_cat": "API per gestionar els inicis de sessió i CRUD d'usuari",
+    "desc_esp": "API para manejar inicios de sesión y usuario CRUD",
+    "url": "https://github.com/Snr1s3/CommanderMTG_Login",
+    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_Login"
+  },
+  {
+    "name": "CommanderMTG_Web",
+    "desc_en": "Web App made with Flask",
+    "desc_cat": "Web App feta amb Flask",
+    "desc_esp": "Aplicación web hecha con Flask",
+    "url": "https://github.com/Snr1s3/CommanderMTG_Web",
+    "image": "https://via.placeholder.com/300x200?text=CommanderMTG_Web"
   },
   {
     "name": "Documentacio",
-    "desc_en": "Welcome to SNR1S3 Personal Documentations.Here you will find guides and manuals for the installation and configuration of different services and tools.",
+    "desc_en": "Welcome to Snr1s3's personal documentation. Here you will find guides and manuals for the installation and configuration of different services and tools.",
     "desc_cat": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
-    "desc_esp": "Bienvenido a las documentos personales SNR1S3.Aquí encontrará guías y manuales para la instalación y configuración de diferentes servicios y herramientas.",
+    "desc_esp": "Bienvenido a la documentación personal de Snr1s3. Aquí encontrará guías y manuales para la instalación y configuración de diferentes servicios y herramientas.",
     "url": "https://github.com/Snr1s3/Documentacio",
-    "photo": "https://via.placeholder.com/300x200?text=Documentacio"
+    "image": "https://via.placeholder.com/300x200?text=Documentacio"
   },
   {
     "name": "PathOfRemembering",
     "desc_en": "Final Project of SMIX in C#",
-    "desc_cat": "Projecte final de Smix a C#",
-    "desc_esp": "Proyecto final de Smix en C#",
+    "desc_cat": "Projecte final de SMIX en C#",
+    "desc_esp": "Proyecto Final de SMIX en C#",
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "photo": "https://via.placeholder.com/300x200?text=PathOfRemembering"
+    "image": "https://via.placeholder.com/300x200?text=PathOfRemembering"
   },
   {
     "name": "Sorting-Algorithms",
     "desc_en": "Sorting-Algorithms is a repository to learn about sorting algorithms",
-    "desc_cat": "Ordenació-algoritmes és un dipòsit per aprendre sobre l'ordenació dels algoritmes",
-    "desc_esp": "Sorting-Algorithms es un repositorio para aprender sobre los algoritmos de clasificación",
+    "desc_cat": "Sorting-Algorithms és un repositori per aprendre sobre els algorismes d'ordenació",
+    "desc_esp": "Sorting-Algorithms es un repositorio para aprender sobre algoritmos de clasificación.",
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "photo": "https://via.placeholder.com/300x200?text=Sorting-Algorithms"
+    "image": "https://via.placeholder.com/300x200?text=Sorting-Algorithms"
   }
 ]

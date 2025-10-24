@@ -62,6 +62,7 @@ function updateTextContent(content) {
     if (tasks) tasks.textContent = content.experience.tasks;
 }
 
+
 async function updateProjects(lang) {
     try {
         const response = await fetch('../json/projects.json');
@@ -71,22 +72,54 @@ async function updateProjects(lang) {
             cat: "desc_cat",
             es: "desc_esp"
         }[lang] || "desc_en";
-        const shuffled = projects.sort(() => 0.5 - Math.random());
-        const selected = shuffled.slice(0, 3);
 
-        selected.forEach((project, idx) => {
-            const num = idx + 1;
-            const titleEl = document.getElementById(`p${num}`);
-            const descEl = document.getElementById(`p${num}-desc`);
-            const linkEl = document.getElementById(`p${num}-link`);
-            if (titleEl) titleEl.textContent = project.name;
-            if (descEl) descEl.textContent = project[descField] || "";
-            if (linkEl) {
-                linkEl.textContent = "Go to project";
-                linkEl.href = project.url;
-                linkEl.target = "_blank";
-            }
-        });
+        // Check if we're on the projects page
+        const projectsContainer = document.getElementById('projects-container');
+        
+        if (projectsContainer) {
+            // Projects page - create cards for all projects
+            projectsContainer.innerHTML = ''; // Clear existing content
+            
+            projects.forEach(project => {
+                const projectCard = document.createElement('div');
+                projectCard.className = 'project-card';
+                
+                projectCard.innerHTML = `
+                    <h3>${project.name}</h3>
+                    ${project.image ? `<img src="${project.image}" alt="${project.name}">` : ''}
+                    <p>${project[descField] || project.desc_en || ''}</p>
+                    <div class="project-tech">
+                        ${project.technologies ? project.technologies.map(tech => 
+                            `<span class="tech-tag">${tech}</span>`
+                        ).join('') : ''}
+                    </div>
+                    <div class="project-links">
+                        <a href="${project.url}" class="project-link" target="_blank">GitHub</a>
+                        ${project.demo ? `<a href="${project.demo}" class="project-link" target="_blank">Live Demo</a>` : ''}
+                    </div>
+                `;
+                
+                projectsContainer.appendChild(projectCard);
+            });
+        } else {
+            // Home page - update existing elements (your current logic)
+            const shuffled = projects.sort(() => 0.5 - Math.random());
+            const selected = shuffled.slice(0, 3);
+
+            selected.forEach((project, idx) => {
+                const num = idx + 1;
+                const titleEl = document.getElementById(`p${num}`);
+                const descEl = document.getElementById(`p${num}-desc`);
+                const linkEl = document.getElementById(`p${num}-link`);
+                if (titleEl) titleEl.textContent = project.name;
+                if (descEl) descEl.textContent = project[descField] || "";
+                if (linkEl) {
+                    linkEl.textContent = "Go to project";
+                    linkEl.href = project.url;
+                    linkEl.target = "_blank";
+                }
+            });
+        }
     } catch (error) {
         console.error('Error loading projects:', error);
     }
