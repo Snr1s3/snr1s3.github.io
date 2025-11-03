@@ -1,49 +1,110 @@
 [
   {
     "name": "Aslsh",
-    "desc_en": "Aslsh a simple shell written in Go for learning purposes.",
-    "desc_cat": "Aslsh un shell senzill escrit a Go amb finalitats d'aprenentatge.",
-    "desc_esp": "Utilice un shell simple escrito en Go con fines de aprendizaje.",
+    "desc_en": "Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.",
+    "desc_cat": "Aslsh és un shell lleuger implementat a Go, fet amb finalitats educatives per ajudar-me a entendre la funcionalitat bàsica de l'intèrpret d'ordres i l'execució d'ordres del sistema.",
+    "desc_esp": "Aslsh es un shell liviano implementado en Go, creado con fines educativos para ayudarme a comprender la funcionalidad básica del shell y la ejecución de comandos del sistema.",
+    "languages": {
+      "Go": 8679
+    },
+    "topics": [
+      "golang",
+      "shell"
+    ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_AndroidApp",
-    "desc_en": "",
-    "desc_cat": "",
-    "desc_esp": "",
+    "desc_en": "This Android application helps track life totals and match statistics for Magic: The Gathering Commander games, including support for managing commanders, matches (partidas), and user-commander relationships.",
+    "desc_cat": "Aquesta aplicació per a Android ajuda a fer un seguiment dels totals de la vida i de les estadístiques de partits per als jocs de Magic: The Gathering Commander, inclòs el suport per gestionar comandants, partits (partides) i relacions usuari-comandant.",
+    "desc_esp": "Esta aplicación de Android ayuda a realizar un seguimiento de los totales de vida y las estadísticas de partidos de los juegos Magic: The Gathering Commander, incluida la compatibilidad con la gestión de comandantes, partidos y relaciones entre el usuario y el comandante.",
+    "languages": {
+      "Kotlin": 4995
+    },
+    "topics": [
+      "android-studio",
+      "kotlin-android",
+      "snr1s3-mtg-commander-app"
+    ],
     "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
     "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_API",
-    "desc_en": "",
-    "desc_cat": "",
-    "desc_esp": "",
+    "desc_en": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
+    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos els comandants, els partits (partides) i les relacions usuari-comandant.",
+    "desc_esp": "Este servicio proporciona operaciones CRUD para administrar juegos de Magic: The Gathering Commander, incluidos comandantes, partidas y relaciones usuario-comandante.",
+    "languages": {
+      "Python": 23868,
+      "Dockerfile": 342
+    },
+    "topics": [
+      "api-rest",
+      "docker",
+      "fastapi",
+      "postgresql",
+      "python",
+      "snr1s3-mtg-commander-app"
+    ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
-    "desc_en": "",
-    "desc_cat": "",
-    "desc_esp": "",
+    "desc_en": "The API Gateway routes requests to either the User Login service for authentication or the CRUD service for managing user data in the database.",
+    "desc_cat": "L'API Gateway encamina les sol·licituds al servei d'inici de sessió d'usuari per a l'autenticació o al servei CRUD per gestionar les dades d'usuari a la base de dades.",
+    "desc_esp": "API Gateway enruta solicitudes al servicio de inicio de sesión de usuario para autenticación o al servicio CRUD para administrar datos de usuario en la base de datos.",
+    "languages": {
+      "Python": 23547,
+      "Dockerfile": 483
+    },
+    "topics": [
+      "api-gateway",
+      "docker",
+      "fastapi",
+      "python",
+      "snr1s3-mtg-commander-app"
+    ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
     "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
-    "desc_en": "API to handle Logins, and user CRUD",
-    "desc_cat": "API per gestionar els inicis de sessió i CRUD d'usuari",
-    "desc_esp": "API para manejar inicios de sesión y usuario CRUD",
+    "desc_en": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
+    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió d'usuari, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
+    "desc_esp": "Esta API proporciona puntos finales para el inicio de sesión y el registro de usuarios y una funcionalidad CRUD completa para administrar perfiles de usuarios en la base de datos.",
+    "languages": {
+      "Python": 15019,
+      "Dockerfile": 319
+    },
+    "topics": [
+      "api-rest",
+      "docker",
+      "fastapi",
+      "postgresql",
+      "python",
+      "snr1s3-mtg-commander-app"
+    ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Web",
     "desc_en": "Web App made with Flask",
     "desc_cat": "Web App feta amb Flask",
     "desc_esp": "Aplicación web hecha con Flask",
+    "languages": {
+      "Python": 13822,
+      "HTML": 8396,
+      "CSS": 2171
+    },
+    "topics": [
+      "flask",
+      "python",
+      "snr1s3-mtg-commander-app",
+      "webapp"
+    ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Web",
     "image": "../img/image.png"
   },
@@ -52,23 +113,49 @@
     "desc_en": "Welcome to Snr1s3's personal documentation. Here you will find guides and manuals for the installation and configuration of different services and tools.",
     "desc_cat": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
     "desc_esp": "Bienvenido a la documentación personal de Snr1s3. Aquí encontrará guías y manuales para la instalación y configuración de diferentes servicios y herramientas.",
+    "languages": {},
+    "topics": [
+      "documentation",
+      "readme"
+    ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "PathOfRemembering",
-    "desc_en": "Final Project of SMIX in C#",
-    "desc_cat": "Projecte final de SMIX en C#",
-    "desc_esp": "Proyecto Final de SMIX en C#",
+    "desc_en": "Welcome, brave explorer, to the Path of Remembering! Though born as a final project for SMIX, this is no ordinary school assignment, it's a journey through a rich medieval fantasy world, where magic, mystery intertwine. o ready your blade, steady your mind, and prepare for liftoff—the Path of Remembering awaits...",
+    "desc_cat": "Benvingut, valent explorador, al camí de la memòria! Tot i que va néixer com a projecte final de SMIX, aquesta no és una tasca escolar normal, és un viatge per un ric món fantàstic medieval, on la màgia i el misteri s'entrellacen. o prepara la teva fulla, calma la teva ment i prepara't per a l'enlairament: el camí del record t'espera...",
+    "desc_esp": "¡Bienvenido, valiente explorador, al Camino del Recuerdo! Aunque nació como un proyecto final para SMIX, esta no es una tarea escolar ordinaria, es un viaje a través de un rico mundo de fantasía medieval, donde la magia y el misterio se entrelazan. Prepara tu espada, estabiliza tu mente y prepárate para el despegue: el Camino del Recuerdo te espera...",
+    "languages": {},
+    "topics": [
+      "csharp",
+      "unity2d",
+      "videogames-unity"
+    ],
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Sorting-Algorithms",
-    "desc_en": "Sorting-Algorithms is a repository to learn about sorting algorithms",
-    "desc_cat": "Sorting-Algorithms és un repositori per aprendre sobre els algorismes d'ordenació",
-    "desc_esp": "Sorting-Algorithms es un repositorio para aprender sobre algoritmos de clasificación.",
+    "desc_en": "This project provides implementations of various sorting algorithms across multiple programming languages, offering a comprehensive resource for learning, understanding, and comparing different sorting techniques.",
+    "desc_cat": "Aquest projecte proporciona implementacions de diversos algorismes d'ordenació en diversos llenguatges de programació, oferint un recurs complet per aprendre, comprendre i comparar diferents tècniques d'ordenació.",
+    "desc_esp": "Este proyecto proporciona implementaciones de varios algoritmos de clasificación en múltiples lenguajes de programación, ofreciendo un recurso integral para aprender, comprender y comparar diferentes técnicas de clasificación.",
+    "languages": {
+      "Java": 3370,
+      "C#": 3330,
+      "C": 2978,
+      "JavaScript": 2472,
+      "Python": 1996
+    },
+    "topics": [
+      "c",
+      "csharp",
+      "java",
+      "javascript",
+      "python",
+      "sorting-algorithms"
+    ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   }
 ]

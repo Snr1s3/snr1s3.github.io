@@ -16,15 +16,21 @@ async def translate_repos():
     
     # List of available background images
     background_images = ["../img/bg.jpg", "../img/image.png"]
-
     repo_list = []
+    num = 1 
     for repo in repos:
         if repo["name"] in ignore_repos:
             print(f"Skipping repository: {repo['name']}")
             continue
-        
         print(f"Processing repository: {repo['name']}")
         desc = repo["description"] or ""
+        
+        if num == 1:
+            print(repo)
+            print("\n  ")
+            print("\n  ")
+            print("\n  ")
+            num = 2
         
         if desc:
             try:
@@ -47,12 +53,14 @@ async def translate_repos():
         
         # Randomly select a background image
         random_image = random.choice(background_images)
-        
+        response = requests.get(repo["languages_url"])
         repo_list.append({
             "name": repo["name"],
             "desc_en": desc_en_text,
             "desc_cat": desc_cat_text,
             "desc_esp": desc_esp_text,
+            "languages": response.json(),
+            "topics": repo["topics"],
             "url": repo["html_url"],
             "image": random_image
         })

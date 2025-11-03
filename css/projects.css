@@ -156,6 +156,18 @@ body {
     flex: 1;
 }
 
+/* Justified text for project descriptions */
+.project-description {
+    text-align: justify;
+    line-height: 1.6;
+    margin: 12px 0;
+}
+
+.project-item p {
+    text-align: justify;
+    line-height: 1.5;
+}
+
 .project-tech {
     display: flex;
     flex-wrap: wrap;
@@ -193,6 +205,154 @@ body {
 .project-link:hover {
     transform: translateY(-1px);
     background: linear-gradient(135deg, var(--accent), var(--primary));
+}
+
+/* Improved language badges */
+.languages {
+    margin: 12px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.language-tag {
+    display: inline-flex;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 6px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    gap: 6px;
+}
+
+.language-tag:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow);
+    border-color: var(--primary);
+}
+
+.lang-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.lang-percentage {
+    font-size: 0.7rem;
+    opacity: 0.8;
+    margin-left: 4px;
+}
+
+/* Language-specific colors */
+.language-tag[data-lang="javascript"] .lang-dot { background: #f7df1e; }
+.language-tag[data-lang="python"] .lang-dot { background: #3776ab; }
+.language-tag[data-lang="java"] .lang-dot { background: #ed8b00; }
+.language-tag[data-lang="c#"] .lang-dot { background: #239120; }
+.language-tag[data-lang="c"] .lang-dot { background: #a8b9cc; }
+.language-tag[data-lang="html"] .lang-dot { background: #e34f26; }
+.language-tag[data-lang="css"] .lang-dot { background: #1572b6; }
+.language-tag[data-lang="typescript"] .lang-dot { background: #3178c6; }
+.language-tag[data-lang="go"] .lang-dot { background: #00add8; }
+.language-tag[data-lang="rust"] .lang-dot { background: #000000; }
+.language-tag[data-lang="kotlin"] .lang-dot { background: #7f52ff; }
+
+/* Topics styling */
+.topics {
+    margin: 10px 0;
+}
+
+.topic-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent), var(--secondary));
+    color: var(--bg);
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+    margin: 2px 4px 2px 0;
+    transition: transform 0.2s ease;
+}
+
+.topic-tag:hover {
+    transform: scale(1.05);
+}
+
+/* Filter Section */
+.filter-section {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    margin: 0 20px;
+    background: var(--bg-card);
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: var(--text);
+    font-size: 0.9rem;
+}
+
+.filter-select {
+    background: var(--bg);
+    border: 1px solid var(--border);
+    color: var(--text);
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-width: 120px;
+}
+
+.filter-select:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(var(--primary), 0.2);
+}
+
+.clear-filter-btn {
+    background: var(--accent);
+    color: var(--bg);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.clear-filter-btn:hover {
+    background: var(--primary);
+    transform: translateY(-1px);
+}
+
+/* Project card fade effect for filtering */
+.project-card {
+    transition: all 0.3s ease;
+}
+
+.project-card.filtered-out {
+    opacity: 0.3;
+    transform: scale(0.95);
+    pointer-events: none;
 }
 
 /* Responsive design */
@@ -235,6 +395,21 @@ body {
 
     .project-card img {
         height: 180px;
+    }
+
+    .filter-section {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+    
+    .filter-group {
+        justify-content: space-between;
+    }
+    
+    .filter-select {
+        min-width: auto;
+        flex: 1;
     }
 }
 
