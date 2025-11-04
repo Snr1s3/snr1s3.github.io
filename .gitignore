@@ -28,7 +28,7 @@ python/*.egg-info/
 node_modules/
 npm-debug.log
 yarn-error.log
-
+venv
 # IDE and editor files
 .vscode/
 .idea/

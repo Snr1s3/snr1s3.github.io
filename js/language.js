@@ -1,11 +1,17 @@
+// ====== Global Variables ======
+let originalProjectsData = [];
+
+// ====== Language Management ======
 export function initLanguageDropdown() {
     const languageSelect = document.getElementById('language-select');
     const currentLang = localStorage.getItem('lang') || 'en';
 
+    // Set initial language
     languageSelect.value = currentLang;
     document.documentElement.setAttribute('data-lang', currentLang);
     loadContent(currentLang);
 
+    // Handle language changes
     languageSelect.addEventListener('change', (event) => {
         const newLang = event.target.value;
         document.documentElement.setAttribute('data-lang', newLang);
@@ -14,228 +20,237 @@ export function initLanguageDropdown() {
     });
 }
 
+// ====== Content Loading ======
 function loadContent(lang) {
-    fetch('../json/text.json')
-        .then((response) => response.json())
-        .then((data) => {
-            const content = data[lang];
-            updateTextContent(content);
+    // Determine path based on current page
+    const isProjectsPage = window.location.pathname.includes('projects.html');
+    const textPath = isProjectsPage ? '../json/text.json' : './json/text.json';
+    
+    fetch(textPath)
+        .then(response => response.json())
+        .then(data => {
+            updateTextContent(data[lang]);
             updateProjects(lang);
         })
-        .catch((error) => console.error('Error loading content:', error));
+        .catch(error => console.error('Error loading content:', error));
 }
 
+// ====== Text Content Updates ======
 function updateTextContent(content) {
-    const about = document.getElementById('About');
-    if (about) about.textContent = content.header.about;
-    const skills = document.getElementById('Skills');
-    if (skills) skills.textContent = content.header.skills;
-    const projects = document.getElementById('Projects');
-    if (projects) projects.textContent = content.header.projects;
-    const experience = document.getElementById('Experiencia');
-    if (experience) experience.textContent = content.header.experience;
-    const settings = document.getElementById('Settings');
-    if (settings) settings.textContent = content.header.settings;
+    // Helper function to safely update element text
+    const updateElement = (id, text) => {
+        const element = document.getElementById(id);
+        if (element && text) element.textContent = text;
+    };
 
-
-    const body_about = document.getElementById("Body-About");
-    if (body_about) body_about.textContent = content.about.body
-
-    
-    const my_skills = document.getElementById("skills");
-    if (my_skills) my_skills.textContent = content.skills.my_skills
-    const learning = document.getElementById("learning");
-    if (learning) learning.textContent = content.skills.learning
-
-    const name = document.getElementById('Name');
-    if (name) name.textContent = content.hero.name;
-    const subtitle = document.getElementById('Subtitle');
-    if (subtitle) subtitle.textContent = content.hero.subtitle;
-    const project = document.getElementById('Project');
-    if (project) project.textContent = content.hero.projects;
-
-    const position = document.getElementById('Position');
-    if (position) position.textContent = content.experience.position;
-    const where = document.getElementById('Where');
-    if (where) where.textContent = content.experience.where;
-    const tasks = document.getElementById('Tasks');
-    if (tasks) tasks.textContent = content.experience.tasks;
+    // Update all text elements
+    updateElement('About', content.header?.about);
+    updateElement('Skills', content.header?.skills);
+    updateElement('Projects', content.header?.projects);
+    updateElement('Experiencia', content.header?.experience);
+    updateElement('Settings', content.header?.settings);
+    updateElement('Body-About', content.about?.body);
+    updateElement('skills', content.skills?.my_skills);
+    updateElement('learning', content.skills?.learning);
+    updateElement('Name', content.hero?.name);
+    updateElement('Subtitle', content.hero?.subtitle);
+    updateElement('Project', content.hero?.projects);
+    updateElement('Position', content.experience?.position);
+    updateElement('Where', content.experience?.where);
+    updateElement('Tasks', content.experience?.tasks);
 }
 
-// Store original projects data globally
-let originalProjectsData = [];
-
+// ====== Projects Management ======
 async function updateProjects(lang) {
     try {
-        const response = await fetch('../json/projects.json');
+        const isProjectsPage = window.location.pathname.includes('projects.html');
+        const jsonPath = isProjectsPage ? '../json/projects.json' : './json/projects.json';
+        const textPath= '../json/projects2.json';
+        const response = await fetch(jsonPath);
         const projects = await response.json();
-        originalProjectsData = projects; // Store original data
-        
-        const descField = {
-            en: "desc_en",
-            cat: "desc_cat",
-            es: "desc_esp"
-        }[lang] || "desc_en";
+        originalProjectsData = projects;
+        fetch(textPath)
+        .then(response => response.json())
+        .then(data => {
+            changeLanguage(data[lang]);
+        })
+        .catch(error => console.error('Error loading content:', error));
+        const descField = `desc_${lang === 'cat' ? 'cat' : lang === 'es' ? 'esp' : 'en'}`;
 
-        // Check if we're on the projects page
+        // Render projects based on page type
         const projectsContainer = document.getElementById('projects-container');
+        const projectsSection = document.getElementById('projects-scroll');
         
         if (projectsContainer) {
-            // Projects page - create cards for all projects
             renderProjects(projects, descField);
-        } else {
-            // Home page logic remains the same
-            console.log('Projects container not found, checking for home page...');
-            const projectsSection = document.getElementById('projects-scroll');
-            
-            if (projectsSection) {
-                console.log('Home projects section found');
-                const selectedProjects = projects.slice(0, 8);
-                
-                projectsSection.innerHTML = '';
-                
-                selectedProjects.forEach(project => {
-                    const projectItem = document.createElement('div');
-                    projectItem.className = 'project-item';
-                    
-                    const projectName = project.name || 'Unnamed Project';
-                    const projectDesc = project[descField] || project.desc_en || 'No description available';
-                    const projectUrl = project.url || project.html_url || '#';
-                    
-                    projectItem.innerHTML = `
-                        <h3><a class="scroll-projects" href="${projectUrl}" target="_blank">${projectName}</a></h3>
-                        <p class="project-description">${projectDesc}</p>
-                    `;
-                    
-                    projectsSection.appendChild(projectItem);
-                });
-            } else {
-                console.log('No projects section found on home page');
-            }
+        } else if (projectsSection) {
+            renderHomeProjects(projects.slice(0, 8), descField);
         }
     } catch (error) {
         console.error('Error loading projects:', error);
-        
-        const projectsContainer = document.getElementById('projects-container');
-        if (projectsContainer) {
-            projectsContainer.innerHTML = '<p>Error loading projects. Please check the console for details.</p>';
-        }
     }
 }
+function changeLanguage(content){
+    const updateElement = (id, text) => {
+        const element = document.getElementById(id);
+        if (element && text) element.textContent = text;
+    };
 
-// New function to render projects
+    updateElement('Tittle', content.title);
+    updateElement('Filter', content.filter);
+    updateElement('All', content.all);
+    updateElement('Prog', content.prog);
+    updateElement('Topics', content.topics);
+}
 function renderProjects(projects, descField) {
-    const projectsContainer = document.getElementById('projects-container');
-    if (!projectsContainer) return;
+    const container = document.getElementById('projects-container');
+    if (!container) return;
     
-    projectsContainer.innerHTML = ''; // Clear existing content
+    container.innerHTML = '';
     
     projects.forEach(project => {
-        const projectCard = document.createElement('div');
-        projectCard.className = 'project-card';
-        
-        // Sort languages by bytes (most used first)
-        const sortedLanguages = project.languages && Object.keys(project.languages).length > 0 
-            ? Object.entries(project.languages)
-                .sort(([,a], [,b]) => b - a)
-                .slice(0, 10)
-            : [];
-        
-        projectCard.innerHTML = `
-            <h3>${project.name}</h3>
-            ${project.image ? `<img src="${project.image}" alt="${project.name}">` : ''}
-            <p class="project-description">${project[descField] || project.desc_en || ''}</p>
-            <div class="topics">
-                ${project.topics && project.topics.length > 0 ? 
-                    project.topics.map(topic => 
-                        `<span class="topic-tag">${topic}</span>`
-                    ).join('') : ''
-                }
-            </div>
-            <div class="languages">
-                ${sortedLanguages.map(([lang, bytes]) => {
-                    const percentage = project.languages ? 
-                        Math.round((bytes / Object.values(project.languages).reduce((a, b) => a + b, 0)) * 100) : 0;
-                    return `<span class="language-tag" data-lang="${lang.toLowerCase()}" title="${lang}: ${percentage}%">
-                        <span class="lang-dot"></span>
-                        ${lang}
-                        <span class="lang-percentage">${percentage}%</span>
-                    </span>`;
-                }).join('')}
-            </div>
-            <div class="project-links">
-                <a href="${project.url}" class="project-link" target="_blank">GitHub</a>
-            </div>
-        `;
-        
-        projectsContainer.appendChild(projectCard);
+        const card = createProjectCard(project, descField);
+        container.appendChild(card);
     });
 }
 
+function renderHomeProjects(projects, descField) {
+    const section = document.getElementById('projects-scroll');
+    if (!section) return;
+    
+    section.innerHTML = '';
+    
+    projects.forEach(project => {
+        const item = document.createElement('div');
+        item.className = 'project-item';
+        item.innerHTML = `
+            <h3><a class="scroll-projects" href="${project.url}" target="_blank">${project.name}</a></h3>
+            <p class="project-description">${project[descField] || project.desc_en || ''}</p>
+        `;
+        section.appendChild(item);
+    });
+}
+
+function createProjectCard(project, descField) {
+    const card = document.createElement('div');
+    card.className = 'project-card';
+    
+    const languages = getTopLanguages(project.languages);
+    
+    card.innerHTML = `
+        <h3>${project.name}</h3>
+        ${project.image ? `<img src="${project.image}" alt="${project.name}">` : ''}
+        <p class="project-description">${project[descField] || project.desc_en || ''}</p>
+        ${createTopicTags(project.topics)}
+        ${createLanguageTags(languages)}
+        <div class="project-links">
+            <a href="${project.url}" class="project-link" target="_blank">GitHub</a>
+        </div>
+    `;
+    
+    return card;
+}
+
+function getTopLanguages(languages) {
+    if (!languages || Object.keys(languages).length === 0) return [];
+    
+    return Object.entries(languages)
+        .sort(([,a], [,b]) => b - a)
+        .slice(0, 10);
+}
+
+function createTopicTags(topics) {
+    if (!topics || topics.length === 0) return '';
+    
+    return `<div class="topics">
+        ${topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}
+    </div>`;
+}
+
+function createLanguageTags(languages) {
+    if (languages.length === 0) return '';
+    
+    const totalBytes = languages.reduce((sum, [,bytes]) => sum + bytes, 0);
+    
+    return `<div class="languages">
+        ${languages.map(([lang, bytes]) => {
+            const percentage = Math.round((bytes / totalBytes) * 100);
+            return `<span class="language-tag" data-lang="${lang.toLowerCase()}" title="${lang}: ${percentage}%">
+                <span class="lang-dot"></span>
+                ${lang}
+                <span class="lang-percentage">${percentage}%</span>
+            </span>`;
+        }).join('')}
+    </div>`;
+}
+
+// ====== Filter System ======
 export function initProjectFilters() {
-    const filterType = document.getElementById('filter-type');
-    const filterOptionsContainer = document.getElementById('filter-options-container');
-    const filterOptions = document.getElementById('filter-options');
-    const clearFilter = document.getElementById('clear-filter');
+    const elements = {
+        filterType: document.getElementById('filter-type'),
+        filterOptionsContainer: document.getElementById('filter-options-container'),
+        filterOptions: document.getElementById('filter-options'),
+        clearFilter: document.getElementById('clear-filter')
+    };
 
-    if (!filterType || !filterOptions) return;
+    if (!elements.filterType || !elements.filterOptions) return;
 
-    filterType.addEventListener('change', (e) => {
+    // Filter type change handler
+    elements.filterType.addEventListener('change', (e) => {
         const selectedType = e.target.value;
         
         if (selectedType === 'all') {
-            filterOptionsContainer.style.display = 'none';
-            clearFilter.style.display = 'none';
+            hideFilterOptions(elements);
             showAllProjects();
         } else {
-            filterOptionsContainer.style.display = 'block';
+            showFilterOptions(elements);
             populateFilterOptions(selectedType);
         }
     });
 
-    filterOptions.addEventListener('change', (e) => {
+    // Filter value change handler
+    elements.filterOptions.addEventListener('change', (e) => {
         const selectedValue = e.target.value;
-        const filterType = document.getElementById('filter-type').value;
+        const filterType = elements.filterType.value;
         
         if (selectedValue) {
-            clearFilter.style.display = 'block';
+            elements.clearFilter.style.display = 'block';
             filterProjects(filterType, selectedValue);
         } else {
-            clearFilter.style.display = 'none';
+            elements.clearFilter.style.display = 'none';
             showAllProjects();
         }
     });
 
-    clearFilter.addEventListener('click', () => {
-        filterType.value = 'all';
-        filterOptionsContainer.style.display = 'none';
-        clearFilter.style.display = 'none';
+    // Clear filter handler
+    elements.clearFilter.addEventListener('click', () => {
+        elements.filterType.value = 'all';
+        hideFilterOptions(elements);
         showAllProjects();
     });
 }
 
+function hideFilterOptions(elements) {
+    elements.filterOptionsContainer.style.display = 'none';
+    elements.clearFilter.style.display = 'none';
+}
+
+function showFilterOptions(elements) {
+    elements.filterOptionsContainer.style.display = 'block';
+}
+
 function populateFilterOptions(filterType) {
     const filterOptions = document.getElementById('filter-options');
-    let options = new Set();
+    const options = new Set();
     
-    // Use original data to populate filter options
     originalProjectsData.forEach(project => {
-        if (filterType === 'language') {
-            if (project.languages && Object.keys(project.languages).length > 0) {
-                Object.keys(project.languages).forEach(lang => {
-                    options.add(lang);
-                });
-            }
-        } else if (filterType === 'topic') {
-            if (project.topics && project.topics.length > 0) {
-                project.topics.forEach(topic => {
-                    options.add(topic);
-                });
-            }
+        if (filterType === 'language' && project.languages) {
+            Object.keys(project.languages).forEach(lang => options.add(lang));
+        } else if (filterType === 'topic' && project.topics) {
+            project.topics.forEach(topic => options.add(topic));
         }
     });
     
-    // Clear and populate options
     filterOptions.innerHTML = '<option value="">Select...</option>';
     Array.from(options).sort().forEach(option => {
         const optionElement = document.createElement('option');
@@ -247,46 +262,29 @@ function populateFilterOptions(filterType) {
 
 function filterProjects(filterType, filterValue) {
     const currentLang = localStorage.getItem('lang') || 'en';
-    const descField = {
-        en: "desc_en",
-        cat: "desc_cat",
-        es: "desc_esp"
-    }[currentLang] || "desc_en";
+    const descField = `desc_${currentLang === 'cat' ? 'cat' : currentLang === 'es' ? 'esp' : 'en'}`;
     
-    // Filter the original data
     const filteredProjects = originalProjectsData.filter(project => {
         if (filterType === 'language') {
-            // Check if project has languages and if any match the filter
-            if (project.languages && Object.keys(project.languages).length > 0) {
-                return Object.keys(project.languages).some(lang => 
-                    lang.toLowerCase() === filterValue.toLowerCase()
-                );
-            }
-            return false; // Hide projects without languages
+            return project.languages && 
+                   Object.keys(project.languages).some(lang => 
+                       lang.toLowerCase() === filterValue.toLowerCase()
+                   );
         } else if (filterType === 'topic') {
-            // Check if project has topics and if any match exactly (100%)
-            if (project.topics && project.topics.length > 0) {
-                return project.topics.some(topic => 
-                    topic.toLowerCase() === filterValue.toLowerCase()
-                );
-            }
-            return false; // Hide projects without topics
+            return project.topics && 
+                   project.topics.some(topic => 
+                       topic.toLowerCase() === filterValue.toLowerCase()
+                   );
         }
-        return true;
+        return false;
     });
     
-    // Re-render with filtered projects
     renderProjects(filteredProjects, descField);
 }
 
 function showAllProjects() {
     const currentLang = localStorage.getItem('lang') || 'en';
-    const descField = {
-        en: "desc_en",
-        cat: "desc_cat",
-        es: "desc_esp"
-    }[currentLang] || "desc_en";
+    const descField = `desc_${currentLang === 'cat' ? 'cat' : currentLang === 'es' ? 'esp' : 'en'}`;
     
-    // Re-render with all original projects
     renderProjects(originalProjectsData, descField);
 }

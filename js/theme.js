@@ -11,6 +11,6 @@ export function initThemeToggle() {
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
         document.documentElement.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        themeIcon.src = newTheme === 'dark' ? '../img/icons/sun.png' : '../img/icons/moon.svg';
+        themeIcon.src = newTheme === 'dark' ? '../img/icons/sun.svg' : '../img/icons/moon.svg';
     });
 }

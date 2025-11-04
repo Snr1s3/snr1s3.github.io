@@ -10,8 +10,10 @@
 </head>
 <body>
     <div class="header">
-        <button onclick="window.location.href='../index.html'" class="projects-button"> 🏠 </button>
-        <h1 id="Tittle">Project Vault</h1>
+        <button onclick="window.location.href='../index.html'" class="projects-button">
+            <img src="../img/icons/home.svg" alt="Home" style="height: 25px; width: 25px;" />
+        </button>   
+        <h1 id="Tittle"></h1>
         <div class="settings-controls">
             <button id="theme-toggle">
                 <img id="bIcon" src="../img/icons/moon.svg" alt="Toggle Dark Mode" style="height: 25px; width: 25px;" class="iconMenu icon hover-scale" />
@@ -27,11 +29,11 @@
     <!-- Filter Section -->
     <div class="filter-section">
         <div class="filter-group">
-            <label for="filter-type">Filter by:</label>
+            <label for="filter-type" id="Filter"></label>
             <select id="filter-type" class="filter-select">
-                <option value="all">All Projects</option>
-                <option value="language">Programming Language</option>
-                <option value="topic">Topic</option>
+                <option value="all" id="All">All Projects</option>
+                <option value="language" id="Prog">Programming Language</option>
+                <option value="topic" id="Topic">Topic</option>
             </select>
         </div>
         <div class="filter-group" id="filter-options-container" style="display: none;">
