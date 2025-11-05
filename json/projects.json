@@ -12,7 +12,7 @@
       "shell"
     ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_AndroidApp",
@@ -28,7 +28,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_API",
@@ -48,7 +48,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -67,7 +67,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
@@ -119,7 +119,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "PathOfRemembering",
@@ -133,6 +133,22 @@
       "videogames-unity"
     ],
     "url": "https://github.com/Snr1s3/PathOfRemembering",
+    "image": "../img/bg.jpg"
+  },
+  {
+    "name": "PerformanceDashboard",
+    "desc_en": "This dashboard provides real-time monitoring of system resources, including memory, CPU, and disk usage, along with live tracking of Docker container activity. It's designed to offer a clear and responsive overview of system performance for developers and system administrators.",
+    "desc_cat": "Aquest tauler proporciona un seguiment en temps real dels recursos del sistema, inclosa la memòria, la CPU i l'ús del disc, juntament amb un seguiment en directe de l'activitat del contenidor Docker. Està dissenyat per oferir una visió general clara i sensible del rendiment del sistema per als desenvolupadors i administradors del sistema.",
+    "desc_esp": "Este panel proporciona monitoreo en tiempo real de los recursos del sistema, incluida la memoria, la CPU y el uso del disco, junto con un seguimiento en vivo de la actividad del contenedor Docker. Está diseñado para ofrecer una descripción general clara y receptiva del rendimiento del sistema para desarrolladores y administradores de sistemas.",
+    "languages": {
+      "Python": 15093,
+      "HTML": 2522,
+      "TypeScript": 2049,
+      "CSS": 930,
+      "Shell": 63
+    },
+    "topics": [],
+    "url": "https://github.com/Snr1s3/PerformanceDashboard",
     "image": "../img/bg.jpg"
   },
   {
@@ -156,6 +172,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   }
 ]
