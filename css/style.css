@@ -42,3 +42,38 @@
     color: var(--accent);
     text-decoration: underline;
 }
+
+.projects h2 {
+    color: var(--text) !important;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* O más específico */
+#Projects {
+    color: var(--text) !important;
+    font-size: clamp(1.2rem, 2.5vw, 1.8rem);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+/* Solución simple y directa */
+.project-item a {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.project-item a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+/* Elimina cualquier estilo conflictivo */
+.project-item a:link,
+.project-item a:visited,
+.project-item a:active {
+    color: var(--text);
+}

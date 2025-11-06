@@ -4,7 +4,7 @@ export function initThemeToggle() {
     const currentTheme = localStorage.getItem('theme') || 'dark'; // Default to dark theme
 
     document.documentElement.setAttribute('data-theme', currentTheme);
-    themeIcon.src = currentTheme === 'dark' ? '../img/icons/sun.png' : '../img/icons/moon.svg';
+    themeIcon.src = currentTheme === 'dark' ? '../img/icons/sun.svg' : '../img/icons/moon.svg';
 
     themeToggle.addEventListener('click', () => {
         const currentTheme = document.documentElement.getAttribute('data-theme') || 'dark';
