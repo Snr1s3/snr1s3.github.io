@@ -84,7 +84,7 @@ async function updateProjects(lang) {
         if (projectsContainer) {
             renderProjects(projects, descField);
         } else if (projectsSection) {
-            renderHomeProjects(projects.slice(0, 8), descField);
+            renderHomeProjects(projects.slice(0, 20), descField);
         }
     } catch (error) {
         console.error('Error loading projects:', error);
