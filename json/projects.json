@@ -87,7 +87,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Web",
@@ -106,7 +106,7 @@
       "webapp"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Web",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Documentacio",
@@ -133,7 +133,7 @@
       "videogames-unity"
     ],
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "PerformanceDashboard",
@@ -143,13 +143,13 @@
     "languages": {
       "Python": 15093,
       "HTML": 2522,
-      "TypeScript": 2049,
+      "TypeScript": 1791,
       "CSS": 930,
       "Shell": 63
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/PerformanceDashboard",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Sorting-Algorithms",

@@ -12,25 +12,16 @@ async def translate_repos():
     repos = response.json()
 
     translator = Translator()
-    ignore_repos = ["snr1s3.github.io", "Snr1s3"]  # Add repo names to ignore
+    ignore_repos = ["snr1s3.github.io", "Snr1s3"]
     
-    # List of available background images
     background_images = ["../img/bg.jpg", "../img/image.png"]
     repo_list = []
-    num = 1 
     for repo in repos:
         if repo["name"] in ignore_repos:
             print(f"Skipping repository: {repo['name']}")
             continue
         print(f"Processing repository: {repo['name']}")
         desc = repo["description"] or ""
-        
-        if num == 1:
-            print(repo)
-            print("\n  ")
-            print("\n  ")
-            print("\n  ")
-            num = 2
         
         if desc:
             try:
