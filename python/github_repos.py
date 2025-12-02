@@ -14,7 +14,7 @@ async def translate_repos():
     translator = Translator()
     ignore_repos = ["snr1s3.github.io", "Snr1s3"]
     
-    background_images = ["../img/bg.jpg", "../img/image.png"]
+    background_images = ["./img/bg.jpg", "./img/image.png"]
     repo_list = []
     for repo in repos:
         if repo["name"] in ignore_repos:
@@ -56,7 +56,7 @@ async def translate_repos():
             "image": random_image
         })
 
-    with open("../json/projects.json", "w") as f:
+    with open("./json/projects.json", "w") as f:
         json.dump(repo_list, f, indent=2, ensure_ascii=False)
 
     print(f"Generated projects.json with {len(repo_list)} repositories")
