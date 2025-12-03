@@ -3,7 +3,10 @@ name: Update GitHub Repos JSON
 on:
   schedule:
     - cron: '0 3 * * *'
-  workflow_dispatch:      
+  workflow_dispatch:   
+
+permissions:
+  contents: write
 
 jobs:
   update-repos:
@@ -26,6 +29,10 @@ jobs:
       - name: Run github_repos.py
         run: python3 python/github_repos.py
 
+      - name: Set up authentication
+        run: |
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git
+
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
@@ -33,3 +40,5 @@ jobs:
           git add json/projects.json
           git commit -m "Update projects.json [auto]" || echo "No changes to commit"
           git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
