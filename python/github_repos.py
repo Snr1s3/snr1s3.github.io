@@ -1,10 +1,10 @@
 import requests
 import json
-import asyncio
 import random
+import os
 from googletrans import Translator
 
-async def translate_repos():
+def translate_repos():
     username = "Snr1s3"
     url = f"https://api.github.com/users/{username}/repos?per_page=100"
 
@@ -14,7 +14,7 @@ async def translate_repos():
     translator = Translator()
     ignore_repos = ["snr1s3.github.io", "Snr1s3"]
     
-    background_images = ["./img/bg.jpg", "./img/image.png"]
+    background_images = ["../img/bg.jpg", "../img/image.png"]
     repo_list = []
     for repo in repos:
         if repo["name"] in ignore_repos:
@@ -25,10 +25,9 @@ async def translate_repos():
         
         if desc:
             try:
-                desc_en = await translator.translate(desc, dest='en')
-                desc_cat = await translator.translate(desc, dest='ca')
-                desc_esp = await translator.translate(desc, dest='es')
-                
+                desc_en = translator.translate(desc, dest='en')
+                desc_cat = translator.translate(desc, dest='ca')
+                desc_esp = translator.translate(desc, dest='es')
                 desc_en_text = desc_en.text
                 desc_cat_text = desc_cat.text
                 desc_esp_text = desc_esp.text
@@ -56,10 +55,12 @@ async def translate_repos():
             "image": random_image
         })
 
+    # Ensure output directory exists
+    os.makedirs("./json", exist_ok=True)
     with open("./json/projects.json", "w") as f:
         json.dump(repo_list, f, indent=2, ensure_ascii=False)
 
     print(f"Generated projects.json with {len(repo_list)} repositories")
 
 if __name__ == "__main__":
-    asyncio.run(translate_repos())
+    translate_repos()

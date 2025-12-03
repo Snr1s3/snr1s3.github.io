@@ -28,12 +28,12 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_API",
     "desc_en": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
-    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos els comandants, els partits (partides) i les relacions usuari-comandant.",
+    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos comandants, partits (partides) i relacions usuari-comandant.",
     "desc_esp": "Este servicio proporciona operaciones CRUD para administrar juegos de Magic: The Gathering Commander, incluidos comandantes, partidas y relaciones usuario-comandante.",
     "languages": {
       "Python": 23868,
@@ -48,7 +48,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -67,7 +67,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
@@ -87,7 +87,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Web",
@@ -127,7 +127,7 @@
     "desc_cat": "",
     "desc_esp": "",
     "languages": {
-      "Python": 7969
+      "Python": 7934
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/MTG-Decklist-Bot",
@@ -149,13 +149,13 @@
   },
   {
     "name": "PerformanceBot",
-    "desc_en": "This dashboard provides real-time monitoring of system resources, including memory, CPU, and disk usage, along with live tracking of Docker container activity. It's designed to offer a clear and responsive overview of system performance for developers and system administrators.",
-    "desc_cat": "Aquest tauler proporciona un seguiment en temps real dels recursos del sistema, inclosa la memòria, la CPU i l'ús del disc, juntament amb un seguiment en directe de l'activitat del contenidor Docker. Està dissenyat per oferir una visió general clara i sensible del rendiment del sistema per als desenvolupadors i administradors del sistema.",
-    "desc_esp": "Este panel proporciona monitoreo en tiempo real de los recursos del sistema, incluida la memoria, la CPU y el uso del disco, junto con un seguimiento en vivo de la actividad del contenedor Docker. Está diseñado para ofrecer una descripción general clara y receptiva del rendimiento del sistema para desarrolladores y administradores de sistemas.",
+    "desc_en": "This bot provides real-time monitoring of system resources, including memory, CPU, and disk usage, along with live tracking of Docker container activity. It's designed to offer a clear and responsive overview of system performance for developers and system administrators.",
+    "desc_cat": "Aquest bot proporciona un seguiment en temps real dels recursos del sistema, inclosa la memòria, la CPU i l'ús del disc, juntament amb un seguiment en directe de l'activitat del contenidor Docker. Està dissenyat per oferir una visió general clara i sensible del rendiment del sistema per als desenvolupadors i administradors del sistema.",
+    "desc_esp": "Este bot proporciona monitoreo en tiempo real de los recursos del sistema, incluida la memoria, la CPU y el uso del disco, junto con un seguimiento en vivo de la actividad del contenedor Docker. Está diseñado para ofrecer una descripción general clara y receptiva del rendimiento del sistema para desarrolladores y administradores de sistemas.",
     "languages": {
-      "Python": 28707,
-      "HTML": 801,
-      "Shell": 63
+      "Python": 42894,
+      "Shell": 716,
+      "Dockerfile": 178
     },
     "topics": [
       "fastapi",
@@ -163,7 +163,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Sorting-Algorithms",
