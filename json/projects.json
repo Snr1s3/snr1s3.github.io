@@ -146,7 +146,7 @@
       "videogames-unity"
     ],
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "PerformanceBot",
@@ -164,7 +164,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Sorting-Algorithms",
