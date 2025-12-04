@@ -29,7 +29,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_API",
@@ -49,7 +49,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -68,7 +68,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
@@ -107,7 +107,7 @@
       "webapp"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Web",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Documentacio",
@@ -120,7 +120,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "MTG-Decklist-Bot",
@@ -132,7 +132,7 @@
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/MTG-Decklist-Bot",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "PathOfRemembering",
@@ -146,7 +146,7 @@
       "videogames-unity"
     ],
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "PerformanceBot",
@@ -164,7 +164,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Sorting-Algorithms",
