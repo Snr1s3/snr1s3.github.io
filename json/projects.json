@@ -13,7 +13,7 @@
       "shell"
     ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_AndroidApp",
@@ -29,7 +29,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_API",
@@ -88,7 +88,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Web",
@@ -188,6 +188,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   }
 ]
