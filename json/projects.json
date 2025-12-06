@@ -6,7 +6,7 @@
     "desc_esp": "Aslsh es un shell liviano implementado en Go, creado con fines educativos para ayudarme a comprender la funcionalidad básica del shell y la ejecución de comandos del sistema.",
     "languages": {
       "Go": 19697,
-      "Perl": 855
+      "Perl": 811
     },
     "topics": [
       "golang",
@@ -160,7 +160,7 @@
       "videogames-unity"
     ],
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "PerformanceBot",
@@ -202,6 +202,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   }
 ]
