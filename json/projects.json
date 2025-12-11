@@ -29,7 +29,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_API",
@@ -68,7 +68,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
@@ -132,7 +132,7 @@
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/MTG-Decklist-Bot",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
@@ -146,12 +146,12 @@
       "telegram"
     ],
     "url": "https://github.com/Snr1s3/notify-telegram-action",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "PathOfRemembering",
     "desc_en": "Welcome, brave explorer, to the Path of Remembering! Though born as a final project for SMIX, this is no ordinary school assignment, it's a journey through a rich medieval fantasy world, where magic, mystery intertwine. o ready your blade, steady your mind, and prepare for liftoff—the Path of Remembering awaits...",
-    "desc_cat": "Benvingut, valent explorador, al camí de la memòria!Tot i que va néixer com un projecte final de SMIX, aquesta no és una tasca escolar normal, és un viatge per un ric món fantàstic medieval, on la màgia i el misteri s'entrellacen.o prepara la teva fulla, calma la teva ment i prepara't per a l'enlairament: el camí del record t'espera...",
+    "desc_cat": "Benvingut, valent explorador, al camí de la memòria!Tot i que va néixer com a projecte final de SMIX, aquesta no és una tasca escolar normal, és un viatge per un ric món fantàstic medieval, on la màgia i el misteri s'entrellacen.o prepara la teva fulla, calma la teva ment i prepara't per a l'enlairament: el camí del record t'espera...",
     "desc_esp": "¡Bienvenido, valiente explorador, al Camino del Recuerdo!Aunque nació como un proyecto final para SMIX, esta no es una tarea escolar ordinaria, es un viaje a través de un rico mundo de fantasía medieval, donde la magia y el misterio se entrelazan.Prepara tu espada, estabiliza tu mente y prepárate para el despegue: el Camino del Recuerdo te espera...",
     "languages": {},
     "topics": [
@@ -160,7 +160,7 @@
       "videogames-unity"
     ],
     "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "PerformanceBot",
@@ -202,6 +202,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   }
 ]
