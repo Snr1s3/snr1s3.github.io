@@ -5,8 +5,9 @@
     "desc_cat": "Aslsh és un shell lleuger implementat a Go, fet amb finalitats educatives per ajudar-me a entendre la funcionalitat bàsica de l'intèrpret d'ordres i l'execució d'ordres del sistema.",
     "desc_esp": "Aslsh es un shell liviano implementado en Go, creado con fines educativos para ayudarme a comprender la funcionalidad básica del shell y la ejecución de comandos del sistema.",
     "languages": {
-      "Go": 19697,
-      "Perl": 811
+      "Go": 19295,
+      "Perl": 811,
+      "Dockerfile": 151
     },
     "topics": [
       "golang",
@@ -16,25 +17,9 @@
     "image": "../img/bg.jpg"
   },
   {
-    "name": "CommanderMTG_AndroidApp",
-    "desc_en": "This Android application helps track life totals and match statistics for Magic: The Gathering Commander games, including support for managing commanders, matches (partidas), and user-commander relationships.",
-    "desc_cat": "Aquesta aplicació d'Android ajuda a fer un seguiment dels totals de la vida i les estadístiques de partits per als jocs de Magic: The Gathering Commander, inclòs el suport per gestionar comandants, partits (partides) i relacions usuari-comandant.",
-    "desc_esp": "Esta aplicación de Android ayuda a realizar un seguimiento de los totales de vida y las estadísticas de partidos de los juegos Magic: The Gathering Commander, incluida la compatibilidad con la gestión de comandantes, partidos y relaciones entre el usuario y el comandante.",
-    "languages": {
-      "Kotlin": 4995
-    },
-    "topics": [
-      "android-studio",
-      "kotlin-android",
-      "snr1s3-mtg-commander-app"
-    ],
-    "url": "https://github.com/Snr1s3/CommanderMTG_AndroidApp",
-    "image": "../img/image.png"
-  },
-  {
     "name": "CommanderMTG_API",
     "desc_en": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
-    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos els comandants, els partits (partides) i les relacions usuari-comandant.",
+    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos comandants, partits (partides) i relacions usuari-comandant.",
     "desc_esp": "Este servicio proporciona operaciones CRUD para administrar juegos de Magic: The Gathering Commander, incluidos comandantes, partidas y relaciones usuario-comandante.",
     "languages": {
       "Python": 23868,
@@ -55,7 +40,7 @@
     "name": "CommanderMTG_Gateway",
     "desc_en": "The API Gateway routes requests to either the User Login service for authentication or the CRUD service for managing user data in the database.",
     "desc_cat": "L'API Gateway encamina les sol·licituds al servei d'inici de sessió d'usuari per a l'autenticació o al servei CRUD per gestionar les dades d'usuari a la base de dades.",
-    "desc_esp": "API Gateway enruta solicitudes al servicio de inicio de sesión de usuario para autenticación o al servicio CRUD para administrar datos de usuario en la base de datos.",
+    "desc_esp": "API Gateway enruta las solicitudes al servicio de inicio de sesión de usuario para autenticación o al servicio CRUD para administrar los datos del usuario en la base de datos.",
     "languages": {
       "Python": 23547,
       "Dockerfile": 483
@@ -88,26 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/bg.jpg"
-  },
-  {
-    "name": "CommanderMTG_Web",
-    "desc_en": "Web App made with Flask",
-    "desc_cat": "Web App feta amb Flask",
-    "desc_esp": "Aplicación web hecha con Flask",
-    "languages": {
-      "Python": 13822,
-      "HTML": 8396,
-      "CSS": 2171
-    },
-    "topics": [
-      "flask",
-      "python",
-      "snr1s3-mtg-commander-app",
-      "webapp"
-    ],
-    "url": "https://github.com/Snr1s3/CommanderMTG_Web",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Documentacio",
@@ -120,18 +86,6 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/bg.jpg"
-  },
-  {
-    "name": "MTG-Decklist-Bot",
-    "desc_en": "",
-    "desc_cat": "",
-    "desc_esp": "",
-    "languages": {
-      "Python": 7934
-    },
-    "topics": [],
-    "url": "https://github.com/Snr1s3/MTG-Decklist-Bot",
     "image": "../img/bg.jpg"
   },
   {
@@ -149,20 +103,6 @@
     "image": "../img/bg.jpg"
   },
   {
-    "name": "PathOfRemembering",
-    "desc_en": "Welcome, brave explorer, to the Path of Remembering! Though born as a final project for SMIX, this is no ordinary school assignment, it's a journey through a rich medieval fantasy world, where magic, mystery intertwine. o ready your blade, steady your mind, and prepare for liftoff—the Path of Remembering awaits...",
-    "desc_cat": "Benvingut, valent explorador, al camí de la memòria!Tot i que va néixer com a projecte final de SMIX, aquesta no és una tasca escolar normal, és un viatge per un ric món fantàstic medieval, on la màgia i el misteri s'entrellacen.o prepara la teva fulla, calma la teva ment i prepara't per a l'enlairament: el camí del record t'espera...",
-    "desc_esp": "¡Bienvenido, valiente explorador, al Camino del Recuerdo!Aunque nació como un proyecto final para SMIX, esta no es una tarea escolar ordinaria, es un viaje a través de un rico mundo de fantasía medieval, donde la magia y el misterio se entrelazan.Prepara tu espada, estabiliza tu mente y prepárate para el despegue: el Camino del Recuerdo te espera...",
-    "languages": {},
-    "topics": [
-      "csharp",
-      "unity2d",
-      "videogames-unity"
-    ],
-    "url": "https://github.com/Snr1s3/PathOfRemembering",
-    "image": "../img/image.png"
-  },
-  {
     "name": "PerformanceBot",
     "desc_en": "This bot provides real-time monitoring of system resources, including memory, CPU, and disk usage, along with live tracking of Docker container activity. It's designed to offer a clear and responsive overview of system performance for developers and system administrators.",
     "desc_cat": "Aquest bot proporciona un seguiment en temps real dels recursos del sistema, inclosa la memòria, la CPU i l'ús del disc, juntament amb un seguiment en directe de l'activitat del contenidor Docker.Està dissenyat per oferir una visió general clara i sensible del rendiment del sistema per als desenvolupadors i administradors del sistema.",
@@ -178,7 +118,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Sorting-Algorithms",
@@ -196,6 +136,7 @@
     "topics": [
       "c",
       "csharp",
+      "go",
       "java",
       "javascript",
       "python",
