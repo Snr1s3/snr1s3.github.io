@@ -5,8 +5,8 @@
     "desc_cat": "Aslsh és un shell lleuger implementat a Go, fet amb finalitats educatives per ajudar-me a entendre la funcionalitat bàsica de l'intèrpret d'ordres i l'execució d'ordres del sistema.",
     "desc_esp": "Aslsh es un shell liviano implementado en Go, creado con fines educativos para ayudarme a comprender la funcionalidad básica del shell y la ejecución de comandos del sistema.",
     "languages": {
-      "Go": 20899,
-      "Perl": 572,
+      "Go": 22571,
+      "Perl": 490,
       "Dockerfile": 151
     },
     "topics": [
@@ -14,12 +14,12 @@
       "shell"
     ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_API",
     "desc_en": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
-    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos els comandants, els partits (partides) i les relacions usuari-comandant.",
+    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos comandants, partits (partides) i relacions usuari-comandant.",
     "desc_esp": "Este servicio proporciona operaciones CRUD para administrar juegos de Magic: The Gathering Commander, incluidos comandantes, partidas y relaciones usuario-comandante.",
     "languages": {
       "Python": 23868,
@@ -34,7 +34,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -58,7 +58,7 @@
   {
     "name": "CommanderMTG_Login",
     "desc_en": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
-    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
+    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió d'usuari, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
     "desc_esp": "Esta API proporciona puntos finales para el inicio de sesión y el registro de usuarios y una funcionalidad CRUD completa para administrar perfiles de usuarios en la base de datos.",
     "languages": {
       "Python": 15019,
@@ -73,7 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Documentacio",
@@ -91,7 +91,7 @@
   {
     "name": "notify-telegram-action",
     "desc_en": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
-    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram cada cop que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
+    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram sempre que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
     "desc_esp": "Este flujo de trabajo de GitHub Actions envía una notificación detallada de Telegram cada vez que un flujo de trabajo (como sus pruebas) termina de ejecutarse.La notificación incluye el nombre del repositorio, el mensaje de confirmación, el autor, el nombre del flujo de trabajo y el estado final (éxito o fracaso), lo que le ayuda a monitorear fácilmente los resultados de CI/CD de su proyecto en tiempo real.",
     "languages": {},
     "topics": [
@@ -121,6 +121,18 @@
     "image": "../img/bg.jpg"
   },
   {
+    "name": "Rush01-Go",
+    "desc_en": "Learning Go through exercises from 42.",
+    "desc_cat": "Aprenentatge Passa pels exercicis del 42.",
+    "desc_esp": "Aprendizaje Realice los ejercicios del 42.",
+    "languages": {
+      "Go": 903
+    },
+    "topics": [],
+    "url": "https://github.com/Snr1s3/Rush01-Go",
+    "image": "../img/bg.jpg"
+  },
+  {
     "name": "Sorting-Algorithms",
     "desc_en": "This project provides implementations of various sorting algorithms across multiple programming languages, offering a comprehensive resource for learning, understanding, and comparing different sorting techniques.",
     "desc_cat": "Aquest projecte proporciona implementacions de diversos algorismes d'ordenació en diversos llenguatges de programació, oferint un recurs complet per aprendre, comprendre i comparar diferents tècniques d'ordenació.",
@@ -143,6 +155,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   }
 ]
