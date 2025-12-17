@@ -14,7 +14,7 @@
       "shell"
     ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_API",
@@ -86,7 +86,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
@@ -118,7 +118,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Rush01-Go",
@@ -126,11 +126,15 @@
     "desc_cat": "Aprenentatge Passa pels exercicis del 42.",
     "desc_esp": "Aprendizaje Realice los ejercicios del 42.",
     "languages": {
-      "Go": 903
+      "Go": 3775
     },
-    "topics": [],
+    "topics": [
+      "42",
+      "backtracking",
+      "go"
+    ],
     "url": "https://github.com/Snr1s3/Rush01-Go",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Sorting-Algorithms",
