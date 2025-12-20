@@ -40,7 +40,7 @@
     "name": "CommanderMTG_Gateway",
     "desc_en": "The API Gateway routes requests to either the User Login service for authentication or the CRUD service for managing user data in the database.",
     "desc_cat": "L'API Gateway encamina les sol·licituds al servei d'inici de sessió d'usuari per a l'autenticació o al servei CRUD per gestionar les dades d'usuari a la base de dades.",
-    "desc_esp": "API Gateway enruta solicitudes al servicio de inicio de sesión de usuario para autenticación o al servicio CRUD para administrar datos de usuario en la base de datos.",
+    "desc_esp": "API Gateway enruta las solicitudes al servicio de inicio de sesión de usuario para autenticación o al servicio CRUD para administrar los datos del usuario en la base de datos.",
     "languages": {
       "Python": 23547,
       "Dockerfile": 483
@@ -53,12 +53,12 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
     "desc_en": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
-    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
+    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió d'usuari, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
     "desc_esp": "Esta API proporciona puntos finales para el inicio de sesión y el registro de usuarios y una funcionalidad CRUD completa para administrar perfiles de usuarios en la base de datos.",
     "languages": {
       "Python": 15019,
@@ -73,7 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Documentacio",
@@ -86,7 +86,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Github-Examples",
@@ -101,12 +101,12 @@
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/Github-Examples",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
     "desc_en": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
-    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram cada cop que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
+    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram sempre que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
     "desc_esp": "Este flujo de trabajo de GitHub Actions envía una notificación detallada de Telegram cada vez que un flujo de trabajo (como sus pruebas) termina de ejecutarse.La notificación incluye el nombre del repositorio, el mensaje de confirmación, el autor, el nombre del flujo de trabajo y el estado final (éxito o fracaso), lo que le ayuda a monitorear fácilmente los resultados de CI/CD de su proyecto en tiempo real.",
     "languages": {},
     "topics": [
@@ -133,12 +133,12 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Rush0X-Go",
     "desc_en": "Learning Go through exercises from 42.",
-    "desc_cat": "Aprenentatge Passa pels exercicis del 42.",
+    "desc_cat": "Aprenentatge Passa pels exercicis de 42.",
     "desc_esp": "Aprendizaje Realice los ejercicios del 42.",
     "languages": {
       "Go": 6332
