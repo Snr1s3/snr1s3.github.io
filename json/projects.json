@@ -34,7 +34,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -53,7 +53,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
@@ -89,6 +89,16 @@
     "image": "../img/image.png"
   },
   {
+    "name": "GestioDeMoneders",
+    "desc_en": "",
+    "desc_cat": "",
+    "desc_esp": "",
+    "languages": {},
+    "topics": [],
+    "url": "https://github.com/Snr1s3/GestioDeMoneders",
+    "image": "../img/image.png"
+  },
+  {
     "name": "Github-Examples",
     "desc_en": "A repo containing GitHub for programmatic examples",
     "desc_cat": "Un repo que conté GitHub per a exemples programàtics",
@@ -115,7 +125,7 @@
       "telegram"
     ],
     "url": "https://github.com/Snr1s3/notify-telegram-action",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "PerformanceBot",
@@ -133,7 +143,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Rush0X-Go",
