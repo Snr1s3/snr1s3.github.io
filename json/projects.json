@@ -14,12 +14,12 @@
       "shell"
     ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_API",
     "desc_en": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
-    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos els comandants, els partits (partides) i les relacions usuari-comandant.",
+    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos comandants, partits (partides) i relacions usuari-comandant.",
     "desc_esp": "Este servicio proporciona operaciones CRUD para administrar juegos de Magic: The Gathering Commander, incluidos comandantes, partidas y relaciones usuario-comandante.",
     "languages": {
       "Python": 23868,
@@ -34,7 +34,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -58,7 +58,7 @@
   {
     "name": "CommanderMTG_Login",
     "desc_en": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
-    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
+    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió d'usuari, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
     "desc_esp": "Esta API proporciona puntos finales para el inicio de sesión y el registro de usuarios y una funcionalidad CRUD completa para administrar perfiles de usuarios en la base de datos.",
     "languages": {
       "Python": 15019,
@@ -73,7 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Documentacio",
@@ -111,12 +111,12 @@
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/Github-Examples",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
     "desc_en": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
-    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram sempre que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
+    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram cada cop que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
     "desc_esp": "Este flujo de trabajo de GitHub Actions envía una notificación detallada de Telegram cada vez que un flujo de trabajo (como sus pruebas) termina de ejecutarse.La notificación incluye el nombre del repositorio, el mensaje de confirmación, el autor, el nombre del flujo de trabajo y el estado final (éxito o fracaso), lo que le ayuda a monitorear fácilmente los resultados de CI/CD de su proyecto en tiempo real.",
     "languages": {},
     "topics": [
@@ -184,6 +184,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   }
 ]
