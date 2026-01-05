@@ -86,7 +86,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "GestioDeMoneders",
@@ -111,7 +111,7 @@
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/Github-Examples",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "notify-telegram-action",
@@ -159,7 +159,7 @@
       "go"
     ],
     "url": "https://github.com/Snr1s3/Rush0X-Go",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "Sorting-Algorithms",
