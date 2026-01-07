@@ -14,7 +14,7 @@ def translate_repos():
     translator = Translator()
     ignore_repos = ["snr1s3.github.io", "Snr1s3"]
     
-    background_images = ["../img/bg.jpg", "../img/image.png"]
+    background_images = ["img/bg.jpg", "img/image.png"]
     repo_list = []
     for repo in repos:
         if repo["name"] in ignore_repos:
