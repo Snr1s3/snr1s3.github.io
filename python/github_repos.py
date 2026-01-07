@@ -57,7 +57,7 @@ def translate_repos():
 
     # Ensure output directory exists
     os.makedirs("./public/json", exist_ok=True)
-    with open("./public//json/projects.json", "w") as f:
+    with open("./public/json/projects.json", "w") as f:
         json.dump(repo_list, f, indent=2, ensure_ascii=False)
 
     print(f"Generated projects.json with {len(repo_list)} repositories")

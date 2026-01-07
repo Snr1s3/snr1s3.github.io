@@ -25,7 +25,7 @@
     function loadContent(lang) {
         // Determine path based on current page
         const isProjectsPage = window.location.pathname.includes('projects.html');
-        const textPath = isProjectsPage ? '/public/json/text.json' : '/public/json/text.json';
+        const textPath = isProjectsPage ? '/json/text.json' : '/json/text.json';
         
         fetch(textPath)
             .then(response => response.json())
@@ -65,8 +65,8 @@
     async function updateProjects(lang) {
         try {
             const isProjectsPage = window.location.pathname.includes('projects.html');
-            const jsonPath = isProjectsPage ? '/public/json/projects.json' : '/public/json/projects.json';
-            const textPath= '/public/json/projects2.json';
+            const jsonPath = isProjectsPage ? '/json/projects.json' : '/json/projects.json';
+            const textPath= '/json/projects2.json';
             const response = await fetch(jsonPath);
             const projects = await response.json();
             originalProjectsData = projects;
