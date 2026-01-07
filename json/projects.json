@@ -14,12 +14,12 @@
       "shell"
     ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "CommanderMTG_API",
     "desc_en": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
-    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos els comandants, els partits (partides) i les relacions usuari-comandant.",
+    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos comandants, partits (partides) i relacions usuari-comandant.",
     "desc_esp": "Este servicio proporciona operaciones CRUD para administrar juegos de Magic: The Gathering Commander, incluidos comandantes, partidas y relaciones usuario-comandante.",
     "languages": {
       "Python": 23868,
@@ -34,13 +34,13 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
     "desc_en": "The API Gateway routes requests to either the User Login service for authentication or the CRUD service for managing user data in the database.",
     "desc_cat": "L'API Gateway encamina les sol·licituds al servei d'inici de sessió d'usuari per a l'autenticació o al servei CRUD per gestionar les dades d'usuari a la base de dades.",
-    "desc_esp": "API Gateway enruta las solicitudes al servicio de inicio de sesión de usuario para autenticación o al servicio CRUD para administrar los datos del usuario en la base de datos.",
+    "desc_esp": "API Gateway enruta solicitudes al servicio de inicio de sesión de usuario para autenticación o al servicio CRUD para administrar datos de usuario en la base de datos.",
     "languages": {
       "Python": 23547,
       "Dockerfile": 483
@@ -53,12 +53,12 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "CommanderMTG_Login",
     "desc_en": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
-    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió d'usuari, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
+    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
     "desc_esp": "Esta API proporciona puntos finales para el inicio de sesión y el registro de usuarios y una funcionalidad CRUD completa para administrar perfiles de usuarios en la base de datos.",
     "languages": {
       "Python": 15019,
@@ -73,7 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Documentacio",
@@ -96,7 +96,7 @@
     "languages": {},
     "topics": [],
     "url": "https://github.com/Snr1s3/GestioDeMoneders",
-    "image": "../img/bg.jpg"
+    "image": "../img/image.png"
   },
   {
     "name": "Github-Examples",
@@ -111,7 +111,7 @@
     },
     "topics": [],
     "url": "https://github.com/Snr1s3/Github-Examples",
-    "image": "../img/image.png"
+    "image": "../img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
