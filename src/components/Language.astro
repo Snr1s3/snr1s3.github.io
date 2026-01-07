@@ -23,10 +23,8 @@
 
     // ====== Content Loading ======
     function loadContent(lang) {
-        // Determine path based on current page
-        const isProjectsPage = window.location.pathname.includes('projects.html');
-        const textPath = isProjectsPage ? '/json/text.json' : '/json/text.json';
-        
+        // Always use absolute path for text.json
+        const textPath = '/json/text.json';
         fetch(textPath)
             .then(response => response.json())
             .then(data => {
@@ -64,9 +62,9 @@
     // ====== Projects Management ======
     async function updateProjects(lang) {
         try {
-            const isProjectsPage = window.location.pathname.includes('projects.html');
-            const jsonPath = isProjectsPage ? '/json/projects.json' : '/json/projects.json';
-            const textPath= '/json/projects2.json';
+            // Always use absolute path for projects.json
+            const jsonPath = '/json/projects.json';
+            const textPath = '/json/projects2.json';
             const response = await fetch(jsonPath);
             const projects = await response.json();
             originalProjectsData = projects;
@@ -81,7 +79,6 @@
             // Render projects based on page type
             const projectsContainer = document.getElementById('projects-container');
             const projectsSection = document.getElementById('projects-scroll');
-            
             if (projectsContainer) {
                 renderProjects(projects, descField);
             } else if (projectsSection) {
@@ -106,9 +103,7 @@
     function renderProjects(projects, descField) {
         const container = document.getElementById('projects-container');
         if (!container) return;
-        
         container.innerHTML = '';
-        
         projects.forEach(project => {
             const card = createProjectCard(project, descField);
             container.appendChild(card);
@@ -118,9 +113,7 @@
     function renderHomeProjects(projects, descField) {
         const section = document.getElementById('projects-scroll');
         if (!section) return;
-        
         section.innerHTML = '';
-        
         projects.forEach(project => {
             const item = document.createElement('div');
             item.className = 'project-item';
@@ -135,12 +128,10 @@
     function createProjectCard(project, descField) {
         const card = document.createElement('div');
         card.className = 'project-card';
-        
         const languages = getTopLanguages(project.languages);
-        
         card.innerHTML = `
             <h3>${project.name}</h3>
-            ${project.image ? `<img src="${project.image}" alt="${project.name}">` : ''}
+            ${project.image ? `<img src="${project.image.startsWith('/') ? project.image : '/' + project.image}" alt="${project.name}">` : ''}
             <p class="project-description">${project[descField] || project.desc_en || ''}</p>
             ${createTopicTags(project.topics)}
             ${createLanguageTags(languages)}
@@ -148,13 +139,11 @@
                 <a href="${project.url}" class="project-link" target="_blank">GitHub</a>
             </div>
         `;
-        
         return card;
     }
 
     function getTopLanguages(languages) {
         if (!languages || Object.keys(languages).length === 0) return [];
-        
         return Object.entries(languages)
             .sort(([,a], [,b]) => b - a)
             .slice(0, 10);
@@ -162,7 +151,6 @@
 
     function createTopicTags(topics) {
         if (!topics || topics.length === 0) return '';
-        
         return `<div class="topics">
             ${topics.map(topic => `<span class="topic-tag">${topic}</span>`).join('')}
         </div>`;
@@ -170,9 +158,7 @@
 
     function createLanguageTags(languages) {
         if (languages.length === 0) return '';
-        
         const totalBytes = languages.reduce((sum, [,bytes]) => sum + bytes, 0);
-        
         return `<div class="languages">
             ${languages.map(([lang, bytes]) => {
                 const percentage = Math.round((bytes / totalBytes) * 100);
@@ -199,7 +185,6 @@
         // Filter type change handler
         elements.filterType.addEventListener('change', (e) => {
             const selectedType = e.target.value;
-            
             if (selectedType === 'all') {
                 hideFilterOptions(elements);
                 showAllProjects();
@@ -213,7 +198,6 @@
         elements.filterOptions.addEventListener('change', (e) => {
             const selectedValue = e.target.value;
             const filterType = elements.filterType.value;
-            
             if (selectedValue) {
                 elements.clearFilter.style.display = 'block';
                 filterProjects(filterType, selectedValue);
@@ -243,7 +227,6 @@
     function populateFilterOptions(filterType) {
         const filterOptions = document.getElementById('filter-options');
         const options = new Set();
-        
         originalProjectsData.forEach(project => {
             if (filterType === 'language' && project.languages) {
                 Object.keys(project.languages).forEach(lang => options.add(lang));
@@ -251,7 +234,6 @@
                 project.topics.forEach(topic => options.add(topic));
             }
         });
-        
         filterOptions.innerHTML = '<option value="">Select...</option>';
         Array.from(options).sort().forEach(option => {
             const optionElement = document.createElement('option');
@@ -264,7 +246,6 @@
     function filterProjects(filterType, filterValue) {
         const currentLang = localStorage.getItem('lang') || 'en';
         const descField = `desc_${currentLang === 'cat' ? 'cat' : currentLang === 'es' ? 'esp' : 'en'}`;
-        
         const filteredProjects = originalProjectsData.filter(project => {
             if (filterType === 'language') {
                 return project.languages && 
@@ -279,14 +260,12 @@
             }
             return false;
         });
-        
         renderProjects(filteredProjects, descField);
     }
 
     function showAllProjects() {
         const currentLang = localStorage.getItem('lang') || 'en';
         const descField = `desc_${currentLang === 'cat' ? 'cat' : currentLang === 'es' ? 'esp' : 'en'}`;
-        
         renderProjects(originalProjectsData, descField);
     }
 </script>
