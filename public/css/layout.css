@@ -24,7 +24,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    box-shadow: var(--shadow);
+    box-shadow: 0 4px 24px 0 rgba(127,215,255,0.10);
 }
 
 .section:hover {

@@ -1,4 +1,4 @@
-export function initThemeToggle() {
+document.addEventListener('DOMContentLoaded', () => {
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = document.getElementById('bIcon');
     const currentTheme = localStorage.getItem('theme') || 'dark'; // Default to dark theme
@@ -13,4 +13,4 @@ export function initThemeToggle() {
         localStorage.setItem('theme', newTheme);
         themeIcon.src = newTheme === 'dark' ? '../img/icons/sun.svg' : '../img/icons/moon.svg';
     });
-}
+});
