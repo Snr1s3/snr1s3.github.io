@@ -19,7 +19,7 @@
   {
     "name": "CommanderMTG_API",
     "desc_en": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
-    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos els comandants, els partits (partides) i les relacions usuari-comandant.",
+    "desc_cat": "Aquest servei ofereix operacions CRUD per gestionar els jocs de Magic: The Gathering Commander, inclosos comandants, partits (partides) i relacions usuari-comandant.",
     "desc_esp": "Este servicio proporciona operaciones CRUD para administrar juegos de Magic: The Gathering Commander, incluidos comandantes, partidas y relaciones usuario-comandante.",
     "languages": {
       "Python": 23868,
@@ -34,7 +34,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -53,7 +53,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "CommanderMTG_Login",
@@ -73,7 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "Documentacio",
@@ -86,7 +86,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
@@ -118,7 +118,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "Rush0X-Go",
@@ -134,7 +134,7 @@
       "go"
     ],
     "url": "https://github.com/Snr1s3/Rush0X-Go",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "Sorting-Algorithms",
@@ -159,6 +159,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   }
 ]
