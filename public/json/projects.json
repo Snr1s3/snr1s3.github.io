@@ -34,7 +34,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -53,7 +53,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "CommanderMTG_Login",
@@ -73,7 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "Documentacio",
@@ -86,12 +86,12 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "notify-telegram-action",
     "desc_en": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
-    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram sempre que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
+    "desc_cat": "Aquest flux de treball de GitHub Actions envia una notificació detallada de Telegram cada cop que s'acaba d'executar un flux de treball (com ara les proves).La notificació inclou el nom del dipòsit, el missatge de confirmació, l'autor, el nom del flux de treball i l'estat final (èxit o fracàs), cosa que us ajuda a controlar fàcilment els resultats CI/CD del vostre projecte en temps real.",
     "desc_esp": "Este flujo de trabajo de GitHub Actions envía una notificación detallada de Telegram cada vez que un flujo de trabajo (como sus pruebas) termina de ejecutarse.La notificación incluye el nombre del repositorio, el mensaje de confirmación, el autor, el nombre del flujo de trabajo y el estado final (éxito o fracaso), lo que le ayuda a monitorear fácilmente los resultados de CI/CD de su proyecto en tiempo real.",
     "languages": {},
     "topics": [
@@ -100,7 +100,7 @@
       "telegram"
     ],
     "url": "https://github.com/Snr1s3/notify-telegram-action",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "PerformanceBot",
@@ -118,12 +118,12 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "Rush0X-Go",
     "desc_en": "Learning Go through exercises from 42.",
-    "desc_cat": "Aprenentatge Passa pels exercicis del 42.",
+    "desc_cat": "Aprenentatge Passa pels exercicis de 42.",
     "desc_esp": "Aprendizaje Realice los ejercicios del 42.",
     "languages": {
       "Go": 6332
@@ -134,7 +134,7 @@
       "go"
     ],
     "url": "https://github.com/Snr1s3/Rush0X-Go",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "Sorting-Algorithms",
