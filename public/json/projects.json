@@ -34,7 +34,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_API",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "CommanderMTG_Gateway",
@@ -53,7 +53,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Gateway",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "CommanderMTG_Login",
@@ -86,7 +86,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
@@ -100,7 +100,7 @@
       "telegram"
     ],
     "url": "https://github.com/Snr1s3/notify-telegram-action",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "PerformanceBot",
@@ -118,7 +118,7 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "Rush0X-Go",
@@ -159,6 +159,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   }
 ]
