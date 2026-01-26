@@ -14,7 +14,7 @@
       "shell"
     ],
     "url": "https://github.com/Snr1s3/Aslsh",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "CommanderMTG_API",
@@ -58,7 +58,7 @@
   {
     "name": "CommanderMTG_Login",
     "desc_en": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
-    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
+    "desc_cat": "Aquesta API proporciona punts finals per a l'inici de sessió d'usuari, el registre i la funcionalitat CRUD completa per gestionar els perfils d'usuari a la base de dades.",
     "desc_esp": "Esta API proporciona puntos finales para el inicio de sesión y el registro de usuarios y una funcionalidad CRUD completa para administrar perfiles de usuarios en la base de datos.",
     "languages": {
       "Python": 15019,
@@ -73,7 +73,7 @@
       "snr1s3-mtg-commander-app"
     ],
     "url": "https://github.com/Snr1s3/CommanderMTG_Login",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   },
   {
     "name": "Documentacio",
@@ -86,7 +86,7 @@
       "readme"
     ],
     "url": "https://github.com/Snr1s3/Documentacio",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "notify-telegram-action",
@@ -100,7 +100,7 @@
       "telegram"
     ],
     "url": "https://github.com/Snr1s3/notify-telegram-action",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "PerformanceBot",
@@ -118,12 +118,12 @@
       "telegrambot"
     ],
     "url": "https://github.com/Snr1s3/PerformanceBot",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "Rush0X-Go",
     "desc_en": "Learning Go through exercises from 42.",
-    "desc_cat": "Aprenentatge Passa pels exercicis del 42.",
+    "desc_cat": "Aprenentatge Passa pels exercicis de 42.",
     "desc_esp": "Aprendizaje Realice los ejercicios del 42.",
     "languages": {
       "Go": 6332
@@ -134,7 +134,7 @@
       "go"
     ],
     "url": "https://github.com/Snr1s3/Rush0X-Go",
-    "image": "/img/image.png"
+    "image": "/img/bg.jpg"
   },
   {
     "name": "Sorting-Algorithms",
@@ -159,6 +159,6 @@
       "sorting-algorithms"
     ],
     "url": "https://github.com/Snr1s3/Sorting-Algorithms",
-    "image": "/img/bg.jpg"
+    "image": "/img/image.png"
   }
 ]
