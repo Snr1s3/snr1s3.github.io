@@ -13,9 +13,19 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+      - name: Set up Python
+        uses: actions/setup-python@v4
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          publish_branch: gh-pages
+          python-version: '3.10'
+
+      - name: Install Reflex
+        run: pip install reflex
+
+      - name: Initialize Reflex project
+        run: reflex init
+
+      - name: Build Reflex app for production
+        run: reflex run --env production
+
+      - name: List public directory (debug)
+        run: ls -l public
