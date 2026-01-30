@@ -66,14 +66,14 @@ def info_detail(info: Info) -> rx.Component:
         ),
         rx.vstack(
             rx.cond(
-                info.date != "",
-                rx.badge(info.date)
+                info["date"] != "",
+                rx.badge(info["date"])
             ),
             rx.cond(
-                info.certificate != "",
+                info["certificate"] != "",
                 icon_button(
                     "shield-check",
-                    info.certificate,
+                    info["certificate"],
                     solid=True
                 )
             ),
