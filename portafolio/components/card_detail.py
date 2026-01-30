@@ -9,21 +9,21 @@ def card_detail(extra: Extra) -> rx.Component:
         rx.link(
             rx.inset(
                 rx.image(
-                    src=extra.image,
+                    src=extra["image"],
                     height="25%",
                     width="25%",
                     object_fit="contain"
                 ),
                 pb=Size.DEFAULT.value
             ),
-            rx.text.strong(extra.title),
+            rx.text.strong(extra["title"]),
             rx.text(
-                extra.description,
+                extra["description"],
                 size=Size.SMALL.value,
                 color_scheme="gray"
             )
         ),
         width="100%",
-        href=extra.url,
+        href=extra["url"],
         is_external=True
     )
