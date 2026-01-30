@@ -26,6 +26,9 @@ jobs:
       - name: Build static site
         run: reflex export
 
+      - name: List build output
+        run: ls -lR .web/public
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
