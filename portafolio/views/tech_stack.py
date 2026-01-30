@@ -11,10 +11,10 @@ def tech_stack(technologies: list[Technology], learnings: list[LearningT]) -> rx
             *[
                 rx.badge(
                     rx.box(
-                        class_name=technology.icon,
+                        class_name=technology["icon"],
                         font_size="24px"
                     ),
-                    rx.text(technology.name),
+                    rx.text(technology["name"]),
                     size="2"
                 )
                 for technology in technologies
@@ -27,10 +27,10 @@ def tech_stack(technologies: list[Technology], learnings: list[LearningT]) -> rx
             *[
                 rx.badge(
                     rx.box(
-                        class_name=learning.icon,
+                        class_name=learning["icon"],
                         font_size="24px"
                     ),
-                    rx.text(learning.name),
+                    rx.text(learning["name"]),
                     size="2"
                 )
                 for learning in learnings
