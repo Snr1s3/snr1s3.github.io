@@ -10,29 +10,49 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
+
+      - name: Move to valid Reflex directory if needed
+        run: |
+          VALID_NAME="reflex_app"
+          CUR_DIR=$(basename "$PWD")
+          if ! [[ $CUR_DIR =~ ^[a-zA-Z][a-zA-Z0-9_]*$ ]]; then
+            echo "Moving project from '$CUR_DIR' to '$VALID_NAME' for Reflex compatibility."
+            cd ..
+            mv "$CUR_DIR" "$VALID_NAME"
+            cd "$VALID_NAME"
+          fi
+          echo "::set-output name=workdir::$(pwd)"
+        id: move_dir
+
 
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: '3.11'
+        working-directory: ${{ steps.move_dir.outputs.workdir }}
+
 
       - name: Install Reflex
         run: pip install reflex
+        working-directory: ${{ steps.move_dir.outputs.workdir }}
 
-      - name: Ensure valid Reflex app directory name
-        run: |
-          if ! [[ $(basename "$PWD") =~ ^[a-zA-Z][a-zA-Z0-9_]*$ ]]; then
-            echo "Error: The app directory name '$(basename "$PWD")' is invalid for Reflex. It must start with a letter and contain only letters, numbers, and underscores."
-            exit 1
-          fi
+
+      # Directory is now valid, no need to check again
+
 
       - name: Initialize Reflex project
         run: reflex init
+        working-directory: ${{ steps.move_dir.outputs.workdir }}
+
 
       - name: Build Reflex app for production
         run: reflex run --env production
+        working-directory: ${{ steps.move_dir.outputs.workdir }}
+
 
       - name: List public directory (debug)
         run: ls -l public
+        working-directory: ${{ steps.move_dir.outputs.workdir }}
