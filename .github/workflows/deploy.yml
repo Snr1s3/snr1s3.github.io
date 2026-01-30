@@ -16,10 +16,17 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.10'
+          python-version: '3.11'
 
       - name: Install Reflex
         run: pip install reflex
+
+      - name: Ensure valid Reflex app directory name
+        run: |
+          if ! [[ $(basename "$PWD") =~ ^[a-zA-Z][a-zA-Z0-9_]*$ ]]; then
+            echo "Error: The app directory name '$(basename "$PWD")' is invalid for Reflex. It must start with a letter and contain only letters, numbers, and underscores."
+            exit 1
+          fi
 
       - name: Initialize Reflex project
         run: reflex init
