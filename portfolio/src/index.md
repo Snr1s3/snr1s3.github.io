@@ -1,11 +1,12 @@
 # Alba Segura Llamas | Junior Dev
 
 **Location:** Barcelona, Catalonia, Spain  
-**Email:** <a href="mailto:alba.segurallamas@gmail.com" style="color:#bb86fc;">alba.segurallamas@gmail.com</a> 
-<strong>
-    <a href="/data/CV_SeguraLlamasAlba.pdf" style="color:#bb86fc;">Download CV</a>
-  </strong> 
+**Email:** <a href="mailto:alba.segurallamas@gmail.com" style="color:#bb86fc;">alba.segurallamas@gmail.com</a>         
 
+<strong>
+    <a href="assets/data/CV_SeguraLlamasAlba.pdf" style="color:#bb86fc;" download>Download CV</a>
+  </strong>
+      |
 <strong>
     <a href="https://github.com/Snr1s3" style="color:#bb86fc;">GitHub</a>
   </strong>  | <strong>
