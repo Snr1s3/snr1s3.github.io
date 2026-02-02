@@ -2,3 +2,6 @@
 title = "Alba Segura"
 authors = ["Alba Segura"]
 language = "en"
+
+[output.html]
+additional-css = ["custom.css"]
