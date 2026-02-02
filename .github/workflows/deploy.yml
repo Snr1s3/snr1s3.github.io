@@ -15,12 +15,12 @@ jobs:
         run: cargo install mdbook
 
       - name: Build mdBook
-        run: mdbook build portfolio/portfolio
+        run: mdbook build portfolio
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./portfolio/portfolio/book
+          publish_dir: ./portfolio/book
           publish_branch: gh-pages
           force_orphan: true
