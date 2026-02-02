@@ -1,9 +1,16 @@
 # Alba Segura Llamas | Junior Dev
 
 **Location:** Barcelona, Catalonia, Spain  
-**Email:** [alba.segurallamas@gmail.com](mailto:alba.segurallamas@gmail.com)  
-**[Download CV](/data/CV_SeguraLlamasAlba.pdf)**  
-**[GitHub](https://github.com/Snr1s3)** | **[LinkedIn](https://www.linkedin.com/in/alba-segura-llamas-b91491299/)**
+**Email:** <a href="mailto:alba.segurallamas@gmail.com" style="color:#bb86fc;">alba.segurallamas@gmail.com</a> 
+<strong>
+    <a href="/data/CV_SeguraLlamasAlba.pdf" style="color:#bb86fc;">Download CV</a>
+  </strong> 
+
+<strong>
+    <a href="https://github.com/Snr1s3" style="color:#bb86fc;">GitHub</a>
+  </strong>  | <strong>
+    <a href="https://www.linkedin.com/in/alba-segura-llamas-b91491299/" style="color:#bb86fc;">LinkedIn</a>
+  </strong>
 
 ---
 
@@ -131,4 +138,4 @@ Go, Docker, Proxmox, GitHub Actions
 ## Certifications
 
 - **Azure Az900**  
-  [Certification Azure Fundamentals](https://learn.microsoft.com/api/credentials/share/en-us/AlbaSegura-4337/827943575C76B352?sharingId=819183AC2878ABB0)  
+  <a href="https://learn.microsoft.com/api/credentials/share/en-us/AlbaSegura-4337/827943575C76B352?sharingId=819183AC2878ABB0" style="color:#bb86fc;">Certification Azure Fundamentals</a>

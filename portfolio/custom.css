@@ -1,7 +1,6 @@
-/* filepath: /home/alba/jo/portfolio/portfolio/custom.css */
 body {
     background: #181c23 !important;
-    color: #e0e0e0;
+    color: #f8d2ff;
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
@@ -18,7 +17,7 @@ a:hover {
 }
 
 strong {
-    color: #c792ea;
+    color: #d49ff7;
 }
 
 div[style*="border:1px"] {
