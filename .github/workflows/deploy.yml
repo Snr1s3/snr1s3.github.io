@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy mdBook to GitHub Pages
 
 on:
   push:
@@ -10,32 +10,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0  # Needed for gh-pages deploy
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+      - name: Install mdBook
+        run: cargo install mdbook
 
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install reflex
-
-      - name: Build static site
-        run: reflex export
-
-      - name: List build output
-        run: ls -lR .web/public
+      - name: Build mdBook
+        run: mdbook build portfolio
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .web/public
+          publish_dir: ./portfolio/book
           publish_branch: gh-pages
           force_orphan: true
-          user_name: github-actions[bot]
-          user_email: github-actions[bot]@users.noreply.github.com
-          keep_files: false
