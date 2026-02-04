@@ -24,10 +24,68 @@ Hi there! I'm Alba, an Advanced Technician in Multiplatform Application Developm
 ## Skills
 
 **Main Technologies:**  
-Java, Python, Kotlin, Git, SQL, PostgreSQL, MongoDB, Android Studio, Windows 10/11/Server, Linux (Debian/Fedora)
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Java</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Python</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Kotlin</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Git</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">SQL</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">PostgreSQL</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">MongoDB</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:80px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px; text-align:center; width:100%; display:inline-block;">Android Studio</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Windows</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Linux</span>
+  </div>
+</div>
 
 **Currently Learning:**  
-Go, Docker, Proxmox, GitHub Actions
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Go</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Docker</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:60px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/proxmox/proxmox-original.svg" alt="Proxmox" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px;">Proxmox</span>
+  </div>
+  <div style="display:flex; flex-direction:column; align-items:center; width:80px;">
+    <span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub Actions" width="50"/></span>
+    <span style="font-size:12px; color:#bb86fc; margin-top:2px; text-align:center; width:100%; display:inline-block;">GitHub Actions</span>
+  </div>
+</div>
 
 ---
 
@@ -128,7 +186,7 @@ Go, Docker, Proxmox, GitHub Actions
 
 ---
 
-## Training
+## Learning
 
 - **CFGS - Platform Application Development**  
   _INSTITUT TIC DE BARCELONA (Sep 2023 - Jun 2025)_  
