@@ -5,8 +5,8 @@ import json
 
 
 
-json_file = 'data.json'
-md_file = './src/index.md'
+json_file = 'portfolio/data.json'
+md_file = 'portfolio/src/index.md'
 
 def readJson(json_file):
     with open(json_file, 'r') as f:
