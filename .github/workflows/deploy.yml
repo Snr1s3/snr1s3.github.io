@@ -23,6 +23,14 @@ jobs:
       - name: Install mdBook
         run: cargo install mdbook
 
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Run json-to-md.py
+        run: python3 portfolio/json-to-md.py
+
       - name: Build with mdBook
         run: mdbook build portfolio
 

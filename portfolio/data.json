@@ -1,75 +1,71 @@
 {
     "title": "Alba Segura Llamas | Junior Dev",
-    "description": "Software Developer with a nighttime passion for System Administration.",
-    "image": "/avatar.jpg",
-    "avatar": "/avatar.jpg",
-    "name": "Alba Segura Llamas",
     "skill": "Junior Developer in a journey to DevOps",
     "location": "Barcelona, Catalonia, Spain",
     "media": {
         "email": "alba.segurallamas@gmail.com",
         "cv": "/data/CV_SeguraLlamasAlba.pdf",
         "github": "https://github.com/Snr1s3",
-        "likedin": "https://www.linkedin.com/in/alba-segura-llamas-b91491299/"
+        "linkedin": "https://www.linkedin.com/in/alba-segura-llamas-b91491299/"
     },
     "about": "Hi there! I'm Alba, an Advanced Technician in Multiplatform Application Development, and I'm currently working as a Senior Assistant, Software Engineering at Kyndryl. I'm gaining hands-on experience and sharpening my technical and problem-solving skills every day.",
     "technologies": [
         {
-            "icon": "devicon-java-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
             "name": "Java"
         },
         {
-            "icon": "devicon-python-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
             "name": "Python"
         },
         {
-            "icon": "devicon-kotlin-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
             "name": "Kotlin"
         },
         {
-            "icon": "devicon-git-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
             "name": "Git"
         },
         {
-            "icon": "devicon-mysql-plain",
-            "name": "SQL"
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+            "name": "MySQL"
         },
         {
-            "icon": "devicon-postgresql-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
             "name": "PostgreSQL"
         },
         {
-            "icon": "devicon-mongodb-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
             "name": "MongoDB"
         },
         {
-            "icon": "devicon-android-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
             "name": "Android Studio"
         },
         {
-            "icon": "devicon-windows8-plain",
-            "name": "Windows 10/11/Server"
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
+            "name": "Windows"
         },
         {
-            "icon": "devicon-linux-plain",
-            "name": "Linux: Debian Based/Fedora"
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+            "name": "Linux"
         }
     ],
-    "learningt": [
+    "currentlylearning": [
         {
-            "icon": "devicon-go-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
             "name": "Go"
         },
         {
-            "icon": "devicon-docker-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
             "name": "Docker"
         },
         {
-            "icon": "devicon-proxmox-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/proxmox/proxmox-original.svg",
             "name": "Proxmox"
         },
         {
-            "icon": "devicon-githubactions-plain",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
             "name": "Github Actions"
         }
     ],
@@ -210,7 +206,7 @@
         "github": "https://github.com/Snr1s3/Sorting-Algorithms"
         }
     ],
-    "training": [
+    "learning": [
         {
             "icon": "graduation-cap",
             "title": "CFGS - Platform Application Development",
@@ -220,7 +216,7 @@
             "certificate": "https://agora.xtec.cat/iticbcn/"
         }
     ],
-    "extras": [
+    "certifications": [
         {
             "image": "/microsoft-certified-fundamentals-badge.png",
             "title": "Azure Az900",
