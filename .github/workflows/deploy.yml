@@ -68,7 +68,3 @@ jobs:
           if [ -z "${{ steps.deployment.outputs.page_url }}" ]; then
             echo "WARNING: page_url is empty — check Pages settings, environment protections, or action logs."
           fi
-
-      - name: Check Pages status via API (optional)
-        run: |
-          echo "You can inspect repo Settings → Pages for build errors or health."
