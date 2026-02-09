@@ -3,6 +3,8 @@ name: Deploy mdBook site to Pages
 on:
   push:
     branches: ["main"]
+  schedule:
+    - cron: '0 3 * * *'
   workflow_dispatch:
 
 permissions:

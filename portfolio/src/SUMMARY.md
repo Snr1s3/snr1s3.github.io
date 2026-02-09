@@ -1,3 +1,4 @@
 # Summary
 
-- [Home](index.md)
+- [Index](index.md)
+- [Projects](projects.md)
