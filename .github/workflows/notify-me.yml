@@ -2,7 +2,7 @@ name: Notify Me
 
 on:
   workflow_run:
-    workflows: ["Update GitHub Repos JSON"]
+    workflows: ["Deploy mdBook site to Pages"]
     types: [completed]
 
 jobs:
