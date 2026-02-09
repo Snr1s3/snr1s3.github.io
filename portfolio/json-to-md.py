@@ -148,7 +148,7 @@ def index():
 
 def projects():
     data = readJson(json_file)
-    writeProjects(index_md, data)
+    writeProjects(projects_md, data)
 
 
 index()
