@@ -85,7 +85,6 @@
         "description": "Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.",
         "technologies": [
             { "icon": "devicon-go-plain", "name": "Go" },
-            { "icon": "devicon-perl-plain", "name": "Perl" },
             { "icon": "devicon-docker-plain", "name": "Docker" }
         ],
         "image": "/project_1.png",

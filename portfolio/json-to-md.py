@@ -10,7 +10,9 @@ def readJson(json_file):
         content = json.load(f)
     return content
 
-def cleanMdFile(index_md):
+def cleanMdFile(index_md, projects_md):
+    with open(projects_md, 'w'):
+        pass
     with open(index_md, 'w'):
         pass
 def writeHeader(index_md, data):
@@ -116,7 +118,8 @@ def writeProjects(projects_md, data):
     lines = []
     lines.append("# Projects\n\n")
     lines.append('<div style="display: flex; flex-wrap: wrap; gap: 1em;">\n')
-    for project in data["projects"]:
+    projects = data["projects"]
+    for project in projects:
         tech_icons = ''
         if "technologies" in project:
             tech_icons = '<div style="display:flex; gap:6px; margin:6px 0 0 0;">'
@@ -134,12 +137,10 @@ def writeProjects(projects_md, data):
             f'  {tech_icons}\n'
             '</div>\n'
         )
-    lines.append('</div>\n')
     writeToMd(projects_md, lines)
 
 def index():
     data = readJson(json_file)
-    cleanMdFile(index_md)
     writeHeader(index_md, data)
     writeSkill(index_md, data)
     writeRandomProjects(index_md, data)
@@ -151,6 +152,7 @@ def projects():
     writeProjects(projects_md, data)
 
 
+cleanMdFile(index_md,projects_md)
 index()
 projects()
 
