@@ -73,7 +73,7 @@ def writeRandomProjects(index_md, data):
     lines = []
     lines.append("## Some Projects\n\n")
     lines.append('<div style="display: flex; flex-wrap: wrap; gap: 1em;">\n')
-    projects = data["projects"]
+    projects = data
     if len(projects) > 2:
         projects = random.sample(projects, 2)
     for project in projects:
@@ -83,15 +83,17 @@ def writeRandomProjects(index_md, data):
             for tech in project["technologies"]:
                 tech_icons += f'<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{tech["icon"].split("-")[1]}/{tech["icon"].split("-")[1]}-original.svg" alt="{tech["name"]}" title="{tech["name"]}" width="24" style="background:#fff; border-radius:4px; padding:2px;">'
             tech_icons += '</div>'
+        deploy_link = f'<br><a href="{project["deploy_url"]}" style="color:#bb86fc;">Live Demo</a>' if "deploy_url" in project else ""
         lines.append(
             '<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">\n'
             f'  <strong>\n'
             f'    <a href="{project["github"]}" style="color:#bb86fc;">{project["title"]}</a>\n'
             f'  </strong>\n'
-            f'  <img src="assets/project_1.jpg" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
+            f'  <img src="{project["image"]}" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
             f'  <br>\n'
             f'  {project["description"]}\n'
             f'  {tech_icons}\n'
+            f'  {deploy_link}\n'
             '</div>\n'
         )
     lines.append('</div>\n')
@@ -119,7 +121,7 @@ def writeProjects(projects_md, data):
     lines = []
     lines.append("# Projects\n\n")
     lines.append('<div style="display: flex; flex-wrap: wrap; gap: 1em;">\n')
-    projects = data["projects"]
+    projects = data
     for project in projects:
         tech_icons = ''
         if "technologies" in project:
@@ -127,17 +129,20 @@ def writeProjects(projects_md, data):
             for tech in project["technologies"]:
                 tech_icons += f'<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{tech["icon"].split("-")[1]}/{tech["icon"].split("-")[1]}-original.svg" alt="{tech["name"]}" title="{tech["name"]}" width="24" style="background:#fff; border-radius:4px; padding:2px;">'
             tech_icons += '</div>'
+        deploy_link = f'<br><a href="{project["deploy_url"]}" style="color:#bb86fc;">Live Demo</a>' if "deploy_url" in project else ""
         lines.append(
             '<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">\n'
             f'  <strong>\n'
             f'    <a href="{project["github"]}" style="color:#bb86fc;">{project["title"]}</a>\n'
             f'  </strong>\n'
-            f'  <img src="assets/project_1.jpg" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
+            f'  <img src="{project["image"]}" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
             f'  <br>\n'
             f'  {project["description"]}\n'
             f'  {tech_icons}\n'
+            f'  {deploy_link}\n'
             '</div>\n'
         )
+    lines.append('</div>\n')
     writeToMd(projects_md, lines)
 
 def index(data, proj, index_md):
