@@ -20,7 +20,7 @@ jobs:
   get-projects:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4 
+      - uses: actions/checkout@v4
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -29,14 +29,24 @@ jobs:
       - name: Install dependencies
         run: pip install requests
 
-      - name: Run json-to-md.py
+      - name: Run github_repos.py
         run: python3 portfolio/github_repos.py
-  
+      - name: Upload projects.json
+        uses: actions/upload-artifact@v3
+        with:
+          name: projects-json
+          path: portfolio/projects.json
+
   build-md:
     runs-on: ubuntu-latest
     needs: get-projects
     steps:
-      - uses: actions/checkout@v4 
+      - uses: actions/checkout@v4
+      - name: Download projects.json
+        uses: actions/download-artifact@v3
+        with:
+          name: projects-json
+          path: portfolio/
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
