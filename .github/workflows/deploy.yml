@@ -32,7 +32,7 @@ jobs:
       - name: Run github_repos.py
         run: python3 portfolio/github_repos.py
       - name: Upload projects.json
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: projects-json
           path: portfolio/projects.json
@@ -43,7 +43,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Download projects.json
-        uses: actions/download-artifact@v3
+        uses: actions/download-artifact@v4
         with:
           name: projects-json
           path: portfolio/
@@ -75,7 +75,7 @@ jobs:
           ls -la ./portfolio || true
 
       - name: Upload artifact (explicit name)
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./portfolio/book
           name: github-pages
