@@ -143,7 +143,7 @@ def index():
     data = readJson(json_file)
     writeHeader(index_md, data)
     writeSkill(index_md, data)
-    writeRandomProjects(index_md, data)
+    writeRandomProjects(projects_md, data)
     writeLearning(index_md, data)
     writeCertifications(index_md, data)
 

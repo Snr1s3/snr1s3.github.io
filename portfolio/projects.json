@@ -1,0 +1,159 @@
+[
+  {
+    "title": "Aslsh",
+    "subtitle": "",
+    "description": "Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.",
+    "technologies": [
+      {
+        "icon": "devicon-go-plain",
+        "name": "Go"
+      },
+      {
+        "icon": "devicon-perl-plain",
+        "name": "Perl"
+      },
+      {
+        "icon": "devicon-github-plain",
+        "name": "Dockerfile"
+      }
+    ],
+    "image": "./portfolio/src/assets/project_1.jpg",
+    "github": "https://github.com/Snr1s3/Aslsh"
+  },
+  {
+    "title": "CommanderMTG_API",
+    "subtitle": "",
+    "description": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
+    "technologies": [
+      {
+        "icon": "devicon-python-plain",
+        "name": "Python"
+      },
+      {
+        "icon": "devicon-github-plain",
+        "name": "Dockerfile"
+      }
+    ],
+    "image": "./portfolio/src/assets/project_2.jpg",
+    "github": "https://github.com/Snr1s3/CommanderMTG_API"
+  },
+  {
+    "title": "CommanderMTG_Gateway",
+    "subtitle": "",
+    "description": "The API Gateway routes requests to either the User Login service for authentication or the CRUD service for managing user data in the database.",
+    "technologies": [
+      {
+        "icon": "devicon-python-plain",
+        "name": "Python"
+      },
+      {
+        "icon": "devicon-github-plain",
+        "name": "Dockerfile"
+      }
+    ],
+    "image": "./portfolio/src/assets/project_1.jpg",
+    "github": "https://github.com/Snr1s3/CommanderMTG_Gateway"
+  },
+  {
+    "title": "CommanderMTG_Login",
+    "subtitle": "",
+    "description": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
+    "technologies": [
+      {
+        "icon": "devicon-python-plain",
+        "name": "Python"
+      },
+      {
+        "icon": "devicon-github-plain",
+        "name": "Dockerfile"
+      }
+    ],
+    "image": "./portfolio/src/assets/project_2.jpg",
+    "github": "https://github.com/Snr1s3/CommanderMTG_Login"
+  },
+  {
+    "title": "Documentacio",
+    "subtitle": "",
+    "description": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
+    "technologies": [],
+    "image": "./portfolio/src/assets/project_2.jpg",
+    "github": "https://github.com/Snr1s3/Documentacio",
+    "deploy_url": "https://albasegura.dev/Documentacio/"
+  },
+  {
+    "title": "notify-telegram-action",
+    "subtitle": "",
+    "description": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
+    "technologies": [],
+    "image": "./portfolio/src/assets/project_2.jpg",
+    "github": "https://github.com/Snr1s3/notify-telegram-action"
+  },
+  {
+    "title": "PerformanceBot",
+    "subtitle": "",
+    "description": "This bot provides real-time monitoring of system resources, including memory, CPU, and disk usage, along with live tracking of Docker container activity. It's designed to offer a clear and responsive overview of system performance for developers and system administrators.",
+    "technologies": [
+      {
+        "icon": "devicon-python-plain",
+        "name": "Python"
+      },
+      {
+        "icon": "devicon-bash-plain",
+        "name": "Shell"
+      },
+      {
+        "icon": "devicon-github-plain",
+        "name": "Dockerfile"
+      }
+    ],
+    "image": "./portfolio/src/assets/project_2.jpg",
+    "github": "https://github.com/Snr1s3/PerformanceBot",
+    "deploy_url": "http://albasegura.dev/PerformanceBot/"
+  },
+  {
+    "title": "Rush0X-Go",
+    "subtitle": "",
+    "description": "Learning Go through exercises from 42.",
+    "technologies": [
+      {
+        "icon": "devicon-go-plain",
+        "name": "Go"
+      }
+    ],
+    "image": "./portfolio/src/assets/project_2.jpg",
+    "github": "https://github.com/Snr1s3/Rush0X-Go"
+  },
+  {
+    "title": "Sorting-Algorithms",
+    "subtitle": "",
+    "description": "This project provides implementations of various sorting algorithms across multiple programming languages, offering a comprehensive resource for learning, understanding, and comparing different sorting techniques.",
+    "technologies": [
+      {
+        "icon": "devicon-java-plain",
+        "name": "Java"
+      },
+      {
+        "icon": "devicon-csharp-plain",
+        "name": "C#"
+      },
+      {
+        "icon": "devicon-c-plain",
+        "name": "C"
+      },
+      {
+        "icon": "devicon-javascript-plain",
+        "name": "JavaScript"
+      },
+      {
+        "icon": "devicon-python-plain",
+        "name": "Python"
+      },
+      {
+        "icon": "devicon-go-plain",
+        "name": "Go"
+      }
+    ],
+    "image": "./portfolio/src/assets/project_1.jpg",
+    "github": "https://github.com/Snr1s3/Sorting-Algorithms"
+  }
+]
