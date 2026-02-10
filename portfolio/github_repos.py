@@ -7,6 +7,7 @@ def get_icon_for_language(lang):
     mapping = {
         "Python": "devicon-python-plain",
         "Docker": "devicon-docker-plain",
+        "Dockerfile": "devicon-docker-plain",
         "Go": "devicon-go-plain",
         "JavaScript": "devicon-javascript-plain",
         "Java": "devicon-java-plain",
@@ -26,19 +27,18 @@ def repo():
     username = "Snr1s3"
     url = f"https://api.github.com/users/{username}/repos?per_page=100"
 
-    response = requests.get(url)
+    response = requests.get(url, verify=False)
     repos = response.json()
 
     ignore_repos = ["snr1s3.github.io", "Snr1s3","Github-Examples","GestioDeMoneders"]
-    background_images = ["./portfolio/src/assets/project_1.jpg", "./portfolio/src/assets/project_2.jpg"]
+    background_images = ["./assets/project_1.jpg", "./assets/project_2.jpg"]
     repo_list = []
-    print(repos)
     for r in repos:
         if r["name"] in ignore_repos:
             continue
         else:
             desc = r["description"] or ""
-            lang_response = requests.get(r["languages_url"])
+            lang_response = requests.get(r["languages_url"], verify=False)
             languages = lang_response.json()
             techs = []
             for lang in languages.keys():

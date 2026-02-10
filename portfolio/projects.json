@@ -13,11 +13,11 @@
         "name": "Perl"
       },
       {
-        "icon": "devicon-github-plain",
+        "icon": "devicon-docker-plain",
         "name": "Dockerfile"
       }
     ],
-    "image": "./portfolio/src/assets/project_1.jpg",
+    "image": "./assets/project_1.jpg",
     "github": "https://github.com/Snr1s3/Aslsh"
   },
   {
@@ -30,11 +30,11 @@
         "name": "Python"
       },
       {
-        "icon": "devicon-github-plain",
+        "icon": "devicon-docker-plain",
         "name": "Dockerfile"
       }
     ],
-    "image": "./portfolio/src/assets/project_2.jpg",
+    "image": "./assets/project_1.jpg",
     "github": "https://github.com/Snr1s3/CommanderMTG_API"
   },
   {
@@ -47,11 +47,11 @@
         "name": "Python"
       },
       {
-        "icon": "devicon-github-plain",
+        "icon": "devicon-docker-plain",
         "name": "Dockerfile"
       }
     ],
-    "image": "./portfolio/src/assets/project_1.jpg",
+    "image": "./assets/project_1.jpg",
     "github": "https://github.com/Snr1s3/CommanderMTG_Gateway"
   },
   {
@@ -64,11 +64,11 @@
         "name": "Python"
       },
       {
-        "icon": "devicon-github-plain",
+        "icon": "devicon-docker-plain",
         "name": "Dockerfile"
       }
     ],
-    "image": "./portfolio/src/assets/project_2.jpg",
+    "image": "./assets/project_2.jpg",
     "github": "https://github.com/Snr1s3/CommanderMTG_Login"
   },
   {
@@ -76,7 +76,7 @@
     "subtitle": "",
     "description": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
     "technologies": [],
-    "image": "./portfolio/src/assets/project_2.jpg",
+    "image": "./assets/project_2.jpg",
     "github": "https://github.com/Snr1s3/Documentacio",
     "deploy_url": "https://albasegura.dev/Documentacio/"
   },
@@ -85,7 +85,7 @@
     "subtitle": "",
     "description": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
     "technologies": [],
-    "image": "./portfolio/src/assets/project_2.jpg",
+    "image": "./assets/project_2.jpg",
     "github": "https://github.com/Snr1s3/notify-telegram-action"
   },
   {
@@ -102,11 +102,11 @@
         "name": "Shell"
       },
       {
-        "icon": "devicon-github-plain",
+        "icon": "devicon-docker-plain",
         "name": "Dockerfile"
       }
     ],
-    "image": "./portfolio/src/assets/project_2.jpg",
+    "image": "./assets/project_1.jpg",
     "github": "https://github.com/Snr1s3/PerformanceBot",
     "deploy_url": "http://albasegura.dev/PerformanceBot/"
   },
@@ -120,7 +120,7 @@
         "name": "Go"
       }
     ],
-    "image": "./portfolio/src/assets/project_2.jpg",
+    "image": "./assets/project_2.jpg",
     "github": "https://github.com/Snr1s3/Rush0X-Go"
   },
   {
@@ -153,7 +153,7 @@
         "name": "Go"
       }
     ],
-    "image": "./portfolio/src/assets/project_1.jpg",
+    "image": "./assets/project_1.jpg",
     "github": "https://github.com/Snr1s3/Sorting-Algorithms"
   }
 ]
