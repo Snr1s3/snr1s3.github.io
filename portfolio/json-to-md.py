@@ -83,7 +83,7 @@ def writeRandomProjects(index_md, data):
             for tech in project["technologies"]:
                 tech_icons += f'<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{tech["icon"].split("-")[1]}/{tech["icon"].split("-")[1]}-original.svg" alt="{tech["name"]}" title="{tech["name"]}" width="24" style="background:#fff; border-radius:4px; padding:2px;">'
             tech_icons += '</div>'
-        deploy_link = f'<br><a href="{project["deploy_url"]}" style="color:#bb86fc;">Live Demo</a>' if "deploy_url" in project else ""
+        deploy_link = f'<br><a href="{project["deploy_url"]}" style="color:#bb86fc;">Docs</a>' if "deploy_url" in project else ""
         lines.append(
             '<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">\n'
             f'  <strong>\n'
@@ -129,7 +129,7 @@ def writeProjects(projects_md, data):
             for tech in project["technologies"]:
                 tech_icons += f'<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/{tech["icon"].split("-")[1]}/{tech["icon"].split("-")[1]}-original.svg" alt="{tech["name"]}" title="{tech["name"]}" width="24" style="background:#fff; border-radius:4px; padding:2px;">'
             tech_icons += '</div>'
-        deploy_link = f'<br><a href="{project["deploy_url"]}" style="color:#bb86fc;">Live Demo</a>' if "deploy_url" in project else ""
+        deploy_link = f'<br><a href="{project["deploy_url"]}" style="color:#bb86fc;">Docs</a>' if "deploy_url" in project else ""
         lines.append(
             '<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">\n'
             f'  <strong>\n'
