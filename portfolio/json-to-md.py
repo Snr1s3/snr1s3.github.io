@@ -2,7 +2,7 @@ import json
 import random
 
 json_file = 'portfolio/data.json'
-projects_file = 'portfolio/data.json'
+projects_file = 'portfolio/projects.json'
 index_md = 'portfolio/src/index.md'
 projects_md = 'portfolio/src/projects.md'
 
