@@ -2,6 +2,7 @@ import json
 import random
 
 json_file = 'portfolio/data.json'
+projects_file = 'portfolio/data.json'
 index_md = 'portfolio/src/index.md'
 projects_md = 'portfolio/src/projects.md'
 
@@ -139,21 +140,21 @@ def writeProjects(projects_md, data):
         )
     writeToMd(projects_md, lines)
 
-def index():
-    data = readJson(json_file)
+def index(data, proj, index_md):
     writeHeader(index_md, data)
     writeSkill(index_md, data)
-    writeRandomProjects(projects_md, data)
+    writeRandomProjects(index_md, proj)
     writeLearning(index_md, data)
     writeCertifications(index_md, data)
 
-def projects():
-    data = readJson(json_file)
-    writeProjects(projects_md, data)
+def projects(proj, projects_md):
+    writeProjects(projects_md, proj)
 
 
+data = readJson(json_file)
+proj = readJson(projects_file)
 cleanMdFile(index_md,projects_md)
-index()
-projects()
+index(data,proj,index_md)
+projects(proj,projects_md)
 
 
