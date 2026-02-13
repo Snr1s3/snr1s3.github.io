@@ -36,7 +36,7 @@ jobs:
       - name: Run push-to-mongo.py
         run: python3 portfolio/push-to-mongo.py
         env:
-          GITHUB_TOKEN: ${{ secrets.MONGODB }}
+          GITHUB_TOKEN: ${{ secrets.MONGO_URI }}
       - name: Upload projects.json
         uses: actions/upload-artifact@v4
         with:
