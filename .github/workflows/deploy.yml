@@ -33,6 +33,10 @@ jobs:
         run: python -m pip install -r requirements.txt
       - name: Run github_repos.py
         run: python3 portfolio/github_repos.py
+      - name: Run push-to-mongo.py
+        run: python3 portfolio/push-to-mongo.py
+        env:
+          GITHUB_TOKEN: ${{ secrets.MONGODB }}
       - name: Upload projects.json
         uses: actions/upload-artifact@v4
         with:
