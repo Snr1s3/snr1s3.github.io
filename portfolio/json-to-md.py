@@ -17,6 +17,7 @@ def cleanMdFile(index_md, projects_md):
     with open(index_md, 'w'):
         pass
 def writeHeader(index_md, data):
+    
     list = []
     list.append(f"# {data['title']}  \n\n")
     list.append(f"**Location:** {data['location']}  \n")
@@ -34,12 +35,14 @@ def writeHeader(index_md, data):
     writeToMd(index_md, list)
 
 def writeAbout(index_md, data):
+    
     list = []
     list.append(f"## About Me  \n\n")
     list.append(f"{data['about']}  \n\n")
     writeToMd(index_md, list)
 
 def writeSkill(index_md, data):
+    
     lines = []
     lines.append(f"## Skills  \n\n")
     lines.append(f"**Main Technologies:**  \n\n")
@@ -70,6 +73,7 @@ def writeToMd(index_md, content, mode='a'):
         f.write("\n---  \n")
 
 def writeRandomProjects(index_md, data):
+    
     lines = []
     lines.append("## Some Projects\n\n")
     lines.append('<div style="display: flex; flex-wrap: wrap; gap: 1em;">\n')
@@ -100,6 +104,7 @@ def writeRandomProjects(index_md, data):
     writeToMd(index_md, lines)
 
 def writeLearning(index_md, data):
+    
     lines = []
     lines.append("## Learning\n\n")
     for learning in data["learning"]:
@@ -110,6 +115,7 @@ def writeLearning(index_md, data):
     writeToMd(index_md, lines)
 
 def writeCertifications(index_md, data):
+    
     lines = []
     lines.append("## Certifications\n\n")
     for cert in data["certifications"]:
@@ -118,6 +124,7 @@ def writeCertifications(index_md, data):
     writeToMd(index_md, lines)
 
 def writeProjects(projects_md, data):
+    
     lines = []
     lines.append("# Projects\n\n")
     lines.append('<div style="display: flex; flex-wrap: wrap; gap: 1em;">\n')
@@ -146,6 +153,7 @@ def writeProjects(projects_md, data):
     writeToMd(projects_md, lines)
 
 def index(data, proj, index_md):
+    proj = proj["projects"]
     writeHeader(index_md, data)
     writeSkill(index_md, data)
     writeRandomProjects(index_md, proj)
@@ -153,6 +161,7 @@ def index(data, proj, index_md):
     writeCertifications(index_md, data)
 
 def projects(proj, projects_md):
+    proj = proj["projects"]
     writeProjects(projects_md, proj)
 
 

@@ -31,22 +31,22 @@
 <div style="display: flex; flex-wrap: wrap; gap: 1em;">
 <div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
   <strong>
-    <a href="https://github.com/Snr1s3/Rush0X-Go" style="color:#bb86fc;">Rush0X-Go</a>
+    <a href="https://github.com/Snr1s3/Aslsh" style="color:#bb86fc;">Aslsh</a>
   </strong>
-  <img src="./assets/project_2.jpg" alt="Rush0X-Go" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
+  <img src="assets/project_1.jpg" alt="Aslsh" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
   <br>
-  Learning Go through exercises from 42.
-  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
+  Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.
+  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl" title="Perl" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Dockerfile" title="Dockerfile" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
   
 </div>
 <div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
   <strong>
-    <a href="https://github.com/Snr1s3/Sorting-Algorithms" style="color:#bb86fc;">Sorting-Algorithms</a>
+    <a href="https://github.com/Snr1s3/Rush0X-Go" style="color:#bb86fc;">Rush0X-Go</a>
   </strong>
-  <img src="./assets/project_1.jpg" alt="Sorting-Algorithms" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
+  <img src="assets/project_1.jpg" alt="Rush0X-Go" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
   <br>
-  This project provides implementations of various sorting algorithms across multiple programming languages, offering a comprehensive resource for learning, understanding, and comparing different sorting techniques.
-  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#" title="C#" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" alt="C" title="C" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" title="JavaScript" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
+  Learning Go through exercises from 42.
+  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
   
 </div>
 </div>
