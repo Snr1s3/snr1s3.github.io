@@ -8,11 +8,13 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+
 MONGO_URI = os.getenv("MONGO_URI")
 if not MONGO_URI:
     raise SystemExit("ERROR: MONGO_URI is not set in the environment. Add it as a GitHub Actions secret and map it in your workflow.")
 
-client = MongoClient(MONGO_URI, server_api=ServerApi('1'))
+client = MongoClient(MONGO_URI, server_api=ServerApi("1"), serverSelectionTimeoutMS=10000)
+
 data_file = 'portfolio/data.json'
 projects_file = 'portfolio/projects.json'
 
