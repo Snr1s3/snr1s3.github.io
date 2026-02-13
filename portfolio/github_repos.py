@@ -27,7 +27,7 @@ def repo():
     username = "Snr1s3"
     url = f"https://api.github.com/users/{username}/repos?per_page=100"
 
-    response = requests.get(url, verify=False)
+    response = requests.get(url)
     repos = response.json()
 
     ignore_repos = ["snr1s3.github.io", "Snr1s3","Github-Examples","GestioDeMoneders"]
@@ -38,7 +38,7 @@ def repo():
             continue
         else:
             desc = r["description"] or ""
-            lang_response = requests.get(r["languages_url"], verify=False)
+            lang_response = requests.get(r["languages_url"])
             languages = lang_response.json()
             techs = []
             for lang in languages.keys():
@@ -54,9 +54,13 @@ def repo():
             if r.get("homepage"):
                 entry["deploy_url"] = r["homepage"]
             repo_list.append(entry)
+    
+    json_proj = {
+        "projects": repo_list
+    }
 
-    with open("./portfolio/projects.json", "w") as f:
-        json.dump(repo_list, f, indent=2, ensure_ascii=False)
+    with open("./portfolio/projects.json", "w", encoding="utf-8") as f:
+        json.dump(json_proj, f, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
     repo()

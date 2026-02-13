@@ -3,4 +3,5 @@
 .web
 __pycache__/
 book/
-.venv
+.venv/*
+.env
