@@ -34,21 +34,12 @@ jobs:
       - name: Run github_repos.py
         run: python3 portfolio/github_repos.py
 
-      # -------------------------
-      # Add runner IP to Atlas allowlist
-      # -------------------------
-      - name: Allow GitHub Actions runner IP in Atlas
-        uses: textbook/atlas-ip@v1.1.0
-        with:
-          atlas-public-key: ${{ secrets.ATLAS_PUBLIC_KEY }}
-          atlas-private-key: ${{ secrets.ATLAS_PRIVATE_KEY }}
-          group-id: ${{ secrets.ATLAS_GROUP_ID }}
-          comment: "github-actions-runner"
+      
           
       - name: Run push-to-mongo.py
         run: python3 portfolio/push-to-mongo.py
         env:
-          GITHUB_TOKEN: ${{ secrets.MONGO_URI }}
+          MONGO_URI: ${{ secrets.MONGO_URI }}
       - name: Upload projects.json
         uses: actions/upload-artifact@v4
         with:
