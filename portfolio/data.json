@@ -1,100 +1,103 @@
 {
-    "title": "Alba Segura Llamas | Junior Dev",
-    "skill": "Junior Developer in a journey to DevOps",
-    "location": "Barcelona, Catalonia, Spain",
-    "media": {
-        "email": "alba.segurallamas@gmail.com",
-        "cv": "/data/CV_SeguraLlamasAlba.pdf",
-        "github": "https://github.com/Snr1s3",
-        "linkedin": "https://www.linkedin.com/in/alba-segura-llamas-b91491299/"
+  "_id": {
+    "$oid": "698f171f05bbb876a732d41a"
+  },
+  "title": "Alba Segura Llamas | Junior Dev",
+  "skill": "Junior Developer in a journey to DevOps",
+  "location": "Barcelona, Catalonia, Spain",
+  "media": {
+    "email": "alba.segurallamas@gmail.com",
+    "cv": "/data/CV_SeguraLlamasAlba.pdf",
+    "github": "https://github.com/Snr1s3",
+    "linkedin": "https://www.linkedin.com/in/alba-segura-llamas-b91491299/"
+  },
+  "about": "Hi there! I'm Alba, an Advanced Technician in Multiplatform Application Development, and I'm currently working as a Senior Assistant, Software Engineering at Kyndryl. I'm gaining hands-on experience and sharpening my technical and problem-solving skills every day.",
+  "technologies": [
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
+      "name": "Java"
     },
-    "about": "Hi there! I'm Alba, an Advanced Technician in Multiplatform Application Development, and I'm currently working as a Senior Assistant, Software Engineering at Kyndryl. I'm gaining hands-on experience and sharpening my technical and problem-solving skills every day.",
-    "technologies": [
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-            "name": "Java"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-            "name": "Python"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
-            "name": "Kotlin"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
-            "name": "Git"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
-            "name": "MySQL"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
-            "name": "PostgreSQL"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-            "name": "MongoDB"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
-            "name": "Android Studio"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
-            "name": "Windows"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
-            "name": "Linux"
-        }
-    ],
-    "currentlylearning": [
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
-            "name": "Go"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-            "name": "Docker"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/proxmox/proxmox-original.svg",
-            "name": "Proxmox"
-        },
-        {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-            "name": "Github Actions"
-        }
-    ],
-    "experience": [
-        {
-            "icon": "terminal",
-            "title": "Senior Assistant Software Engineer",
-            "subtitle": "Kyndryl",
-            "description": "Python scripting to migrate PostgreSQL Data Bases OnPrem or clouds like AWS/Azure/GPC. Also I've been doing postmigration scripts in Bash and VM migration tasks with VMware and Zerto",
-            "date": "September 2025 - Present"
-        }
-    ],
-    "learning": [
-        {
-            "icon": "graduation-cap",
-            "title": "CFGS - Platform Application Development",
-            "subtitle": "INSTITUT TIC DE BARCELONA",
-            "description": "I have experience programming in Java, Python, and Kotlin. I work with Windows and Linux operating systems, and I have knowledge of REST APIs, Android Studio, and virtualization technologies such as Docker and VirtualBox",
-            "date": "September 2023 - June 2025",
-            "certificate": "https://agora.xtec.cat/iticbcn/"
-        }
-    ],
-    "certifications": [
-        {
-            "image": "/microsoft-certified-fundamentals-badge.png",
-            "title": "Azure Az900",
-            "description": "Certification Azure Foundamentals",
-            "url": "https://learn.microsoft.com/api/credentials/share/en-us/AlbaSegura-4337/827943575C76B352?sharingId=819183AC2878ABB0"
-        }
-    ],
-    "timestamp": "2026-02-13T12:20:46.518582+00:00"
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "name": "Python"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg",
+      "name": "Kotlin"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
+      "name": "Git"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
+      "name": "MySQL"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+      "name": "PostgreSQL"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "name": "MongoDB"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg",
+      "name": "Android Studio"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
+      "name": "Windows"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
+      "name": "Linux"
+    }
+  ],
+  "currentlylearning": [
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+      "name": "Go"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      "name": "Docker"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/proxmox/proxmox-original.svg",
+      "name": "Proxmox"
+    },
+    {
+      "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "name": "Github Actions"
+    }
+  ],
+  "experience": [
+    {
+      "icon": "terminal",
+      "title": "Senior Assistant Software Engineer",
+      "subtitle": "Kyndryl",
+      "description": "Python scripting to migrate PostgreSQL Data Bases OnPrem or clouds like AWS/Azure/GPC. Also I've been doing postmigration scripts in Bash and VM migration tasks with VMware and Zerto",
+      "date": "September 2025 - Present"
+    }
+  ],
+  "learning": [
+    {
+      "icon": "graduation-cap",
+      "title": "CFGS - Platform Application Development",
+      "subtitle": "INSTITUT TIC DE BARCELONA",
+      "description": "I have experience programming in Java, Python, and Kotlin. I work with Windows and Linux operating systems, and I have knowledge of REST APIs, Android Studio, and virtualization technologies such as Docker and VirtualBox",
+      "date": "September 2023 - June 2025",
+      "certificate": "https://agora.xtec.cat/iticbcn/"
+    }
+  ],
+  "certifications": [
+    {
+      "image": "/microsoft-certified-fundamentals-badge.png",
+      "title": "Azure Az900",
+      "description": "Certification Azure Foundamentals",
+      "url": "https://learn.microsoft.com/api/credentials/share/en-us/AlbaSegura-4337/827943575C76B352?sharingId=819183AC2878ABB0"
+    }
+  ],
+  "timestamp": "2026-02-13T12:20:46.518582+00:00"
 }
