@@ -19,4 +19,3 @@ jobs:
             *Workflow:* ${{ github.event.workflow_run.name }}
             *Conclusion:* ${{ github.event.workflow_run.conclusion }}
             *Run:* ${{ github.event.workflow_run.html_url }}
-            🔔 Portfolio is Up 🔔
