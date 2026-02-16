@@ -2,7 +2,7 @@ name: Notify Me
 
 on:
   workflow_run:
-    workflows: ["Deploy mdBook site to Pages"]
+    workflows: ["Deploy mdBook site to Pages", "Push to mongo", "Pull from mongo"]
     types: [completed]
 
 jobs:

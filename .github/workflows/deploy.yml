@@ -2,7 +2,7 @@ name: Deploy mdBook site to Pages
 
 on:
   workflow_run:
-    workflows: ["Push to mongo", "Pull to mongo"]
+    workflows: ["Push to mongo", "Pull from mongo"]
     types: [completed]
 
 permissions:
