@@ -9,6 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
+
 MONGO_URI = os.getenv("MONGO_URI")
 if not MONGO_URI:
     raise SystemExit("ERROR: MONGO_URI is not set in the environment. Add it as a GitHub Actions secret and map it in your workflow.")
@@ -39,6 +40,9 @@ try:
     db = client["portfolio"]
     data = db["data"]
     proj = db["projects"]
+    # Remove _id field if present
+    proj_data.pop('_id', None)
+    data_data.pop('_id', None)
     proj.insert_one(proj_data)
     data.insert_one(data_data)
 except Exception as e:
