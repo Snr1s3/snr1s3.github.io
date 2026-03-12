@@ -17,6 +17,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          repository: Snr1s3/snr1s3.github.io
+          token: ${{ secrets.REPO_READ_TOKEN }}
 
       - name: Set up Python (with pip cache)
         uses: actions/setup-python@v5
