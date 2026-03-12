@@ -31,22 +31,22 @@
 <div style="display: flex; flex-wrap: wrap; gap: 1em;">
 <div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
   <strong>
+    <a href="https://github.com/Snr1s3/notify-telegram-action" style="color:#bb86fc;">notify-telegram-action</a>
+  </strong>
+  <img src="assets/project_1.jpg" alt="notify-telegram-action" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
+  <br>
+  This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.
+  <div style="display:flex; gap:6px; margin:6px 0 0 0;"></div>
+  
+</div>
+<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
+  <strong>
     <a href="https://github.com/Snr1s3/Aslsh" style="color:#bb86fc;">Aslsh</a>
   </strong>
   <img src="assets/project_1.jpg" alt="Aslsh" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
   <br>
   Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.
   <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl" title="Perl" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Dockerfile" title="Dockerfile" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
-  
-</div>
-<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
-  <strong>
-    <a href="https://github.com/Snr1s3/Rush0X-Go" style="color:#bb86fc;">Rush0X-Go</a>
-  </strong>
-  <img src="assets/project_1.jpg" alt="Rush0X-Go" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
-  <br>
-  Learning Go through exercises from 42.
-  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
   
 </div>
 </div>
