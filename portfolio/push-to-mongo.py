@@ -1,13 +1,11 @@
-
 from datetime import datetime, timezone
+from dotenv import load_dotenv
 from pymongo.mongo_client import MongoClient
 from pymongo.server_api import ServerApi
 import os
 import json
-from dotenv import load_dotenv
 
 load_dotenv()
-
 
 
 MONGO_URI = os.getenv("MONGO_URI")
