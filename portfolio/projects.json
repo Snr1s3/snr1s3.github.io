@@ -1,7 +1,4 @@
 {
-  "_id": {
-    "$oid": "698f171f05bbb876a732d419"
-  },
   "projects": [
     {
       "title": "Aslsh",
@@ -25,64 +22,34 @@
       "github": "https://github.com/Snr1s3/Aslsh"
     },
     {
-      "title": "CommanderMTG_API",
-      "subtitle": "",
-      "description": "This service provides CRUD operations for managing Magic: The Gathering Commander games, including commanders, matches (partidas), and user-commander relationships.",
-      "technologies": [
-        {
-          "icon": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "icon": "devicon-docker-plain",
-          "name": "Dockerfile"
-        }
-      ],
-      "image": "assets/project_1.jpg",
-      "github": "https://github.com/Snr1s3/CommanderMTG_API"
-    },
-    {
-      "title": "CommanderMTG_Gateway",
-      "subtitle": "",
-      "description": "The API Gateway routes requests to either the User Login service for authentication or the CRUD service for managing user data in the database.",
-      "technologies": [
-        {
-          "icon": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "icon": "devicon-docker-plain",
-          "name": "Dockerfile"
-        }
-      ],
-      "image": "assets/project_1.jpg",
-      "github": "https://github.com/Snr1s3/CommanderMTG_Gateway"
-    },
-    {
-      "title": "CommanderMTG_Login",
-      "subtitle": "",
-      "description": "This API provides endpoints for user login, registration, and complete CRUD functionality for managing user profiles in the database.",
-      "technologies": [
-        {
-          "icon": "devicon-python-plain",
-          "name": "Python"
-        },
-        {
-          "icon": "devicon-docker-plain",
-          "name": "Dockerfile"
-        }
-      ],
-      "image": "assets/project_1.jpg",
-      "github": "https://github.com/Snr1s3/CommanderMTG_Login"
-    },
-    {
       "title": "Documentacio",
       "subtitle": "",
       "description": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
       "technologies": [],
-      "image": "assets/project_1.jpg",
+      "image": "assets/project_2.jpg",
       "github": "https://github.com/Snr1s3/Documentacio",
       "deploy_url": "https://albasegura.dev/Documentacio/"
+    },
+    {
+      "title": "FlightsASL",
+      "subtitle": "",
+      "description": "",
+      "technologies": [
+        {
+          "icon": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "icon": "devicon-github-plain",
+          "name": "HTML"
+        },
+        {
+          "icon": "devicon-github-plain",
+          "name": "CSS"
+        }
+      ],
+      "image": "assets/project_2.jpg",
+      "github": "https://github.com/Snr1s3/FlightsASL"
     },
     {
       "title": "notify-telegram-action",
@@ -110,7 +77,7 @@
           "name": "Dockerfile"
         }
       ],
-      "image": "assets/project_1.jpg",
+      "image": "assets/project_2.jpg",
       "github": "https://github.com/Snr1s3/PerformanceBot",
       "deploy_url": "http://albasegura.dev/PerformanceBot/"
     },
@@ -160,6 +127,5 @@
       "image": "assets/project_1.jpg",
       "github": "https://github.com/Snr1s3/Sorting-Algorithms"
     }
-  ],
-  "timestamp": "2026-02-13T12:20:46.515735+00:00"
+  ]
 }
