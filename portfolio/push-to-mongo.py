@@ -41,7 +41,12 @@ try:
     # Remove _id field if present
     proj_data.pop('_id', None)
     data_data.pop('_id', None)
-    proj.insert_one(proj_data)
-    data.insert_one(data_data)
+    proj_result = proj.insert_one(proj_data)
+    data_result = data.insert_one(data_data)
+    print(f"Inserted project _id: {proj_result.inserted_id}")
+    print(f"Inserted data _id: {data_result.inserted_id}")
+    # Show a sample document from each collection
+    print("Sample project document:", proj.find_one({'_id': proj_result.inserted_id}))
+    print("Sample data document:", data.find_one({'_id': data_result.inserted_id}))
 except Exception as e:
     print(e)
