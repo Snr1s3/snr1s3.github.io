@@ -18,7 +18,7 @@ jobs:
   build-md:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Set up Python (with pip cache)
         uses: actions/setup-python@v5
@@ -34,7 +34,7 @@ jobs:
         run: python3 portfolio/json-to-md.py
 
       - name: Upload md
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: md-files
           path: |
@@ -47,12 +47,12 @@ jobs:
     needs: build-md
     steps:
       - name: Download MD files
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v5
         with:
           name: md-files
           path: portfolio/
     
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
 
       - name: Install mdBook
         run: cargo install mdbook
@@ -61,7 +61,7 @@ jobs:
         run: mdbook build portfolio
 
       - name: Upload artifact (explicit name)
-        uses: actions/upload-pages-artifact@v4
+        uses: actions/upload-pages-artifact@v5
         with:
           path: ./portfolio/book
           name: github-pages
@@ -75,7 +75,7 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
         with:
           artifact_name: github-pages
 
