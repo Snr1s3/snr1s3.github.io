@@ -1,132 +1,147 @@
 {
-    "projects": [
+  "projects": [
+    {
+      "title": "Aslsh",
+      "subtitle": "",
+      "description": "Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.",
+      "technologies": [
         {
-            "title": "Aslsh",
-            "subtitle": "",
-            "description": "Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.",
-            "technologies": [
-                {
-                    "icon": "devicon-go-plain",
-                    "name": "Go"
-                },
-                {
-                    "icon": "devicon-perl-plain",
-                    "name": "Perl"
-                },
-                {
-                    "icon": "devicon-docker-plain",
-                    "name": "Dockerfile"
-                }
-            ],
-            "image": "assets/project_1.jpg",
-            "github": "https://github.com/Snr1s3/Aslsh"
+          "icon": "devicon-go-plain",
+          "name": "Go"
         },
         {
-            "title": "Documentacio",
-            "subtitle": "",
-            "description": "Benvingut/da a les documentacions personals de Snr1s3. Aqu\u00ed trobar\u00e0s guies i manuals per a la instal\u00b7laci\u00f3 i configuraci\u00f3 de diferents serveis i eines.",
-            "technologies": [],
-            "image": "assets/project_2.jpg",
-            "github": "https://github.com/Snr1s3/Documentacio",
-            "deploy_url": "https://albasegura.dev/Documentacio/"
+          "icon": "devicon-perl-plain",
+          "name": "Perl"
         },
         {
-            "title": "FlightsASL",
-            "subtitle": "",
-            "description": "",
-            "technologies": [
-                {
-                    "icon": "devicon-python-plain",
-                    "name": "Python"
-                },
-                {
-                    "icon": "devicon-github-plain",
-                    "name": "HTML"
-                },
-                {
-                    "icon": "devicon-github-plain",
-                    "name": "CSS"
-                }
-            ],
-            "image": "assets/project_2.jpg",
-            "github": "https://github.com/Snr1s3/FlightsASL"
-        },
-        {
-            "title": "notify-telegram-action",
-            "subtitle": "",
-            "description": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
-            "technologies": [],
-            "image": "assets/project_1.jpg",
-            "github": "https://github.com/Snr1s3/notify-telegram-action"
-        },
-        {
-            "title": "PerformanceBot",
-            "subtitle": "",
-            "description": "This bot provides real-time monitoring of system resources, including memory, CPU, and disk usage, along with live tracking of Docker container activity. It's designed to offer a clear and responsive overview of system performance for developers and system administrators.",
-            "technologies": [
-                {
-                    "icon": "devicon-python-plain",
-                    "name": "Python"
-                },
-                {
-                    "icon": "devicon-bash-plain",
-                    "name": "Shell"
-                },
-                {
-                    "icon": "devicon-docker-plain",
-                    "name": "Dockerfile"
-                }
-            ],
-            "image": "assets/project_2.jpg",
-            "github": "https://github.com/Snr1s3/PerformanceBot",
-            "deploy_url": "http://albasegura.dev/PerformanceBot/"
-        },
-        {
-            "title": "Rush0X-Go",
-            "subtitle": "",
-            "description": "Learning Go through exercises from 42.",
-            "technologies": [
-                {
-                    "icon": "devicon-go-plain",
-                    "name": "Go"
-                }
-            ],
-            "image": "assets/project_1.jpg",
-            "github": "https://github.com/Snr1s3/Rush0X-Go"
-        },
-        {
-            "title": "Sorting-Algorithms",
-            "subtitle": "",
-            "description": "This project provides implementations of various sorting algorithms across multiple programming languages, offering a comprehensive resource for learning, understanding, and comparing different sorting techniques.",
-            "technologies": [
-                {
-                    "icon": "devicon-java-plain",
-                    "name": "Java"
-                },
-                {
-                    "icon": "devicon-csharp-plain",
-                    "name": "C#"
-                },
-                {
-                    "icon": "devicon-c-plain",
-                    "name": "C"
-                },
-                {
-                    "icon": "devicon-javascript-plain",
-                    "name": "JavaScript"
-                },
-                {
-                    "icon": "devicon-python-plain",
-                    "name": "Python"
-                },
-                {
-                    "icon": "devicon-go-plain",
-                    "name": "Go"
-                }
-            ],
-            "image": "assets/project_1.jpg",
-            "github": "https://github.com/Snr1s3/Sorting-Algorithms"
+          "icon": "devicon-docker-plain",
+          "name": "Dockerfile"
         }
-    ],
-    "timestamp": "2026-03-12T10:37:05.923063+00:00"
+      ],
+      "image": "assets/project_2.jpg",
+      "github": "https://github.com/Snr1s3/Aslsh"
+    },
+    {
+      "title": "Documentacio",
+      "subtitle": "",
+      "description": "Benvingut/da a les documentacions personals de Snr1s3. Aquí trobaràs guies i manuals per a la instal·lació i configuració de diferents serveis i eines.",
+      "technologies": [],
+      "image": "assets/project_1.jpg",
+      "github": "https://github.com/Snr1s3/Documentacio",
+      "deploy_url": "https://albasegura.dev/Documentacio/"
+    },
+    {
+      "title": "FlightsASL",
+      "subtitle": "",
+      "description": "",
+      "technologies": [
+        {
+          "icon": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "icon": "devicon-github-plain",
+          "name": "HTML"
+        },
+        {
+          "icon": "devicon-github-plain",
+          "name": "CSS"
+        },
+        {
+          "icon": "devicon-github-plain",
+          "name": "PLpgSQL"
+        },
+        {
+          "icon": "devicon-docker-plain",
+          "name": "Dockerfile"
+        }
+      ],
+      "image": "assets/project_2.jpg",
+      "github": "https://github.com/Snr1s3/FlightsASL"
+    },
+    {
+      "title": "notify-telegram-action",
+      "subtitle": "",
+      "description": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
+      "technologies": [],
+      "image": "assets/project_1.jpg",
+      "github": "https://github.com/Snr1s3/notify-telegram-action"
+    },
+    {
+      "title": "PerformanceBot",
+      "subtitle": "",
+      "description": "This bot provides real-time monitoring of system resources, including memory, CPU, and disk usage, along with live tracking of Docker container activity. It's designed to offer a clear and responsive overview of system performance for developers and system administrators.",
+      "technologies": [
+        {
+          "icon": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "icon": "devicon-bash-plain",
+          "name": "Shell"
+        },
+        {
+          "icon": "devicon-docker-plain",
+          "name": "Dockerfile"
+        }
+      ],
+      "image": "assets/project_1.jpg",
+      "github": "https://github.com/Snr1s3/PerformanceBot",
+      "deploy_url": "http://albasegura.dev/PerformanceBot/"
+    },
+    {
+      "title": "Rush0X-Go",
+      "subtitle": "",
+      "description": "Learning Go through exercises from 42.",
+      "technologies": [
+        {
+          "icon": "devicon-go-plain",
+          "name": "Go"
+        }
+      ],
+      "image": "assets/project_1.jpg",
+      "github": "https://github.com/Snr1s3/Rush0X-Go"
+    },
+    {
+      "title": "Sorting-Algorithms",
+      "subtitle": "",
+      "description": "This project provides implementations of various sorting algorithms across multiple programming languages, offering a comprehensive resource for learning, understanding, and comparing different sorting techniques.",
+      "technologies": [
+        {
+          "icon": "devicon-java-plain",
+          "name": "Java"
+        },
+        {
+          "icon": "devicon-csharp-plain",
+          "name": "C#"
+        },
+        {
+          "icon": "devicon-c-plain",
+          "name": "C"
+        },
+        {
+          "icon": "devicon-javascript-plain",
+          "name": "JavaScript"
+        },
+        {
+          "icon": "devicon-python-plain",
+          "name": "Python"
+        },
+        {
+          "icon": "devicon-go-plain",
+          "name": "Go"
+        }
+      ],
+      "image": "assets/project_1.jpg",
+      "github": "https://github.com/Snr1s3/Sorting-Algorithms"
+    },
+    {
+      "title": "upload-to-docker-action",
+      "subtitle": "",
+      "description": "",
+      "technologies": [],
+      "image": "assets/project_2.jpg",
+      "github": "https://github.com/Snr1s3/upload-to-docker-action"
+    }
+  ]
 }
