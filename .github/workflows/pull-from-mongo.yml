@@ -53,6 +53,6 @@ jobs:
         run: |
           curl -sSf -X POST \
             -H "Accept: application/vnd.github+json" \
-            -H "Authorization: Bearer ${{ github.token }}" \
+            -H "Authorization: Bearer ${{ secrets.PAT_TOKEN }}" \
             "https://api.github.com/repos/${{ github.repository }}/dispatches" \
             -d '{"event_type":"mongo-sync-status","client_payload":{"source":"${{ steps.sync_source.outputs.source }}","mongo_outcome":"${{ steps.mongo.outcome }}","run_url":"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"}}'
