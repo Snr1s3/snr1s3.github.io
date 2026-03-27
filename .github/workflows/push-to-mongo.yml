@@ -35,6 +35,13 @@ jobs:
         run: python portfolio/github_repos.py
 
       - name: Run push-to-mongo.py
+        id: mongo
         run: python portfolio/push-to-mongo.py
+        continue-on-error: true
         env:
           MONGO_URI: ${{ secrets.MONGO_URI }}
+      
+      # Fallback to the GitHub script if the Mongo step fails.
+      - name: Fallback to the GitHub script
+        if: ${{ steps.mongo.outcome == 'failure' }}
+        run: python portfolio/github_repos.py
