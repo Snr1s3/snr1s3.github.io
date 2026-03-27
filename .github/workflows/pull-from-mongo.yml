@@ -36,6 +36,6 @@ jobs:
           MONGO_URI: ${{ secrets.MONGO_URI }}
       
       # Fallback to the GitHub script if the Mongo step fails.
-      - name: Get Github Repos
+      - name: Fallback to the GitHub script
         if: ${{ steps.mongo.outcome == 'failure' }}
         run: python portfolio/github_repos.py
