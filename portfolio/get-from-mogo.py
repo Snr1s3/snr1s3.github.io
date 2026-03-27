@@ -35,3 +35,4 @@ try:
         f.write(bson_dumps(last_data, indent=2, ensure_ascii=False))
 except Exception as e:
     print(e)
+    raise
