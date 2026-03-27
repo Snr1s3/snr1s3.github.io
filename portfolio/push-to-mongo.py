@@ -58,3 +58,4 @@ try:
     print("Sample data document:", data.find_one({'_id': data_result.inserted_id}))
 except Exception as e:
     print(e)
+    raise
