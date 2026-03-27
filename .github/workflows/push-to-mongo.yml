@@ -45,3 +45,21 @@ jobs:
       - name: Fallback to the GitHub script
         if: ${{ steps.mongo.outcome == 'failure' }}
         run: python portfolio/github_repos.py
+
+      - name: Set sync source
+        id: sync_source
+        run: |
+          if [ "${{ steps.mongo.outcome }}" = "failure" ]; then
+            echo "source=fallback" >> "$GITHUB_OUTPUT"
+          else
+            echo "source=mongo" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Dispatch notify event
+        run: |
+          curl -sSf -X POST \
+            -H "Accept: application/vnd.github+json" \
+            -H "Authorization: Bearer ${{ github.token }}" \
+            "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+            -d '{"event_type":"mongo-sync-status","client_payload":{"source":"${{ steps.sync_source.outputs.source }}","mongo_outcome":"${{ steps.mongo.outcome }}","run_url":"https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}"}}'
+

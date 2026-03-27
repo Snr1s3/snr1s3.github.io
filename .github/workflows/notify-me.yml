@@ -4,12 +4,15 @@ on:
   workflow_run:
     workflows: ["Deploy mdBook site to Pages", "Push to mongo", "Pull from mongo"]
     types: [completed]
+  repository_dispatch:
+    types: [mongo-sync-status]
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Send Telegram notification
+      - name: Send workflow notification
+        if: ${{ github.event_name == 'workflow_run' }}
         uses: Snr1s3/notify-telegram-action@v1.0.3
         with:
           telegram_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
@@ -19,3 +22,16 @@ jobs:
             *Workflow:* ${{ github.event.workflow_run.name }}
             *Conclusion:* ${{ github.event.workflow_run.conclusion }}
             *Run:* ${{ github.event.workflow_run.html_url }}
+
+      - name: Send mongo sync notification
+        if: ${{ github.event_name == 'repository_dispatch' && github.event.action == 'mongo-sync-status' }}
+        uses: Snr1s3/notify-telegram-action@v1.0.3
+        with:
+          telegram_token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          telegram_chat_id: ${{ secrets.TELEGRAM_CHAT_ID }}
+          message: |
+            🔔 *${{ github.repository }}*
+            *Workflow:* Pull from mongo
+            *Source:* ${{ github.event.client_payload.source }}
+            *Mongo Outcome:* ${{ github.event.client_payload.mongo_outcome }}
+            *Run:* ${{ github.event.client_payload.run_url }}
