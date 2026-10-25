@@ -43,18 +43,30 @@ def writeAbout(index_md, data):
 
 def writeSkill(index_md, data):
     lines = []
-    lines.extend([
-        "## Languages & Tools\n\n",
-        "### Programming Languages\n",
-        "[![Programming languages](https://skillicons.dev/icons?i=python,java,kotlin,go,bash&theme=dark)](https://skillicons.dev)\n\n",
-        "### Databases\n",
-        "[![Databases](https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark)](https://skillicons.dev)\n\n",
-        "### Tools, Environments & Platforms\n",
-        "[![Tools, environments and platforms](https://skillicons.dev/icons?i=docker,git,github,androidstudio,vscode&theme=dark)](https://skillicons.dev)\n\n",
-        "### Operating Systems\n",
-        "[![Operating systems](https://skillicons.dev/icons?i=linux,windows,debian&theme=dark)](https://skillicons.dev)\n\n",
-        "## Currently Learning\n\n",
-    ])
+    technologies = {technology["name"]: technology["icon"] for technology in data["technologies"]}
+    technologies.update({
+        "Go": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg",
+        "GitHub": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+        "Docker": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+    })
+
+    groups = [
+        ("Programming Languages", ["Python", "Java", "Kotlin", "Go", "Bash"]),
+        ("Databases", ["MongoDB", "MySQL", "PostgreSQL"]),
+        ("Tools, Environments & Platforms", ["Docker", "Git", "GitHub", "Android Studio", "VS Code"]),
+        ("Operating Systems", ["Linux", "Windows", "Debian"]),
+    ]
+    lines.append("## Languages & Tools\n\n")
+    for title, names in groups:
+        lines.append(f"### {title}\n\n")
+        lines.append('<div style="display:flex; gap:10px; flex-wrap:wrap;">\n')
+        for name in names:
+            lines.append(
+                f'<img src="{technologies[name]}" alt="{name}" title="{name}" width="50" height="50" '
+                'style="background:#fff; border-radius:6px; padding:4px;">'
+            )
+        lines.append("</div>\n\n")
+    lines.append("## Currently Learning\n\n")
     lines.extend(f"- {topic}\n" for topic in data["learningTopics"])
     lines.append("\n")
     writeToMd(index_md, lines)
@@ -89,7 +101,7 @@ def writeRandomProjects(index_md, data):
             f'  <br>\n'
             f'  {project["description"]}\n'
             f'  {tech_icons}\n'
-            f'  {deploy_link}\n'
+            f'{deploy_link}\n' if deploy_link else ''
             '</div>\n'
         )
     lines.append('</div>\n')
@@ -138,7 +150,7 @@ def writeProjects(projects_md, data):
             f'  <br>\n'
             f'  {project["description"]}\n'
             f'  {tech_icons}\n'
-            f'  {deploy_link}\n'
+            f'{deploy_link}\n' if deploy_link else ''
             '</div>\n'
         )
     lines.append('</div>\n')

@@ -17,16 +17,24 @@
 ## Languages & Tools
 
 ### Programming Languages
-[![Programming languages](https://skillicons.dev/icons?i=python,java,kotlin,go,bash&theme=dark)](https://skillicons.dev)
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" title="Java" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" title="Kotlin" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash" title="Bash" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"></div>
 
 ### Databases
-[![Databases](https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark)](https://skillicons.dev)
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" title="MongoDB" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" title="MySQL" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" title="PostgreSQL" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"></div>
 
 ### Tools, Environments & Platforms
-[![Tools, environments and platforms](https://skillicons.dev/icons?i=docker,git,github,androidstudio,vscode&theme=dark)](https://skillicons.dev)
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" title="Docker" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" title="Git" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" title="GitHub" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" title="Android Studio" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" title="VS Code" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"></div>
 
 ### Operating Systems
-[![Operating systems](https://skillicons.dev/icons?i=linux,windows,debian&theme=dark)](https://skillicons.dev)
+
+<div style="display:flex; gap:10px; flex-wrap:wrap;">
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" title="Linux" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows" title="Windows" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg" alt="Debian" title="Debian" width="50" height="50" style="background:#fff; border-radius:6px; padding:4px;"></div>
 
 ## Currently Learning
 
@@ -40,25 +48,7 @@
 ## Some Projects
 
 <div style="display: flex; flex-wrap: wrap; gap: 1em;">
-<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
-  <strong>
-    <a href="https://github.com/Snr1s3/Aslsh" style="color:#bb86fc;">Aslsh</a>
-  </strong>
-  <img src="assets/project_2.jpg" alt="Aslsh" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
-  <br>
-  Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.
-  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl" title="Perl" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Dockerfile" title="Dockerfile" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
-  
 </div>
-<div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
-  <strong>
-    <a href="https://github.com/Snr1s3/upload-to-docker-action" style="color:#bb86fc;">upload-to-docker-action</a>
-  </strong>
-  <img src="assets/project_2.jpg" alt="upload-to-docker-action" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
-  <br>
-  
-  <div style="display:flex; gap:6px; margin:6px 0 0 0;"></div>
-  
 </div>
 </div>
 
