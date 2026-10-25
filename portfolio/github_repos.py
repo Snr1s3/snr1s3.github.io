@@ -30,7 +30,7 @@ def repo():
     response = requests.get(url)
     repos = response.json()
 
-    ignore_repos = ["snr1s3.github.io", "Snr1s3","Github-Examples","GestioDeMoneders"]
+    ignore_repos = ["snr1s3.github.io", "Snr1s3"]
     background_images = ["assets/project_1.jpg", "assets/project_2.jpg"]
     repo_list = []
     for r in repos:
