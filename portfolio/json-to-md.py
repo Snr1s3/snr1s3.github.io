@@ -99,9 +99,9 @@ def writeRandomProjects(index_md, data):
             f'  </strong>\n'
             f'  <img src="{project["image"]}" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
             f'  <br>\n'
-            f'  {project["description"]}\n'
-            f'  {tech_icons}\n'
-            f'{deploy_link}\n' if deploy_link else ''
+            f'{project["description"]}\n'
+            f'{tech_icons}\n'
+            f'{deploy_link}\n'
             '</div>\n'
         )
     lines.append('</div>\n')
@@ -148,9 +148,9 @@ def writeProjects(projects_md, data):
             f'  </strong>\n'
             f'  <img src="{project["image"]}" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
             f'  <br>\n'
-            f'  {project["description"]}\n'
-            f'  {tech_icons}\n'
-            f'{deploy_link}\n' if deploy_link else ''
+            f'{project["description"]}\n'
+            f'{tech_icons}\n'
+            f'{deploy_link}\n'
             '</div>\n'
         )
     lines.append('</div>\n')

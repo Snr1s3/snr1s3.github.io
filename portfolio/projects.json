@@ -31,15 +31,15 @@
           "name": "Python"
         },
         {
-          "icon": "devicon-github-plain",
+          "icon": "devicon-html5-plain",
           "name": "HTML"
         },
         {
-          "icon": "devicon-github-plain",
+          "icon": "devicon-css3-plain",
           "name": "CSS"
         },
         {
-          "icon": "devicon-github-plain",
+          "icon": "devicon-postgresql-plain",
           "name": "PLpgSQL"
         },
         {
@@ -56,15 +56,15 @@
       "description": "",
       "technologies": [
         {
-          "icon": "devicon-github-plain",
+          "icon": "devicon-qt-original",
           "name": "QML"
         },
         {
-          "icon": "devicon-github-plain",
+          "icon": "devicon-nixos-original",
           "name": "Nix"
         },
         {
-          "icon": "devicon-github-plain",
+          "icon": "devicon-lua-plain",
           "name": "Lua"
         },
         {
