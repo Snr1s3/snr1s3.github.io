@@ -13,45 +13,56 @@
     <a href="https://www.linkedin.com/in/alba-segura-llamas-b91491299/" style="color:#bb86fc;">LinkedIn</a>
   </strong>
 
----  
-## Skills  
+---
+## Languages & Tools
 
-**Main Technologies:**  
+### Programming Languages
+[![Programming languages](https://skillicons.dev/icons?i=python,java,kotlin,go,bash&theme=dark)](https://skillicons.dev)
 
-<div style="display:flex; gap:10px; flex-wrap:wrap;"><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Java</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Python</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Kotlin</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Git</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">MySQL</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">PostgreSQL</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">MongoDB</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Android Studio</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg" alt="Windows" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Windows</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Linux</span></div></div>  
+### Databases
+[![Databases](https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark)](https://skillicons.dev)
 
-**Currently Learning:**  
+### Tools, Environments & Platforms
+[![Tools, environments and platforms](https://skillicons.dev/icons?i=docker,git,github,androidstudio,vscode&theme=dark)](https://skillicons.dev)
 
-<div style="display:flex; gap:10px; flex-wrap:wrap;"><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Go</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Docker</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/proxmox/proxmox-original.svg" alt="Proxmox" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Proxmox</span></div><div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;"><span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Github Actions" width="50"/></span><span style="font-size:12px; color:#bb86fc; margin-top:2px;">Github Actions</span></div></div>  
+### Operating Systems
+[![Operating systems](https://skillicons.dev/icons?i=linux,windows,debian&theme=dark)](https://skillicons.dev)
+
+## Currently Learning
+
+- Backend development with Go
+- CI/CD with GitHub Actions
+- Docker and DevOps fundamentals
+- Design patterns and clean code principles
 
 
----  
+---
 ## Some Projects
 
 <div style="display: flex; flex-wrap: wrap; gap: 1em;">
 <div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
   <strong>
-    <a href="https://github.com/Snr1s3/notify-telegram-action" style="color:#bb86fc;">notify-telegram-action</a>
+    <a href="https://github.com/Snr1s3/Aslsh" style="color:#bb86fc;">Aslsh</a>
   </strong>
-  <img src="assets/project_1.jpg" alt="notify-telegram-action" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
+  <img src="assets/project_2.jpg" alt="Aslsh" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
   <br>
-  This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.
-  <div style="display:flex; gap:6px; margin:6px 0 0 0;"></div>
+  Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.
+  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl" title="Perl" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Dockerfile" title="Dockerfile" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
   
 </div>
 <div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
   <strong>
-    <a href="https://github.com/Snr1s3/FlightsASL" style="color:#bb86fc;">FlightsASL</a>
+    <a href="https://github.com/Snr1s3/upload-to-docker-action" style="color:#bb86fc;">upload-to-docker-action</a>
   </strong>
-  <img src="assets/project_2.jpg" alt="FlightsASL" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
+  <img src="assets/project_2.jpg" alt="upload-to-docker-action" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
   <br>
   
-  <div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" title="Python" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="HTML" title="HTML" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="CSS" title="CSS" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="PLpgSQL" title="PLpgSQL" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Dockerfile" title="Dockerfile" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
+  <div style="display:flex; gap:6px; margin:6px 0 0 0;"></div>
   
 </div>
 </div>
 
----  
+---
 ## Learning
 
 - **CFGS - Platform Application Development**  
@@ -59,11 +70,11 @@
   I have experience programming in Java, Python, and Kotlin. I work with Windows and Linux operating systems, and I have knowledge of REST APIs, Android Studio, and virtualization technologies such as Docker and VirtualBox
 
 
----  
+---
 ## Certifications
 
 - **Azure Az900**  
   <a href="https://learn.microsoft.com/api/credentials/share/en-us/AlbaSegura-4337/827943575C76B352?sharingId=819183AC2878ABB0" style="color:#bb86fc;">Certification Azure Foundamentals</a>
 
 
----  
+---

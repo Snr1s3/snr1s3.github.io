@@ -3,7 +3,7 @@
         "$oid": "698f171f05bbb876a732d41a"
     },
     "title": "Alba Segura Llamas | Junior Dev",
-    "skill": "Junior Developer in a journey to DevOps",
+    "skill": "Junior Developer",
     "location": "Barcelona, Catalonia, Spain",
     "media": {
         "email": "alba.segurallamas@gmail.com",
@@ -26,6 +26,10 @@
             "name": "Kotlin"
         },
         {
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+            "name": "Bash"
+        },
+        {
             "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg",
             "name": "Git"
         },
@@ -46,12 +50,20 @@
             "name": "Android Studio"
         },
         {
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+            "name": "VS Code"
+        },
+        {
             "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",
             "name": "Windows"
         },
         {
             "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg",
             "name": "Linux"
+        },
+        {
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-original.svg",
+            "name": "Debian"
         }
     ],
     "currentlylearning": [
@@ -64,13 +76,15 @@
             "name": "Docker"
         },
         {
-            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/proxmox/proxmox-original.svg",
-            "name": "Proxmox"
-        },
-        {
             "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-            "name": "Github Actions"
+            "name": "GitHub Actions"
         }
+    ],
+    "learningTopics": [
+        "Backend development with Go",
+        "CI/CD with GitHub Actions",
+        "Docker and DevOps fundamentals",
+        "Design patterns and clean code principles"
     ],
     "experience": [
         {

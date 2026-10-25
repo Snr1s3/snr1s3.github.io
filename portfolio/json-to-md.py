@@ -42,35 +42,27 @@ def writeAbout(index_md, data):
     writeToMd(index_md, list)
 
 def writeSkill(index_md, data):
-    
     lines = []
-    lines.append(f"## Skills  \n\n")
-    lines.append(f"**Main Technologies:**  \n\n")
-    lines.append(f'<div style="display:flex; gap:10px; flex-wrap:wrap;">')
-    for tec in data["technologies"]:
-        lines.append(
-            '<div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;">'
-                f'<span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="{tec["icon"]}" alt="{tec["name"]}" width="50"/></span>'
-                f'<span style="font-size:12px; color:#bb86fc; margin-top:2px;">{tec["name"]}</span>'
-            '</div>'
-        )
-    lines.append(f'</div>  \n\n')
-    lines.append(f"**Currently Learning:**  \n\n")
-    lines.append(f'<div style="display:flex; gap:10px; flex-wrap:wrap;">')
-    for tec in data["currentlylearning"]:
-        lines.append(
-            '<div style="display:flex; flex-direction:column; align-items:center; width:60px; text-align:center;">'
-                f'<span style="background:#fff; padding:4px; border-radius:6px; display:inline-block;"><img src="{tec["icon"]}" alt="{tec["name"]}" width="50"/></span>'
-                f'<span style="font-size:12px; color:#bb86fc; margin-top:2px;">{tec["name"]}</span>'
-            '</div>'
-        )
-    lines.append(f'</div>  \n\n')
+    lines.extend([
+        "## Languages & Tools\n\n",
+        "### Programming Languages\n",
+        "[![Programming languages](https://skillicons.dev/icons?i=python,java,kotlin,go,bash&theme=dark)](https://skillicons.dev)\n\n",
+        "### Databases\n",
+        "[![Databases](https://skillicons.dev/icons?i=mongodb,mysql,postgres&theme=dark)](https://skillicons.dev)\n\n",
+        "### Tools, Environments & Platforms\n",
+        "[![Tools, environments and platforms](https://skillicons.dev/icons?i=docker,git,github,androidstudio,vscode&theme=dark)](https://skillicons.dev)\n\n",
+        "### Operating Systems\n",
+        "[![Operating systems](https://skillicons.dev/icons?i=linux,windows,debian&theme=dark)](https://skillicons.dev)\n\n",
+        "## Currently Learning\n\n",
+    ])
+    lines.extend(f"- {topic}\n" for topic in data["learningTopics"])
+    lines.append("\n")
     writeToMd(index_md, lines)
 def writeToMd(index_md, content, mode='a'):
     with open(index_md, mode) as f:
         for line in content:
             f.write(line)
-        f.write("\n---  \n")
+        f.write("\n---\n")
 
 def writeRandomProjects(index_md, data):
     
