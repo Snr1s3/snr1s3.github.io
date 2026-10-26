@@ -20,6 +20,7 @@ def writeHeader(index_md, data):
     
     list = []
     list.append(f"# {data['title']}  \n\n")
+    list.append(f"{data['about']}  \n\n")
     list.append(f"**Location:** {data['location']}  \n")
     list.append(f"**Email:** <a href=\"mailto:{data['media']['email']}\" style=\"color:#bb86fc;\">{data['media']['email']}</a>  \n\n")
     list.append(
