@@ -1,6 +1,6 @@
 # Alba Segura Llamas | Junior Dev  
 
-Hi there! I'm Alba, an Advanced Technician in Multiplatform Application Development and currently working as a Senior Assistant, Software Engineering at Kyndryl. Through my role, I continue to strengthen my technical expertise and problem-solving skills while gaining valuable hands-on industry experience. Alongside my professional career, I am pursuing a Bachelor's Degree in Computer Engineering at the Universitat Oberta de Catalunya (UOC), combining academic learning with practical experience to further develop my skills in software engineering and technology.  
+Hi, I'm Alba, a Senior Assistant, Software Engineering at Kyndryl with a background in Multiplatform Application Development. I'm also studying Computer Engineering at the Universitat Oberta de Catalunya (UOC), further developing my technical and problem-solving skills.  
 
 **Location:** Barcelona, Catalonia, Spain  
 **Email:** <a href="mailto:alba.segurallamas@gmail.com" style="color:#bb86fc;">alba.segurallamas@gmail.com</a>  
@@ -52,12 +52,12 @@ Hi there! I'm Alba, an Advanced Technician in Multiplatform Application Developm
 <div style="display: flex; flex-wrap: wrap; gap: 1em;">
 <div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">
   <strong>
-    <a href="https://github.com/Snr1s3/Aslsh" style="color:#bb86fc;">Aslsh</a>
+    <a href="https://github.com/Snr1s3/notify-telegram-action" style="color:#bb86fc;">notify-telegram-action</a>
   </strong>
-  <img src="assets/project_1.jpg" alt="Aslsh" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
+  <img src="assets/project_2.jpg" alt="notify-telegram-action" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">
   <br>
-Aslsh is a lightweight shell implemented in Go, made for educational purposes to help me understand basic shell functionality and system command execution.
-<div style="display:flex; gap:6px; margin:6px 0 0 0;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original.svg" alt="Go" title="Go" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/perl/perl-original.svg" alt="Perl" title="Perl" width="24" style="background:#fff; border-radius:4px; padding:2px;"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Dockerfile" title="Dockerfile" width="24" style="background:#fff; border-radius:4px; padding:2px;"></div>
+This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.
+<div style="display:flex; gap:6px; margin:6px 0 0 0;"></div>
 
 </div>
 <div style="border:1px solid #bb86fc; border-radius:8px; padding:1em; width:300px; background:#23272f; color:#e0e0e0;">

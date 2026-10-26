@@ -22,12 +22,11 @@ def get_icon_for_language(lang):
         "FastAPI": "devicon-fastapi-plain",
         "PostgreSQL": "devicon-postgresql-plain",
         "GitHub Actions": "devicon-github-plain",
-        "Telegram": "devicon-telegram-plain",
         "C": "devicon-c-plain",
         "C#": "devicon-csharp-plain",
         "Perl": "devicon-perl-plain",
     }
-    return mapping.get(lang, "devicon-github-plain")
+    return mapping.get(lang)
 
 def repo():
     username = "Snr1s3"
@@ -48,7 +47,9 @@ def repo():
             languages = lang_response.json()
             techs = []
             for lang in languages.keys():
-                techs.append({"icon": get_icon_for_language(lang), "name": lang})
+                icon = get_icon_for_language(lang)
+                if icon:
+                    techs.append({"icon": icon, "name": lang})
             entry = {
                 "title": r["name"],
                 "subtitle": "",
