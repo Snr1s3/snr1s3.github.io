@@ -1,15 +1,38 @@
+:root,
+html.light,
+html.rust,
+html.coal,
+html.navy,
+html.ayu {
+    --bg: #3b4062;
+    --fg: #f5eeff;
+    --sidebar-bg: #2f3454;
+    --sidebar-fg: #e8dcff;
+    --sidebar-active: #e0b8ff;
+    --scrollbar: #8b5cf6;
+    --links: #d9bcff;
+    --inline-code-color: #f0d4ff;
+    --theme-popup-bg: #2f3454;
+    --theme-hover: #4a5078;
+    --quote-bg: #474d73;
+    --table-border-color: #5b6290;
+    --table-header-bg: #474d73;
+    --table-alternate-bg: #424869;
+}
+
 body {
-    background: #181c23 !important;
-    color: #f8d2ff;
+    background: #3b4062 !important;
+    color: #f5eeff;
     font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #c792ea;
+    color: #e6c4ff;
 }
 
-a {
-    color: #bb86fc;
+a,
+a[style*="color"] {
+    color: #d9bcff !important;
     text-decoration: none;
 }
 a:hover {
@@ -17,40 +40,44 @@ a:hover {
 }
 
 strong {
-    color: #d49ff7;
+    color: #f0d4ff;
 }
 
 div[style*="border:1px"] {
-    background: #23272f;
-    border: 1px solid #7c3aed !important;
+    background: #4a5078 !important;
+    border: 1px solid #a78bfa !important;
     border-radius: 12px !important;
-    box-shadow: 0 2px 8px #0003;
+    box-shadow: 0 2px 8px #0002;
     margin-bottom: 1em;
-    color: #e0e0e0;
+    color: #f5eeff !important;
+}
+
+img[style*="border:1px"] {
+    border-color: #a78bfa !important;
 }
 
 code, pre {
-    background: #23272f !important;
-    color: #c792ea !important;
+    background: #4a5078 !important;
+    color: #f0d4ff !important;
 }
 
 hr {
-    border-color: #693db4;
+    border-color: #8b6fd0;
 }
 
 ::-webkit-scrollbar {
-    background: #23272f;
+    background: #3b4062;
     width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #7c3aed;
+    background: #8b5cf6;
     border-radius: 4px;
 }
 
 /* Tag style for skills/technologies */
 .skill-tag {
     display: inline-block;
-    background: #7c3aed;
+    background: #8b5cf6;
     color: #fff;
     border-radius: 6px;
     padding: 2px 10px;
@@ -61,10 +88,10 @@ hr {
 
 /* Section cards */
 .section-card {
-    background: #23272f;
+    background: #4a5078;
     border-radius: 12px;
     padding: 1.2em 1.5em;
     margin-bottom: 1.5em;
-    box-shadow: 0 2px 8px #0003;
-    border: 1px solid #7c3aed;
+    box-shadow: 0 2px 8px #0002;
+    border: 1px solid #a78bfa;
 }

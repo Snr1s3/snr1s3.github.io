@@ -4,7 +4,7 @@
 **Email:** <a href="mailto:alba.segurallamas@gmail.com" style="color:#bb86fc;">alba.segurallamas@gmail.com</a>  
 
 <strong>
-    <a href="/data/CV_SeguraLlamasAlba.pdf" style="color:#bb86fc;" download>Download CV</a>
+    <a href="assets/data/CV_SeguraLlamasAlba.pdf" style="color:#bb86fc;" download>Download CV</a>
   </strong>
       |
 <strong>
