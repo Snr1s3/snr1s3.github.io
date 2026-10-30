@@ -1,84 +1,122 @@
+/* Ubuntu Mono Nerd Font: uses the installed font; falls back to Ubuntu Mono / system monospace */
+@font-face {
+    font-family: 'Ubuntu Mono Nerd';
+    font-style: normal;
+    font-weight: 400;
+    src: local('UbuntuMono Nerd Font'), local('UbuntuMonoNerdFont-Regular'),
+         local('UbuntuMono NF'), local('Ubuntu Mono');
+}
+@font-face {
+    font-family: 'Ubuntu Mono Nerd';
+    font-style: normal;
+    font-weight: 700;
+    src: local('UbuntuMono Nerd Font Bold'), local('UbuntuMonoNerdFont-Bold'),
+         local('UbuntuMono NF Bold'), local('Ubuntu Mono Bold');
+}
+
 :root,
 html.light,
 html.rust,
 html.coal,
 html.navy,
 html.ayu {
-    --bg: #3b4062;
-    --fg: #f5eeff;
-    --sidebar-bg: #2f3454;
-    --sidebar-fg: #e8dcff;
-    --sidebar-active: #e0b8ff;
-    --scrollbar: #8b5cf6;
-    --links: #d9bcff;
-    --inline-code-color: #f0d4ff;
-    --theme-popup-bg: #2f3454;
-    --theme-hover: #4a5078;
-    --quote-bg: #474d73;
-    --table-border-color: #5b6290;
-    --table-header-bg: #474d73;
-    --table-alternate-bg: #424869;
+    --mono-font: 'Ubuntu Mono Nerd', 'UbuntuMono Nerd Font', 'UbuntuMono NF', 'Ubuntu Mono', monospace;
+    --bg: #1a1b26;
+    --fg: #e6e9f5;
+    --sidebar-bg: #14151e;
+    --sidebar-fg: #c8cde6;
+    --sidebar-non-existant: #6b7194;
+    --sidebar-active: #ffcf99;
+    --sidebar-spacer: #2a2d42;
+    --scrollbar: #7c6bd6;
+    --icons: #9aa1c4;
+    --icons-hover: #ffffff;
+    --links: #c4a7ff;
+    --inline-code-color: #ffcf99;
+    --theme-popup-bg: #14151e;
+    --theme-popup-border: #3a3f5c;
+    --theme-hover: #2a2e45;
+    --quote-bg: #22243a;
+    --quote-border: #7c6bd6;
+    --table-border-color: #3a3f5c;
+    --table-header-bg: #22243a;
+    --table-alternate-bg: #1f2133;
+    --searchbar-bg: #22243a;
+    --searchbar-fg: #e6e9f5;
+    --searchbar-border-color: #3a3f5c;
+    --searchresults-header-fg: #9aa1c4;
+    --searchresults-border-color: #3a3f5c;
+    --searchresults-li-bg: #22243a;
+    --search-mark-bg: #ffcf99;
 }
 
 body {
-    background: #3b4062 !important;
-    color: #f5eeff;
-    font-family: 'Inter', 'Segoe UI', Arial, sans-serif;
+    background: #1a1b26 !important;
+    color: #e6e9f5;
+    font-family: var(--mono-font);
+    font-size: 1.8rem;
+    line-height: 1.65;
+}
+
+code, pre, .hljs {
+    font-family: var(--mono-font) !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #e6c4ff;
+    color: #d8c4ff;
+    font-weight: 700;
 }
 
 a,
 a[style*="color"] {
-    color: #d9bcff !important;
+    color: #c4a7ff !important;
     text-decoration: none;
 }
 a:hover {
+    color: #ffffff !important;
     text-decoration: underline;
 }
 
 strong {
-    color: #f0d4ff;
+    color: #ffffff;
 }
 
 div[style*="border:1px"] {
-    background: #4a5078 !important;
-    border: 1px solid #a78bfa !important;
+    background: #24283b !important;
+    border: 1px solid #7c6bd6 !important;
     border-radius: 12px !important;
-    box-shadow: 0 2px 8px #0002;
+    box-shadow: 0 2px 8px #0006;
     margin-bottom: 1em;
-    color: #f5eeff !important;
+    color: #e6e9f5 !important;
 }
 
 img[style*="border:1px"] {
-    border-color: #a78bfa !important;
+    border-color: #7c6bd6 !important;
 }
 
 code, pre {
-    background: #4a5078 !important;
-    color: #f0d4ff !important;
+    background: #2a2e45 !important;
+    color: #ffcf99 !important;
 }
 
 hr {
-    border-color: #8b6fd0;
+    border-color: #3a3f5c;
 }
 
 ::-webkit-scrollbar {
-    background: #3b4062;
+    background: #1a1b26;
     width: 8px;
 }
 ::-webkit-scrollbar-thumb {
-    background: #8b5cf6;
+    background: #7c6bd6;
     border-radius: 4px;
 }
 
 /* Tag style for skills/technologies */
 .skill-tag {
     display: inline-block;
-    background: #8b5cf6;
-    color: #fff;
+    background: #7c6bd6;
+    color: #ffffff;
     border-radius: 6px;
     padding: 2px 10px;
     margin: 2px 4px 2px 0;
@@ -88,10 +126,10 @@ hr {
 
 /* Section cards */
 .section-card {
-    background: #4a5078;
+    background: #24283b;
     border-radius: 12px;
     padding: 1.2em 1.5em;
     margin-bottom: 1.5em;
-    box-shadow: 0 2px 8px #0002;
-    border: 1px solid #a78bfa;
+    box-shadow: 0 2px 8px #0006;
+    border: 1px solid #7c6bd6;
 }
