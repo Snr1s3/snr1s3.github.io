@@ -47,7 +47,7 @@
           "name": "Dockerfile"
         }
       ],
-      "image": "assets/project_2.jpg",
+      "image": "assets/project_1.jpg",
       "github": "https://github.com/Snr1s3/FlightsASL"
     },
     {
@@ -84,7 +84,7 @@
       "subtitle": "",
       "description": "This GitHub Actions workflow sends a detailed Telegram notification whenever a workflow (such as your tests) finishes running. The notification includes the repository name, commit message, author, workflow name, and the final status (success or failure), helping you easily monitor your project's CI/CD results in real time.",
       "technologies": [],
-      "image": "assets/project_2.jpg",
+      "image": "assets/notify-telegram-action.png",
       "github": "https://github.com/Snr1s3/notify-telegram-action"
     },
     {
@@ -92,7 +92,7 @@
       "subtitle": "",
       "description": "",
       "technologies": [],
-      "image": "assets/project_2.jpg",
+      "image": "assets/project_1.jpg",
       "github": "https://github.com/Snr1s3/upload-to-docker-action"
     }
   ]

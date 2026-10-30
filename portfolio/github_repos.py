@@ -36,7 +36,7 @@ def repo():
     repos = response.json()
 
     ignore_repos = ["snr1s3.github.io", "Snr1s3"]
-    background_images = ["assets/project_1.jpg", "assets/project_2.jpg"]
+    background_images = ["assets/project_1.jpg"]
     repo_list = []
     for r in repos:
         if r["name"] in ignore_repos:

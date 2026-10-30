@@ -5,3 +5,4 @@ __pycache__/
 book/
 .venv/*
 .env
+.venv
