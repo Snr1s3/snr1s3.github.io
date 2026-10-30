@@ -5,6 +5,7 @@ json_file = 'portfolio/data.json'
 projects_file = 'portfolio/projects.json'
 index_md = 'portfolio/src/index.md'
 projects_md = 'portfolio/src/projects.md'
+IMG_STYLE = "display:block; width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;"
 
 def readJson(json_file):
     with open(json_file, 'r') as f:
@@ -98,7 +99,7 @@ def writeRandomProjects(index_md, data):
             f'  <strong>\n'
             f'    <a href="{project["github"]}" style="color:#bb86fc;">{project["title"]}</a>\n'
             f'  </strong>\n'
-            f'  <img src="{project["image"]}" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
+            f'  <img src="{project["image"]}" alt="{project["title"]}" style="{IMG_STYLE}">\n'
             f'  <br>\n'
             f'{project["description"]}\n'
             f'{tech_icons}\n'
@@ -147,7 +148,7 @@ def writeProjects(projects_md, data):
             f'  <strong>\n'
             f'    <a href="{project["github"]}" style="color:#bb86fc;">{project["title"]}</a>\n'
             f'  </strong>\n'
-            f'  <img src="{project["image"]}" alt="{project["title"]}" style="width:100%; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;">\n'
+            f'  <img src="{project["image"]}" alt="{project["title"]}" style="{IMG_STYLE}">\n'
             f'  <br>\n'
             f'{project["description"]}\n'
             f'{tech_icons}\n'
