@@ -47,13 +47,13 @@
           "name": "Dockerfile"
         }
       ],
-      "image": "assets/project_1.jpg",
+      "image": "assets/FlightsASL.png",
       "github": "https://github.com/Snr1s3/FlightsASL"
     },
     {
       "title": "Hyprland-Rice",
       "subtitle": "",
-      "description": "",
+      "description": "NixOS flake for a lightweight Hyprland desktop that combines system modules, Home Manager settings, a Quickshell system-info bar, and app configs for Foot, Tofi, Walker and Fastfetch, all managed from a single configuration.",
       "technologies": [
         {
           "icon": "devicon-qt-original",
@@ -90,9 +90,9 @@
     {
       "title": "upload-to-docker-action",
       "subtitle": "",
-      "description": "",
+      "description": "GitHub Action that sets up Docker Buildx, logs in to Docker Hub, and builds and pushes multi-platform Docker images with the tags and Dockerfile you choose.",
       "technologies": [],
-      "image": "assets/project_1.jpg",
+      "image": "assets/upload-to-docker-action.png",
       "github": "https://github.com/Snr1s3/upload-to-docker-action"
     }
   ]

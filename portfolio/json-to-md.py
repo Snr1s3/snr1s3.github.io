@@ -1,10 +1,12 @@
 import json
+import os
 import random
 
-json_file = 'portfolio/data.json'
-projects_file = 'portfolio/projects.json'
-index_md = 'portfolio/src/index.md'
-projects_md = 'portfolio/src/projects.md'
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+json_file = os.path.join(BASE_DIR, 'data.json')
+projects_file = os.path.join(BASE_DIR, 'projects.json')
+index_md = os.path.join(BASE_DIR, 'src', 'index.md')
+projects_md = os.path.join(BASE_DIR, 'src', 'projects.md')
 IMG_STYLE = "display:block; width:100%; aspect-ratio:16/9; object-fit:contain; background:#14151e; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;"
 
 def readJson(json_file):

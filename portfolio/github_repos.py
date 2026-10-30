@@ -3,6 +3,8 @@ import json
 import random
 import os
 
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
 def get_icon_for_language(lang):
     mapping = {
         "Python": "devicon-python-plain",
@@ -73,7 +75,7 @@ def repo():
         "projects": repo_list
     }
 
-    with open("./portfolio/projects.json", "w", encoding="utf-8") as f:
+    with open(os.path.join(BASE_DIR, "projects.json"), "w", encoding="utf-8") as f:
         json.dump(json_proj, f, indent=2, ensure_ascii=False)
 
 if __name__ == "__main__":
