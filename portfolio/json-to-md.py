@@ -5,7 +5,7 @@ json_file = 'portfolio/data.json'
 projects_file = 'portfolio/projects.json'
 index_md = 'portfolio/src/index.md'
 projects_md = 'portfolio/src/projects.md'
-IMG_STYLE = "display:block; width:100%; aspect-ratio:16/9; object-fit:cover; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;"
+IMG_STYLE = "display:block; width:100%; aspect-ratio:16/9; object-fit:contain; background:#14151e; border-radius:8px; margin:10px 0; border:1px solid #bb86fc;"
 
 def readJson(json_file):
     with open(json_file, 'r') as f:
