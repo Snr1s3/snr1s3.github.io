@@ -50,12 +50,19 @@ def repo():
                 icon = get_icon_for_language(lang)
                 if icon:
                     techs.append({"icon": icon, "name": lang})
+            background = random.choice(background_images)
+            for extension in ("png", "jpg"):
+                image = f"assets/{r['name']}.{extension}"
+                image_path = os.path.join(os.path.dirname(__file__), "src", image)
+                if os.path.isfile(image_path):
+                    background = image
+                    break
             entry = {
                 "title": r["name"],
                 "subtitle": "",
                 "description": desc,
                 "technologies": techs,
-                "image": random.choice(background_images),
+                "image": background,
                 "github": r["html_url"]
             }
             if r.get("homepage"):
